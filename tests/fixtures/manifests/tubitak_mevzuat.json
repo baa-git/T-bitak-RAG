@@ -1,0 +1,28 @@
+{
+  "kaynak": "https://tubitak.gov.tr/tr/mevzuat",
+  "secim": "başvuru süreçleriyle ilgili 60 doküman (136 içinden)",
+  "dokumanlar": [
+    {
+      "baslik": "TÜBİTAK 1501- Sanayi Araştırma Teknoloji Geliştirme ve Yenilik Projeleri Destekleme Programı Uygulama Esasları",
+      "url": "https://tubitak.gov.tr/sites/default/files/2026-01/77_YK_1501_islenmis_hali.pdf",
+      "tarih_turu": "Güncelleme",
+      "tarih": "29.12.2025",
+      "dosya": "030_77_YK_1501_islenmis_hali.pdf",
+      "boyut": 889954,
+      "program_kodu": "1501",
+      "kaynak_sayfa": "https://tubitak.gov.tr/tr/mevzuat",
+      "indirme_tarihi": "2026-10-15"
+    },
+    {
+      "baslik": "TÜBİTAK 1507- KOBİ Ar-Ge Başlangıç Destek Programı Uygulama Esasları",
+      "url": "https://tubitak.gov.tr/sites/default/files/2026-10/1507_UE_25.09.2026_84YK_islenmis_hali.pdf",
+      "tarih_turu": "Güncelleme",
+      "tarih": "25.09.2026",
+      "dosya": "031_1507_UE_25.09.2026_84YK_islenmis_hali.pdf",
+      "boyut": 925125,
+      "program_kodu": "1507",
+      "kaynak_sayfa": "https://tubitak.gov.tr/tr/mevzuat",
+      "indirme_tarihi": "2026-10-15"
+    }
+  ]
+}

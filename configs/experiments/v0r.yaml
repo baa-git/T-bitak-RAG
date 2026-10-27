@@ -1,0 +1,18 @@
+# v0r — v0 + reranker: kötü chunking'i reranker kurtarabilir mi?
+extends: ../default.yaml
+
+experiment:
+  name: v0r
+  description: "Reranker kötü chunking'i kurtarabilir mi? v0 ile aynı sabit parçalar, üstüne bge-reranker-v2-m3."
+  concept: reranker
+  previous: v0
+
+chunker:
+  name: fixed
+  context_header: false
+
+retriever:
+  mode: dense
+
+reranker:
+  enabled: true

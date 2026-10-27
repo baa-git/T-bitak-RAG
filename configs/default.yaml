@@ -1,0 +1,106 @@
+# TÜBİTAK Mevzuat RAG — varsayılan yapılandırma
+#
+# Bu dosya tüm alanları açıkça yazar (öğretici). Kod içindeki varsayılanlarla birebir aynıdır;
+# deney dosyaları (configs/experiments/*.yaml) `extends: ../default.yaml` ile bunu temel alır
+# ve yalnızca farkları yazar. `${DEGISKEN:varsayilan}` ortam değişkeninden (veya .env'den) okunur.
+# Çözüm tek seferdir; düz metin olarak `${` yazmak için `$${` kullanın.
+# Gizli anahtarlar (ör. ANTHROPIC_API_KEY) burada DEĞİL, yalnızca .env / ortamda tutulur.
+#
+# Pipeline v3 ile aynıdır: yapı bazlı chunking + bağlam başlığı, hibrit arama, reranker.
+
+experiment:
+  name: default
+  description: "Varsayılan kullanım: v3 ile aynı tam pipeline (hibrit arama + reranker)."
+  concept: full_pipeline
+  previous: null
+
+paths:
+  data_dir: data
+  raw_dir: data/raw
+  manifests_dir: data/manifests
+  artifacts_dir: artifacts
+  testset: eval/testset_v1.jsonl
+
+embedder:
+  provider: sentence_transformers   # sentence_transformers | ollama | fake
+  model: google/embeddinggemma-2
+  dimension: 768
+  device: auto                      # auto | cpu | cuda (TUBITAK_RAG_DEVICE ortam değişkeni ezer)
+  batch_size: 32
+  text_only: true                   # EmbeddingGemma 2'yi yalnız metin modunda yükle
+  cache: true                       # embedding önbelleği (artifacts/cache/embeddings)
+  url: ${OLLAMA_URL:http://localhost:11434}   # yalnızca provider: ollama için
+
+chunker:
+  name: structural                  # fixed | structural
+  max_tokens: 450
+  context_header: true              # belge/bölüm/madde başlığını embed metnine ekle
+  tokenizer: hf:google/embeddinggemma-2   # hf:<model>; "regex" yalnız testler için
+  fixed:
+    size: 512
+    overlap: 64
+
+vector_store:
+  provider: qdrant                  # qdrant | numpy | fake
+  url: ${QDRANT_URL:http://localhost:6333}
+  export_dir: artifacts/export
+
+bm25:
+  enabled: true
+  provider: bm25s                   # bm25s | fake (testler)
+  stemming: true                    # snowballstemmer "turkish"
+  k1: 1.5
+  b: 0.75
+
+retriever:
+  mode: hybrid                      # dense | bm25 | hybrid (RRF)
+  k_candidates: 30
+  top_n: 5
+  rrf_k: 60
+
+reranker:
+  enabled: true
+  provider: cross_encoder           # cross_encoder | fake
+  model: BAAI/bge-reranker-v2-m3
+  device: auto                      # auto | cpu | cuda (TUBITAK_RAG_DEVICE ortam değişkeni ezer)
+  max_length: 512
+  cpu_max_candidates: 6             # CPU'da yeniden sıralanacak en fazla aday (~0,7 s/aday);
+                                    # 0 = CPU'da reranker kapalı, null = sınır yok
+                                    # (RERANKER_CPU_CANDIDATES ezer; bkz. device_policy.py)
+
+llm:
+  provider: ollama                  # ollama | anthropic | openai_compat | transformers | fake — varsayılan yereldir (NFR-PRIV1)
+  model: qwen3:4b                   # < 8B parametre (NFR-HW3)
+  url: ${OLLAMA_URL:http://localhost:11434}
+  temperature: 0.0                  # değerlendirme koşularında 0 (NFR-REPRO2)
+  num_ctx: 8192
+  think: false                      # Qwen3 düşünme modu kapalı
+  timeout_s: ${LLM_TIMEOUT_S:120}   # CPU'da yavaş makineler için ortamdan büyütülebilir
+  anthropic:                        # yalnızca provider: anthropic seçilirse kullanılır
+    model: claude-opus-5
+    effort: low
+  openai_compat:                    # yalnızca provider: openai_compat (OpenAI uyumlu /chat/completions)
+    base_url: ${LLM_BASE_URL:http://localhost:11434/v1}   # ör. Groq, OpenRouter, HF, yerel Ollama /v1
+    api_key_env: LLM_API_KEY        # anahtarı tutan ortam değişkeninin ADI (anahtar burada yazılmaz)
+    json_mode: json_schema          # json_schema | json_object | prompt (reddedilirse sıradakine düşer)
+    max_tokens: 2048
+  transformers:                     # yalnızca provider: transformers (model süreç içinde; HF ZeroGPU Space)
+    device: auto                    # auto | cpu | cuda (TUBITAK_RAG_DEVICE ezer); model adı llm.model (ör. Qwen/Qwen3-4B)
+    dtype: bfloat16                 # bfloat16 | float16 | float32 | auto
+    max_new_tokens: 1024            # cevap için en fazla üretilecek token
+
+guardrails:
+  scope_mode: both                  # lexicon | llm | both | off
+  thresholds:                       # retrieval eşiği, skor anahtarı başına (FR-GR9)
+    dense: 0.45
+    rerank: -2.0
+    bm25: 0.0
+  number_check: strip               # off | strip | reject — cevaptaki sayı kaynakta yoksa
+  disclaimer: "Bu cevap bilgilendirme amaçlıdır; resmî görüş değildir. Kesin bilgi için ilgili mevzuata ve TÜBİTAK'a başvurunuz."
+
+eval:
+  judge:
+    provider: ollama                # ollama | anthropic | openai_compat | transformers | fake
+    model: qwen3:4b
+  k_values: [5, 10]
+  limit: null                       # null = tüm test seti

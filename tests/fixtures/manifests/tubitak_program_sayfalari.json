@@ -1,0 +1,80 @@
+{
+  "kaynak": "tubitak.gov.tr/tr/destekler program sayfaları (sitemap; cagri-* arşivi hariç)",
+  "indirme_tarihi": "2026-10-15",
+  "secim_kurali": "PDF/XLSX içinden yalnız çağrı metni, duyuru, SSS ve başvuru/hazırlama kılavuzları; görünürlük/kimlik rehberleri, form şablonları, sunumlar, eski kapanmış çağrılar, listeler hariç; aynı içerik sha256 ile tekilleştirildi",
+  "sayfalar": [
+    {
+      "url": "https://tubitak.gov.tr/tr/destekler/akademik",
+      "baslik": "Akademik",
+      "slug": "akademik",
+      "html_boyut": 31219,
+      "html_dosya": "html/akademik.html"
+    },
+    {
+      "url": "https://tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1501-tubitak-sanayi-ar-ge-projeleri-destekleme-programi",
+      "baslik": "1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı",
+      "slug": "sanayi__ulusal-destek-programlari__1501-tubitak-sanayi-ar-ge-projeleri-destekleme-programi",
+      "html_boyut": 50938,
+      "html_dosya": "html/sanayi__ulusal-destek-programlari__1501-tubitak-sanayi-ar-ge-projeleri-destekleme-programi.html"
+    }
+  ],
+  "dosyalar": [
+    {
+      "url": "https://tubitak.gov.tr/sites/default/files/2026-07/1501_Sanayi_Ar-Ge_Destek_Programi_2026-2_Proje_Cagri_Metni_13.07.2026_v2.pdf",
+      "baslik": "1501-Sanayi Ar-Ge Destek Programı 2026 yılı 2. Çağrı Dokümanı",
+      "ext": ".pdf",
+      "dosya_adi": "1501_Sanayi_Ar-Ge_Destek_Programi_2026-2_Proje_Cagri_Metni_13.07.2026_v2.pdf",
+      "sayfalar": [
+        "sanayi__ulusal-destek-programlari__1501-tubitak-sanayi-ar-ge-projeleri-destekleme-programi"
+      ],
+      "haric": null,
+      "boyut": 826521,
+      "kat": "cagri",
+      "dosya": "dosyalar/2026-07__1501_Sanayi_Ar-Ge_Destek_Programi_2026-2_Proje_Cagri_Metni_13.07.2026_v2.pdf",
+      "sha256": "10f733d7f6a2d0f8e728c63bdc119392f4373693e0c900fb42110c5cde704563",
+      "sayfa_sayisi": 7,
+      "metin_karakter": 15260,
+      "dil": "tr"
+    },
+    {
+      "url": "https://tubitak.gov.tr/sites/default/files/2024-03/teydeb_destek_programlari_ve_cagrilari_ust_limitleri.xlsx",
+      "baslik": "Proje bütçesine ve diğer destek üst limitlerine ulaşmak için lütfen tıklayınız.",
+      "ext": ".xlsx",
+      "dosya_adi": "teydeb_destek_programlari_ve_cagrilari_ust_limitleri.xlsx",
+      "sayfalar": [
+        "mali-hususlar-ve-odeme",
+        "sanayi__ulusal-destek-programlari__1501-tubitak-sanayi-ar-ge-projeleri-destekleme-programi",
+        "sanayi__ulusal-destek-programlari__1503-proje-pazarlari-destekleme-programi",
+        "sanayi__ulusal-destek-programlari__1505-universite-sanayi-isbirligi-destek-programi",
+        "sanayi__ulusal-destek-programlari__1507-tubitak-kobi-ar-ge-baslangic-destek-programi",
+        "sanayi__ulusal-destek-programlari__1511-tubitak-oncelikli-alanlar-arastirma-teknoloji-gelistirme-ve-yenilik-p-d-pteknoloji-odakli-sanayi-hamlesi-programi",
+        "sanayi__ulusal-destek-programlari__1515-oncul-ar-ge-laboratuvarlari-destekleme-programi"
+      ],
+      "haric": null,
+      "boyut": 80517,
+      "kat": "cagri",
+      "dosya": "dosyalar/2024-03__teydeb_destek_programlari_ve_cagrilari_ust_limitleri.xlsx",
+      "sha256": "6a5eda267423e24ea65e00e6639aa562d4251e812d60c364fea90c5529f18161",
+      "ayni_icerikli_urller": [
+        "https://tubitak.gov.tr/sites/default/files/2024-03/teydeb_destek_programlari_ve_cagrilari_ust_limitleri%20%282%29.xlsx"
+      ]
+    }
+  ],
+  "elenenler": [
+    {
+      "url": "https://tubitak.gov.tr/sites/default/files/2023-08/desteklenen_arastirma_programlari.pdf",
+      "baslik": "2018 Yılı çağrısı ile destek verilen araştırma programları",
+      "ext": ".pdf",
+      "dosya_adi": "desteklenen_arastirma_programlari.pdf",
+      "sayfalar": [
+        "akademik__ulusal-destek-programlari__1004-mukemmeliyet-merkezi-destek-programi"
+      ],
+      "haric": "eski_cagri_veya_liste",
+      "boyut": 458027,
+      "kat": "cagri"
+    }
+  ],
+  "erisilemeyen_sayfalar": [
+    "https://tubitak.gov.tr/tr/destekler/akademik/ulusal-destek-programlari/3005-sosyal-ve-beseri-bilimlerde-yenilikci-cozumler-arastirma-projeleri-destek-programi"
+  ]
+}

@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% set d = onizleme.belge %}
+{% block title %}{{ d.baslik[:60] }}{% endblock %}
+{% block content %}
+<nav class="iz" aria-label="Sayfa yolu">
+  <a href="/">Sohbet</a> <span aria-hidden="true">›</span> <span aria-current="page">Belge önizlemesi · {{ d.doc_id }}</span>
+</nav>
+<div class="sayfa-bas">
+  <h1>{{ d.baslik }}</h1>
+</div>
+
+<div class="belge-duzeni">
+  <aside class="belge-kunye" aria-labelledby="kunye-baslik">
+    <h2 id="kunye-baslik">Künye</h2>
+    <dl class="kunye-listesi">
+      <div><dt>Program</dt><dd>{{ d.program_kodu or 'Genel' }}</dd></div>
+      <div><dt>Tür</dt><dd>{{ DOC_TYPE_LABELS.get(d.doc_turu, d.doc_turu) }}</dd></div>
+      <div><dt>Sürüm tarihi</dt><dd>{{ d.surum_tarihi | tarih }}</dd></div>
+      <div><dt>Dil</dt><dd>{{ LANGUAGE_LABELS.get(d.dil, d.dil) }}</dd></div>
+      <div><dt>Durum</dt><dd><span class="etiket etiket-{{ d.durum }}">{{ DOCUMENT_STATE_LABELS[d.durum] }}</span></dd></div>
+      <div><dt>Bölüm</dt><dd>{{ onizleme.bolum_sayisi | sayi(0) }}</dd></div>
+    </dl>
+    {% if onizleme.chunk_sayilari %}
+    <table class="tablo parca-tablosu">
+      <caption>Koleksiyonlara göre parça sayısı</caption>
+      <thead><tr><th scope="col">Koleksiyon</th><th scope="col" class="sayi">Parça</th></tr></thead>
+      <tbody>
+        {% for koleksiyon, adet in onizleme.chunk_sayilari.items() %}
+        <tr><th scope="row"><code>{{ koleksiyon }}</code></th><td class="sayi">{{ adet | sayi(0) }}</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% endif %}
+    <p><a class="dis-baglanti" href="{{ d.kaynak_url }}" rel="noopener" target="_blank">Belgenin aslını aç<span class="gorunmez"> (yeni sekmede)</span></a></p>
+    {% if onizleme.kaynak_sayfa_url %}<p><a class="dis-baglanti" href="{{ onizleme.kaynak_sayfa_url }}" rel="noopener" target="_blank">Yayımlandığı sayfa<span class="gorunmez"> (yeni sekmede)</span></a></p>{% endif %}
+  </aside>
+
+  <section class="bolumler" aria-labelledby="bolumler-baslik">
+    <h2 id="bolumler-baslik">Bölümler</h2>
+    {% if onizleme.ayristirildi %}
+    <p class="kaynak-ipucu">Ayrıştırıcının çıkardığı yapı: her bölüm açılınca temizlenmiş metni ve değişiklik notları görünür. Cevaptaki “Belgede göster” bağlantısı ilgili bölümü açar.</p>
+    <ol class="kaynak-listesi bolum-listesi">
+      {% for s in onizleme.bolumler %}
+      <li id="bolum-{{ s.bolum_id }}" class="kaynak bolum{% if s.mulga %} mulga{% endif %}">
+        <details>
+          <summary>
+            <span class="kaynak-ozet">
+              <span class="kaynak-belge">
+                {%- if s.madde_no %}Madde {{ s.madde_no }}{% if s.baslik %} – {% endif %}{% endif -%}
+                {%- if s.baslik %}{{ s.baslik }}{% elif not s.madde_no %}Bölüm {{ loop.index }}{% endif -%}
+              </span>
+              <span class="kaynak-konum">
+                {%- if s.hiyerarsi %}{{ s.hiyerarsi | join(' › ') }}{% endif -%}
+                {%- if s.sayfa %}{% if s.hiyerarsi %} · {% endif %}sayfa {{ s.sayfa }}{% endif -%}
+              </span>
+            </span>
+            <span class="bolum-etiketleri">
+              {%- if s.mulga %}<span class="etiket etiket-eksik">Mülga</span>{% endif -%}
+              {%- if s.degisiklik_notlari %}<span class="etiket etiket-guncel_degil">Değişiklik</span>{% endif -%}
+            </span>
+          </summary>
+          <div class="kaynak-govde">
+            <blockquote class="kaynak-metni">{{ s.metin | paragraflar }}</blockquote>
+            {% if s.degisiklik_notlari %}
+            <ul class="degisiklik-notlari" aria-label="Değişiklik notları">
+              {% for not_metni in s.degisiklik_notlari %}<li>{{ not_metni }}</li>{% endfor %}
+            </ul>
+            {% endif %}
+          </div>
+        </details>
+      </li>
+      {% endfor %}
+    </ol>
+    {% else %}
+    <p class="aciklama">Bu belgenin ayrıştırılmış metni henüz yok: dosya indirilmemiş, taranmış (metin katmanı yok) ya da henüz indekslenmemiş olabilir. Belgenin aslını künyedeki bağlantıdan okuyabilirsiniz.</p>
+    {% endif %}
+  </section>
+</div>
+{% endblock %}

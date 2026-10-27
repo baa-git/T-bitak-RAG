@@ -1,0 +1,53 @@
+{
+  "aciklama": "Sanayi ve Teknoloji Bakanlığı mevzuatı (Ar-Ge merkezi / teknopark). mevzuat.gov.tr bu makineden erişilemediği için konsolide metinler GİB'den alındı.",
+  "eksikler": [
+    {
+      "baslik": "Araştırma, Geliştirme ve Tasarım Faaliyetlerinin Desteklenmesine İlişkin Uygulama ve Denetim Yönetmeliği",
+      "durum": "sanayi.gov.tr WAF otomatik indirmeyi reddediyor; elle indirilmeli",
+      "url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/AGTM29797Yonetmelik.pdf"
+    },
+    {
+      "baslik": "Teknoloji Geliştirme Bölgeleri Uygulama Yönetmeliği",
+      "durum": "sanayi.gov.tr kopyası 2023 öncesi (18.11.2023 ve 27.03.2025 değişiklikleri eksik); güncel hali mevzuat.gov.tr'den elle indirilmeli",
+      "url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/TGBUygulamaYonetmeligi.pdf"
+    }
+  ],
+  "dokumanlar": [
+    {
+      "dosya": "5746_kanun_gib.json",
+      "kanun_no": "5746",
+      "baslik": "Araştırma, Geliştirme ve Tasarım Faaliyetlerinin Desteklenmesi Hakkında Kanun",
+      "tur": "kanun",
+      "kurum": "TBMM (uygulayıcı: Sanayi ve Teknoloji Bakanlığı)",
+      "kaynak": "https://www.gib.gov.tr/mevzuat/kanun/485",
+      "api": "https://gib.gov.tr/api/gibportal/mevzuat/madde/findByKanunId?kanunId=485&status=2&page=0&size=2000&sortFieldName=id&sortType=ASC",
+      "format": "GİB API JSON; resultContainer.content[] = madde (title, description=HTML)",
+      "resmi_gazete": "12.03.2008 / 26814",
+      "madde_sayisi": 8,
+      "kaynakta_son_guncelleme": "2026-06-10",
+      "islenmis_degisiklikler_kontrol": {
+        "7555": true,
+        "7582": true
+      },
+      "indirme_tarihi": "2026-10-15"
+    },
+    {
+      "dosya": "4691_kanun_gib.json",
+      "kanun_no": "4691",
+      "baslik": "Teknoloji Geliştirme Bölgeleri Kanunu",
+      "tur": "kanun",
+      "kurum": "TBMM (uygulayıcı: Sanayi ve Teknoloji Bakanlığı)",
+      "kaynak": "https://www.gib.gov.tr/mevzuat/kanun/476",
+      "api": "https://gib.gov.tr/api/gibportal/mevzuat/madde/findByKanunId?kanunId=476&status=2&page=0&size=2000&sortFieldName=id&sortType=ASC",
+      "format": "GİB API JSON; resultContainer.content[] = madde (title, description=HTML)",
+      "resmi_gazete": "06.07.2001 / 24454",
+      "madde_sayisi": 20,
+      "kaynakta_son_guncelleme": "2026-01-05",
+      "islenmis_degisiklikler_kontrol": {
+        "7555": true,
+        "7582": false
+      },
+      "indirme_tarihi": "2026-10-15"
+    }
+  ]
+}

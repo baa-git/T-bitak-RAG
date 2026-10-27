@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %}{% if tur and tur.soru %}{{ tur.soru[:60] }}{% else %}Sohbet{% endif %}{% endblock %}
+{% block body_class %}sohbet-govde{% endblock %}
+{% block content %}
+<div class="sohbet">
+  <div class="sohbet-bas">
+    <div>
+      <h1>Mevzuata soru sorun</h1>
+      <p class="giris">Cevaplar yalnızca indekslenen TÜBİTAK ve Ar-Ge mevzuatına dayanır. Her cevabın altında dayandığı kaynaklar numaralarıyla listelenir.</p>
+    </div>
+    <a class="yeni-sohbet" href="/" data-yeni-sohbet>Yeni sohbet</a>
+  </div>
+
+  <div id="sohbet" class="akis" role="log" aria-label="Sohbet">
+    {% if tur %}
+      {% include "partials/tur.html" %}
+    {% else %}
+    <section class="bos-durum" aria-labelledby="ornek-baslik">
+      <h2 id="ornek-baslik">Örnek sorular</h2>
+      <ul class="ornekler">
+        {% for ornek in ornekler %}
+        <li><a href="/?soru={{ ornek | urlencode }}" data-ornek="{{ ornek }}">{{ ornek }}</a></li>
+        {% endfor %}
+      </ul>
+      <p class="nasil">Soru, belgelerde anlam ve anahtar kelime aramasıyla aranır; bulunan parçalar yeniden sıralanır. Yeterince ilgili parça yoksa sistem tahmin yürütmez, bilgi bulunamadığını söyler. Dil modeli yalnızca bu parçalara dayanarak yazar ve her bilgiye kaynak numarası ekler.</p>
+    </section>
+    {% endif %}
+  </div>
+
+  <form id="soru-formu" class="yazma-alani" action="/" method="get"
+        hx-get="/ui/ask" hx-target="#sohbet" hx-swap="beforeend"
+        hx-disabled-elt="find button[type=submit]">
+    <label class="gorunmez" for="soru">Sorunuz</label>
+    <div class="yazma-satiri">
+      <textarea id="soru" name="soru" rows="2" maxlength="1000" required
+                aria-describedby="soru-ipucu"
+                placeholder="Örneğin: 1507 programında destek oranı en fazla yüzde kaçtır?"></textarea>
+      <button type="submit" class="dugme">Sor</button>
+    </div>
+    <div class="yapilandirma-satiri">
+      <label for="yapilandirma">Yapılandırma</label>
+      <select id="yapilandirma" name="yapilandirma" aria-describedby="yontemler">
+        {% for o in yapilandirmalar %}
+        <option value="{{ o.ad }}"{% if not o.hazir %} disabled{% elif secili == o.ad %} selected{% endif %}>{{ o.etiket }}{% if not o.hazir %} ({{ o.durum_notu or "indeks yok" }}){% endif %}</option>
+        {% endfor %}
+      </select>
+      <div id="yontemler" class="yontemler" aria-live="polite">
+        {% for o in yapilandirmalar %}
+        <p class="yontem" data-yapilandirma="{{ o.ad }}"{% if secili != o.ad %} hidden{% endif %}>{{ yontem_metni(o.yontemler) }}</p>
+        {% endfor %}
+      </div>
+    </div>
+    <p class="alt-not"><span id="soru-ipucu">Göndermek için <kbd>Enter</kbd>, yeni satır için <kbd>Shift</kbd> + <kbd>Enter</kbd>.</span> <span class="uyari-notu">{{ uyari_metni }}</span></p>
+  </form>
+</div>
+{% endblock %}

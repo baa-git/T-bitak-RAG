@@ -1,0 +1,68 @@
+{#- One conversation turn: the question, then the reply (answer with sources, refusal or error).
+    Appended to #sohbet by HTMX; `tur.onek` keeps the anchors of several turns apart. -#}
+{% set t = tur %}
+<section class="tur" aria-label="Soru ve cevap">
+  {% if t.soru %}
+  <div class="mesaj soru-mesaji">
+    <p class="mesaj-kim">Soru</p>
+    <p class="soru-metni">{{ t.soru }}</p>
+  </div>
+  {% endif %}
+  {% if t.hata %}
+  <div class="mesaj cevap-mesaji hata">
+    <p class="form-hatasi" role="alert">{{ t.hata }}</p>
+  </div>
+  {% elif t.sonuc %}
+  {% set c = t.sonuc.answer %}
+  {% set ad = t.sonuc.yapilandirma %}
+  {% set cevaplandi = c.durum == 'cevaplandi' and c.kaynaklar %}
+  <article class="mesaj cevap-mesaji{% if not cevaplandi %} ret{% endif %}" aria-label="Cevap">
+    <p class="cevap-ust">
+      <span class="mesaj-kim">Cevap</span>
+      {%- if ad %}<span class="ayrac" aria-hidden="true">·</span><span class="yapilandirma-adi" title="{{ t.yontemler.get(ad, '') }}">{{ ad }}</span>{% endif -%}
+      <span class="ayrac" aria-hidden="true">·</span><span class="sure">{{ c.gecikme_ms.get('total', 0) | saniye }}</span>
+    </p>
+    {% if cevaplandi %}
+    {% set kaynaklar = atif_kaynaklari(c) %}
+    <div class="cevap-metni">
+      {{ atifli_metin(c.cevap, kaynaklar | map(attribute='no'), t.onek) }}
+    </div>
+    {% if c.atif_onarimi %}
+    <p class="onarim-notu">{% for no in c.atif_onarimi %}[{{ no }}]{% if not loop.last %}, {% endif %}{% endfor %} numaralı atıf guardrail tarafından eklendi: cümledeki sayı yalnızca bu kaynakta geçiyordu.</p>
+    {% endif %}
+    <section class="kaynaklar" aria-labelledby="{{ t.onek }}kaynaklar">
+      <h3 id="{{ t.onek }}kaynaklar">Kaynaklar</h3>
+      <ol class="kaynak-listesi">
+        {% for k in kaynaklar %}
+        {% set b = t.sonuc.baglam.get(k.chunk_id) %}
+        <li id="kaynak-{{ t.onek }}{{ k.no }}" class="kaynak">
+          <span class="kaynak-no">[{{ k.no }}]</span>
+          <div class="kaynak-icerik">
+            <p class="kaynak-belge">{{ k.doc_title }}</p>
+            <p class="kaynak-konum">{{ konum_parcalari(k.konum, b) | join(' · ') }}</p>
+            {% if k.no in c.atif_onarimi %}<p class="kaynak-onarim">guardrail tarafından eklendi</p>{% endif %}
+            <p class="kaynak-baglantilar">
+              <a href="{{ k.kaynak_url }}" rel="noopener" target="_blank">Belgenin aslı<span class="gorunmez"> ({{ k.doc_title }}, yeni sekmede)</span></a>
+              {%- if b and b.doc_id %}
+              <a href="/belgeler/{{ b.doc_id | urlencode }}{% if b.bolum_id %}#bolum-{{ b.bolum_id }}{% endif %}">Belgede göster<span class="gorunmez"> (ayrıştırılmış metinde bu bölüm)</span></a>
+              {%- endif %}
+            </p>
+            <details>
+              <summary>Alıntıyı göster</summary>
+              <blockquote class="kaynak-metni">{{ k.text | paragraflar }}</blockquote>
+            </details>
+          </div>
+        </li>
+        {% endfor %}
+      </ol>
+    </section>
+    {% elif c.durum == 'kapsam_disi' %}
+    <p class="durum-mesaji">{{ c.cevap }}</p>
+    <p class="aciklama">Bu araç yalnızca TÜBİTAK destek programları, Ar-Ge ve tasarım merkezleri ile teknoloji geliştirme bölgelerine ilişkin mevzuatı yanıtlar.</p>
+    {% else %}
+    <p class="durum-mesaji">Bu konuda elimdeki dokümanlarda bilgi bulunamadı.</p>
+    <p class="aciklama">{% if c.durum == 'atif_reddi' %}Üretilen cevap atıf denetiminden geçmediği için gösterilmiyor.{% else %}Soruyu destekleyecek kadar ilgili bir mevzuat parçası bulunamadı; sistem tahmin yürütmek yerine cevap vermemeyi seçti.{% endif %} Soruyu farklı sözcüklerle ya da ilgili program ve madde adıyla yeniden sormayı deneyebilirsiniz.</p>
+    {% endif %}
+  </article>
+  {% endif %}
+</section>

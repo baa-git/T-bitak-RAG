@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block title %}Hakkında{% endblock %}
+{% block content %}
+<article class="hakkinda">
+  <div class="sayfa-bas">
+    <h1>Hakkında</h1>
+    <p class="giris">Bu araç, TÜBİTAK destek programları ve Ar-Ge mevzuatı üzerine kurulmuş, kaynak gösteren bir soru-cevap sistemidir (RAG). Açık kaynak bir eğitim projesidir; resmî bir TÜBİTAK hizmeti değildir. Aşağıdaki bilgiler sistemin yapılandırma dosyalarından ve belge listelerinden okunur.</p>
+  </div>
+
+  <section aria-labelledby="derlem-baslik">
+    <h2 id="derlem-baslik">Kullanılan belgeler</h2>
+    <dl class="sayilar">
+      <div><dt>Belge</dt><dd>{{ bilgi.belge_sayisi | sayi(0) }}</dd></div>
+      <div><dt>Bölüm</dt><dd>{% if bilgi.bolum_sayisi is not none %}{{ bilgi.bolum_sayisi | sayi(0) }}{% else %}—{% endif %}</dd></div>
+      <div><dt>Parça (chunk)</dt><dd>{% if bilgi.parca_sayisi is not none %}{{ bilgi.parca_sayisi | sayi(0) }}{% else %}—{% endif %}</dd></div>
+    </dl>
+    <ul class="derlem">
+      {% for g in bilgi.gruplar %}
+      <li>
+        <h3>{{ g.ad }}</h3>
+        <p class="derlem-ozet">{{ g.ozet }}</p>
+        <p class="derlem-kaynak">Kaynak: {% if g.kaynak_url %}<a href="{{ g.kaynak_url }}" rel="noopener" target="_blank">{{ g.kaynak }}<span class="gorunmez"> (yeni sekmede)</span></a>{% else %}{{ g.kaynak }}{% endif %}</p>
+        {% if g.ayrinti %}
+        <ul class="derlem-ayrinti">
+          {% for satir in g.ayrinti %}<li>{{ satir }}</li>{% endfor %}
+        </ul>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    <p class="not">Bölüm, ayrıştırıcının çıkardığı madde veya başlıktır; parça, aramada kullanılan metin birimidir (varsayılan koleksiyon <code>{{ bilgi.koleksiyon }}</code>). Cevaplardaki kaynak bağlantıları belgenin aslını ve ayrıştırılmış metnini açar.</p>
+  </section>
+
+  <section aria-labelledby="bilesen-baslik">
+    <h2 id="bilesen-baslik">Modeller ve yöntemler</h2>
+    <dl class="satirlar">
+      {% for m in bilgi.bilesenler %}
+      <div><dt>{{ m.etiket }}</dt><dd>{{ m.deger }}</dd></div>
+      {% endfor %}
+    </dl>
+  </section>
+
+  <section aria-labelledby="yapilandirma-baslik">
+    <h2 id="yapilandirma-baslik">Yapılandırmalar</h2>
+    <p class="not">Sohbet sayfasındaki seçici bu yapılandırmalardan birini kullanır. Her biri bir öncekinden tek bir yöntemle ayrılır; karşılaştırmalı sonuçlar GitHub'daki öğrenme belgesindedir.</p>
+    <dl class="yapilandirmalar">
+      {% for o in bilgi.yapilandirmalar %}
+      <div>
+        <dt>{{ o.ad }}{% if o.varsayilan %} <span class="soluk">(varsayılan)</span>{% endif %}{% if not o.hazir %} <span class="soluk">({{ o.durum_notu or "indeks yok" }})</span>{% endif %}</dt>
+        <dd>
+          <ul>
+            {% for m in o.yontemler %}<li><span class="etiket-adi">{{ m.etiket }}:</span> {{ m.deger }}</li>{% endfor %}
+          </ul>
+        </dd>
+      </div>
+      {% endfor %}
+    </dl>
+  </section>
+
+  <section aria-labelledby="guardrail-baslik">
+    <h2 id="guardrail-baslik">Guardrail'ler</h2>
+    <p class="not">Dil modelinin önünde ve arkasında çalışan denetimler. Biri devreye girerse sistem kaynaksız cevap vermek yerine bilgi bulunamadığını ya da sorunun kapsam dışı olduğunu söyler.</p>
+    <dl class="satirlar">
+      {% for m in bilgi.guardrailler %}
+      <div><dt>{{ m.etiket }}</dt><dd>{{ m.deger }}</dd></div>
+      {% endfor %}
+    </dl>
+  </section>
+
+  <section aria-labelledby="kaynak-kod-baslik">
+    <h2 id="kaynak-kod-baslik">Kaynak kod ve belgeler</h2>
+    <p>Kod, geliştirme günlüğü ve deney sonuçları GitHub'dadır: <a href="{{ REPO_URL }}" rel="noopener">{{ REPO_URL }}</a>. Her aşamanın gerekçesi <a href="{{ DOCS_URL }}" rel="noopener">docs</a> klasöründe anlatılır.</p>
+  </section>
+</article>
+{% endblock %}

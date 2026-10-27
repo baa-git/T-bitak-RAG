@@ -1,0 +1,34 @@
+# Hugging Face Space katmanı (overlay) — Gradio + ZeroGPU.
+#
+# Bu dosya tek başına bir yapılandırma DEĞİLDİR: Gradio uygulaması onu sunucu yapılandırmasının
+# (configs/default.yaml) ve configs/experiments/*.yaml dosyalarının HER BİRİNİN üstüne yazar
+# (TUBITAK_RAG_OVERLAY). Yöntemler (chunking, arama, reranker, eşikler) deneylerdeki gibi
+# kalır; yalnız Space'te farklı olan altyapı değişir:
+#
+#   * vektör deposu: Qdrant yerine salt okunur NumPy dosyaları (rag export-space çıktısı)
+#   * modeller: Space'in GPU'sunda (ZeroGPU; CUDA)
+#   * LLM: Ollama yerine aynı Qwen3 4B, transformers ile süreç içinde (dış API yok)
+#
+# Space'te bu dosya configs/space-overlay.yaml olarak durur (prepare_space.py kopyalar).
+
+vector_store:
+  provider: numpy
+  export_dir: ${TUBITAK_RAG_EXPORT_DIR:artifacts/export}
+
+embedder:
+  device: cuda
+
+reranker:
+  device: cuda
+
+llm:
+  provider: transformers
+  # Yerelde Ollama'nın qwen3:4b'si; Hub'daki karşılığı (bfloat16, ~8 GB).
+  model: ${LLM_MODEL:Qwen/Qwen3-4B}
+  temperature: 0.0
+  think: false                      # Qwen3 düşünme modu kapalı (enable_thinking=False)
+  transformers:
+    device: cuda
+    dtype: bfloat16
+    # Bir cevabın üst sınırı; ZeroGPU süresini (chat.py) bu belirler.
+    max_new_tokens: ${LLM_MAX_NEW_TOKENS:768}

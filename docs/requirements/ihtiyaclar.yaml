@@ -1,0 +1,998 @@
+# TÜBİTAK Mevzuat RAG — İhtiyaç listesi (tek kaynak)
+#
+# Bu dosya ihtiyaçların TEK kaynağıdır. Excel (docs/ihtiyaclar.xlsx) ve
+# Markdown tablosu `python docs/requirements/build.py` ile buradan üretilir.
+#
+# İhtiyaçlar aracı kullanan kişilerin bakışıyla yazılır:
+#   - TÜBİTAK başvurusu ve mevzuatı hakkında soru soran kişi,
+#   - teknikleri karşılaştırarak RAG öğrenen geliştirici,
+#   - aracı Docker ile ya da Hugging Face Space'te çalıştıran kişi,
+#   - koda katkıda bulunan geliştirici.
+# Geliştirme süreci (günlük, review, commit düzeni) ihtiyaç değildir.
+#
+# Cümle kuralı (EARS kalıbı, Türkçe):
+#   Her zaman      : "<Özne>, <nesne> <eylem>-malıdır/-melidir."
+#   Olay           : "<Olay> -dığında/-diğinde, <özne> ... -malıdır."
+#   Durum          : "<Durum> iken, <özne> ... -malıdır."
+#   İstenmeyen     : "<İstenmeyen durum> durumunda, <özne> ... -malıdır."
+#   Opsiyonel      : "<Özellik> etkinleştirildiğinde, <özne> ... -malıdır."
+# Her ihtiyaç tek bir yükümlülük içerir ve "-malıdır/-melidir" ile biter.
+#
+# durum: Bekliyor | Karşılandı | Kısmi | Karşılanmadı | Kapsam dışı
+#   (Bekliyor = üzerinde çalışılıyor / henüz doğrulanamadı)
+# oncelik: Zorunlu | Önemli | İsteğe bağlı
+# dogrulama: Test | Gösterim | İnceleme | Analiz
+# kanit: dosya yolu, test adı (dosya::test) veya ölçülen sonuç. Durumlar 2026-10-21'de
+#   kod, testler (pytest tests/unit: 1520 geçti, 12 bilinen açık strict xfail, kapsam %98) ve
+#   docs/sample-reports/ sonuçlarıyla doğrulandı.
+
+meta:
+  proje: TÜBİTAK Mevzuat RAG
+  surum: "2.3"
+  tarih: "2026-10-21"
+  sahip: Batur Alp
+
+gecmis:
+- {tarih: "2026-10-15", surum: "0.1", yazan: Claude, degisiklik: "İlk taslak (Markdown tabloları)."}
+- {tarih: "2026-10-15", surum: "1.0", yazan: Claude, degisiklik: "İhtiyaçlar EARS kalıbına göre tek yükümlülüklü cümlelere dönüştürüldü; tek kaynak YAML + Excel takip matrisi."}
+- {tarih: "2026-10-19", surum: "2.0", yazan: Claude, degisiklik: "İhtiyaçlar ürün ve kullanıcı bakışıyla yeniden yazıldı (109 → 94). Geliştirme sürecine ve yapay zekâ ajanının çalışma biçimine dair maddeler çıkarıldı; corpus kapsamı, test seti (cevaplanacak, reddedilecek, belirsiz ve sürüm soruları) ve arama ile cevap değerlendirmesi ayrı ihtiyaçlar olarak yazıldı; arayüz güncel ürüne (sohbet sayfası + Hakkında) göre güncellendi. Her ihtiyacın durumu ve kanıtı kod, testler ve ölçülen sonuçlarla doğrulandı."}
+- {tarih: "2026-10-19", surum: "2.0", yazan: Claude, degisiklik: "Kaldırılan süreç maddeleri: SR-1 (aşama başına geliştirme günlüğü), SR-2 (her aşamada inceleme ajanı), SR-3 (aşama başına commit), SR-4 (proje sonunda karşılama matrisi), FR-U5'in eski hâli (taste-skill kuralları, gerekçe günlükte; yerel varlıklar ihtiyacına dönüştü), NFR-LANG1'deki geliştirme günlüğü dili, NFR-LANG2 (İngilizce tanımlayıcılar), NFR-CLEAN3 (fabrika katmanı), NFR-TEST4 (entegrasyon işareti), FR-CLI1'deki eval-gen komutu (uygulanmadı; test seti elle yazıldı)."}
+- {tarih: "2026-10-19", surum: "2.0", yazan: Claude, degisiklik: "Ürün değiştiği için kaldırılan/dönüşen: FR-U4 (Deneyler sayfası kaldırıldı; raporlar REST API ve docs/sample-reports üzerinden), FR-U3 (ingest düğmeli Belgeler sayfası → Hakkında sayfası), FR-U2 (kaynak paneli → sohbet akışı), FR-U6 (Streamlit sürümü 'Barındırılan sürüm' kategorisine taşındı), FR-C5 (kılavuzların başlık/paragraf bölünmesi; tasarım ayrıntısı, test_guide_parser.py ile korunuyor)."}
+- {tarih: "2026-10-19", surum: "2.0", yazan: Claude, degisiklik: "Birleştirilen: FR-D2 → FR-D1/FR-D3; FR-P2 → FR-P3; FR-P7, FR-C3, FR-C4 → FR-C2; FR-P8, FR-C7, FR-G1, FR-G2 → FR-G3; FR-I1, FR-I3, FR-I4, FR-I6 → FR-I2; FR-I5 → FR-X9; FR-R2 → FR-R3; FR-RR2, FR-GR9 → FR-GR1; FR-E2 → FR-E13; FR-E8 → FR-X3; FR-E7 → FR-E7, FR-E17, FR-E18, FR-E19; FR-X2, FR-X10 → FR-X1; FR-X4…FR-X7 → FR-X3; NFR-REPRO2 → NFR-REPRO1; FR-A2 → FR-A1; FR-A3 → FR-A4; FR-U1 → FR-U5; NFR-DOCKER2, NFR-DOCKER3 → NFR-DOCKER1; NFR-HW3 → NFR-HW1; NFR-MOD1 → NFR-MOD2; NFR-CLEAN1, NFR-CLEAN2 → NFR-CI1."}
+- {tarih: "2026-10-21", surum: "2.1", yazan: Claude, degisiklik: "Streamlit sürümü kaldırıldı: FR-U6 Kapsam dışı; FR-HF1 barındırılan Gradio + ZeroGPU Space'e göre yeniden yazıldı; NFR-MOD3'te Streamlit yerine Gradio. NFR-DOCKER5: hazır indeks paketi varsayılan olarak Hugging Face veri setinden indirilir."}
+- {tarih: "2026-10-19", surum: "2.0", yazan: Claude, degisiklik: "Yeni: FR-D6, FR-D7, FR-D8 (corpus kapsamı), FR-D10 (site erişim kuralları), FR-D12 (sürümler), FR-G6, FR-GR11, FR-E9, FR-E11, FR-E12, FR-E13, FR-E14 (test seti), FR-E17…FR-E21 (cevap metrikleri), FR-U7, FR-U8, FR-U11, FR-HF1, FR-A5, FR-CLI2, FR-CLI3, NFR-DOCKER4, NFR-DOCKER5, NFR-DOCKER6, NFR-SEC1."}
+- {tarih: "2026-10-21", surum: "2.2", yazan: Claude, degisiklik: "Corpus ve veri edinimi kategorisi kaldırıldı (FR-D6, FR-D7, FR-D8, FR-D1, FR-D3, FR-D10, FR-D4, FR-D5, FR-D12). Ürün, belgelerin elde olduğu ve indekslendiği noktadan başlar; belgeleri bulmak ve indirmek ürün ihtiyacı değil, corpus hazırlığıdır (rehber §1). Ayrıştırma ve temizleme ihtiyaçları kalır."}
+- {tarih: "2026-10-21", surum: "2.3", yazan: Claude, degisiklik: "Kaldırılan: NFR-REPRO1 (aynı girdilerle aynı arama metrikleri; ürün sahibi gerekli görmedi), FR-U6 (Streamlit sürümü; Streamlit artık yok, madde tamamen silindi), NFR-CI1 (CI hattı; projede kullanılan bir CI hattı yok, .github/workflows/ci.yml dosyası duruyor). Geliştirme planı (docs/plan.md, docs/plan/) depodan kaldırıldı."}
+- {tarih: "2026-10-21", surum: "2.3", yazan: Claude, degisiklik: "Barındırılan sürüm üç ihtiyaca bölündü: FR-HF1 (Gradio + ZeroGPU, Qwen3 4B, embedding ve reranker Space GPU'sunda), FR-HF2 (Qdrant ve Ollama olmadan hazır NumPy indeksi), FR-HF3 (web arayüzüyle aynı sohbet, yapılandırma seçici ve numaralı kaynaklar). FR-G4 iki ihtiyaca bölündü: FR-G4 (cevap modeli: Ollama ile yerel model veya OpenAI uyumlu API; ayrıca Anthropic ve transformers) ve FR-G7 (hakem modeli, cevap modelinden bağımsız ve isteğe bağlı)."}
+- {tarih: "2026-10-21", surum: "2.3", yazan: Claude, degisiklik: "Test ihtiyaçları ayrıntılandırıldı. Test seti: FR-E1 tür dağılımını sayar; yeni FR-E16 (cevaplanmalı/reddedilmeli etiketi), FR-E22 (beklenen cevap), FR-E23 (beklenen belgeler), FR-E24 (beklenen sayılar); FR-E4 sentetik üretimi açıkça yazar. Arama testi: FR-E6 Recall@5/@10 ve MRR'ye daraltıldı; yeni FR-E26 (belge isabeti), FR-E27 (soru türüne göre), FR-E29 (kanıtın ilk sırası), FR-E30 (ilk sıra dağılımı). Cevap testi: FR-E7, FR-E17, FR-E18, FR-E19 Claude (Opus) incelemesine göre yeniden yazıldı; yeni FR-E31 (gereksiz retin aşaması), FR-E32 (uydurma cevaplar), FR-E33 (atıf kesinliği), FR-E34 (isteğe bağlı otomatik hakem)."}
+
+kategoriler:
+  P: Ayrıştırma ve temizleme
+  C: Parçalama (chunking)
+  I: İndeksleme
+  R: Arama ve yeniden sıralama
+  G: Cevap üretimi ve atıf
+  GR: Güvenlik önlemleri (guardrail)
+  E: Test seti
+  ER: Arama değerlendirmesi
+  EG: Cevap değerlendirmesi
+  X: Deney karşılaştırma ve dokümantasyon
+  U: Web arayüzü
+  HF: Barındırılan sürüm (Hugging Face Spaces)
+  A: REST API
+  CLI: Komut satırı arayüzü
+  DK: Docker paketi ve donanım
+  Q: Yazılım kalitesi ve testler
+  N: Güvenlik, gizlilik ve dil
+
+ihtiyaclar:
+# ------------------------------------------------------------ Ayrıştırma ve temizleme
+- id: FR-P1
+  kat: P
+  tip: Her zaman
+  ihtiyac: "Sistem, PDF, HTML, XLSX ve GİB JSON kaynaklarını ortak bir belge modeline dönüştürmelidir."
+  kabul: "Dört kaynak türü için ayrıştırıcı aynı Document tipini döndürür."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "ingestion/parser_registry.py; test_html_parser.py::test_parse_returns_document_with_metadata, test_gib_parser.py::test_gib_articles_parsed, test_xlsx_parser.py::test_one_table_section_per_sheet, test_pdf_text.py::test_extract_pages_reads_fixture_pdf."
+- id: FR-P3
+  kat: P
+  tip: Her zaman
+  ihtiyac: "Sistem, çıkarılan metinden sayfa numaralarını, tekrarlayan üstlük/altlıkları ve bozuk karakter kodlamalarını temizlemelidir."
+  kabul: "'2/47', 'KANUN VE YÖNETMELİKLER III-8' gibi kalıntılar çıktıda yoktur; metin Unicode NFC biçimindedir; eski Mac Türkçe glifleri onarılır."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "test_pdf_text.py::test_strips_repeated_header_and_page_numbers, ::test_removes_tiklayiniz_lines; test_normalize.py::test_nfc_composes_decomposed_chars, ::test_repair_mac_turkish_glyphs."
+- id: FR-P4
+  kat: P
+  tip: Her zaman
+  ihtiyac: "Sistem, mevzuat belgelerinden kısım, bölüm, madde, fıkra ve bent hiyerarşisini çıkarmalıdır."
+  kabul: "Örnek belgelerde madde numaraları, başlıkları ve fıkra/bent etiketleri doğru eşleşir."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "ingestion/legislation_parser.py; test_legislation_parser.py::test_hierarchy_labels, ::test_bolum_resets_on_new_kisim, ::test_paragraphs_split_on_fikra_and_bent."
+- id: FR-P5
+  kat: P
+  tip: Her zaman
+  ihtiyac: "Sistem, değişiklik notlarını madde metninden ayırıp metadata olarak saklamalıdır."
+  kabul: "'(Değişik: …YK)' ibareleri embed edilen metinde yer almaz, parça metadata'sında listelenir."
+  oncelik: Önemli
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "test_legislation_parser.py::test_amendment_notes_moved_to_metadata; test_structural.py::test_amendment_notes_in_metadata_not_text; test_gib_parser.py::test_gib_amendment_note_extracted."
+- id: FR-P6
+  kat: P
+  tip: Her zaman
+  ihtiyac: "Sistem, yürürlükten kaldırılmış (mülga) maddeleri indeks dışında bırakmalıdır."
+  kabul: "Yalnızca '(Mülga…)' içeren maddeler indekste bulunmaz."
+  oncelik: Önemli
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "test_legislation_parser.py::test_repealed_article_flagged; test_structural.py::test_repealed_skipped; test_fixed.py::test_repealed_sections_excluded."
+- id: FR-P9
+  kat: P
+  tip: İstenmeyen
+  ihtiyac: "Bir PDF'ten metin çıkarılamadığı durumunda, sistem belgeyi ingest raporunda 'taranmış' olarak listelemelidir."
+  kabul: "Taranmış ve içeriksiz belgeler indekslenmez, raporda ayrı listelenir."
+  oncelik: Önemli
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "test_ingest.py::test_scanned_docs_reported_not_indexed; artifacts/ingest_report.json: 3 taranmış PDF, 18 içeriksiz sayfa."
+- id: FR-P10
+  kat: P
+  tip: Her zaman
+  ihtiyac: "Sistem, her belgeye kimlik, başlık, program kodu, belge türü, kaynak URL, sürüm tarihi, dil ve SHA-256 metadata alanlarını atamalıdır."
+  kabul: "Belge modeli bu alanları içerir; bilinmeyen alanlar açıkça boş (null) tutulur; başlık okunabilir bir belge adıdır."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Kısmi
+  kanit: "domain/document.py; test_document_builder.py::test_skeleton_copies_entry_metadata_and_uses_real_sha, ::test_skeleton_keeps_missing_fields_as_none."
+  not: "Açık hata: 132 parçada belge başlığı boş ya da 'tıklayınız' (program sayfası bağlantı metninden geliyor); 111 belgede sürüm tarihi yok."
+
+# ------------------------------------------------------------ Parçalama
+- id: FR-C1
+  kat: C
+  tip: Her zaman
+  ihtiyac: "Sistem, sabit pencereli parçalamada parça boyutunun ve örtüşmenin token cinsinden yapılandırılmasına izin vermelidir."
+  kabul: "512 token / 64 örtüşme ile üretilen parçalar bu sınırlara uyar; örtüşme boyuttan küçük olmalıdır."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "chunking/fixed.py; test_fixed.py::test_windows_respect_size_and_overlap, ::test_rejects_overlap_not_smaller_than_size; v0/v0r: 4.193 parça."
+- id: FR-C2
+  kat: C
+  tip: Opsiyonel
+  ihtiyac: "Yapı bazlı parçalama etkinleştirildiğinde, sistem her maddeyi, her HTML bölümünü ve her SSS soru-cevap çiftini ayrı bir parça olarak üretmelidir."
+  kabul: "Uzunluk eşiğini aşan madde fıkra sınırlarından bölünür, hiçbir fıkra ortadan kesilmez; bir SSS çifti tek parçadadır."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "chunking/structural.py; test_structural.py::test_each_article_is_one_chunk, ::test_long_article_split_at_paragraph_boundaries, ::test_faq_pair_single_chunk, ::test_html_sections_separate_chunks; v1–v3b: 7.017 parça."
+- id: FR-C6
+  kat: C
+  tip: Opsiyonel
+  ihtiyac: "Bağlam başlığı seçeneği etkinleştirildiğinde, sistem her parçanın embed edilen metninin başına belge ve hiyerarşi bilgisini eklemelidir."
+  kabul: "embed_text 'Belge › Bölüm › Madde N – Başlık' satırıyla başlar; kullanıcıya gösterilen text değişmez."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "chunking/context_header.py; test_structural.py::test_embed_text_starts_with_doc_and_hierarchy, ::test_text_unchanged_when_header_on, ::test_same_title_different_program_yields_different_embed_text."
+
+# ------------------------------------------------------------ İndeksleme
+- id: FR-I2
+  kat: I
+  tip: Olay
+  ihtiyac: "Corpus'ta bir belge eklendiğinde, değiştiğinde veya silindiğinde, sistem yalnızca o belgenin dense ve BM25 indeks kayıtlarını güncellemelidir."
+  kabul: "Diğer belgelerin embedding'leri yeniden hesaplanmaz; silinen belgenin parçaları aramada dönmez; ikinci ingest hiçbir şey değiştirmez."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "indexing/sync.py; test_sync.py::test_apply_only_embeds_changed_docs, ::test_apply_update_replaces_chunks, ::test_apply_remove_deletes; test_ingest.py::test_ingest_removes_deleted_doc_from_both_indexes."
+- id: FR-X9
+  kat: I
+  tip: Durum
+  ihtiyac: "Bir belgenin içeriği ve işlem ayarları değişmemişken, sistem ayrıştırma, parçalama ve embedding sonuçlarını önbellekten yeniden kullanmalıdır."
+  kabul: "İkinci ingest ayrıştırma ve embedding adımlarını atlar; önbellek model adına göre ayrıdır."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "test_ingest.py::test_second_ingest_is_noop_and_skips_parse_and_embed, ::test_full_flag_rebuilds_everything_from_the_caches; test_embedding_cache.py::test_lookup_is_per_model; ölçüm: önbellekli ingest 23 s (7.017 parça)."
+
+# ------------------------------------------------------------ Arama ve yeniden sıralama
+- id: FR-R1
+  kat: R
+  tip: Her zaman
+  ihtiyac: "Sistem, arama yönteminin dense, BM25 veya hibrit olarak yapılandırmayla seçilmesine izin vermelidir."
+  kabul: "retriever.mode değiştirilerek aynı corpus üzerinde üç yöntem çalışır."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "test_factory.py::test_build_retriever_by_mode_uses_config_collection; test_dense.py, test_bm25.py, test_hybrid.py; configs/experiments/v0–v3b.yaml."
+- id: FR-R3
+  kat: R
+  tip: Opsiyonel
+  ihtiyac: "Kök bulma seçeneği etkinleştirildiğinde, sistem BM25 belirteçlerine Türkçe kök bulma uygulamalıdır."
+  kabul: "'projelerin' ve 'projeler' aynı köke iner; Türkçe küçük harf dönüşümü (İ→i, I→ı) her zaman uygulanır; sayılar ve program kodları köklenmez."
+  oncelik: Önemli
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "retrieval/turkish.py; test_turkish.py::test_stemming_merges_plural_forms, ::test_no_stemming_option, ::test_turkish_lower_dotted_and_dotless_i, ::test_numbers_are_not_stemmed."
+- id: FR-R4
+  kat: R
+  tip: Opsiyonel
+  ihtiyac: "Hibrit arama etkinleştirildiğinde, sistem dense ve BM25 sonuç sıralarını Reciprocal Rank Fusion ile birleştirmelidir."
+  kabul: "RRF projenin kendi kodundadır; k varsayılan 60 ve yapılandırılabilir; bilinen örnekte doğru sıralama çıkar."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "retrieval/rrf.py; test_rrf.py::test_rrf_known_example; test_hybrid.py::test_rrf_k_is_used; v1→v2 Recall@5 0,439→0,543."
+- id: FR-R5
+  kat: R
+  tip: Opsiyonel
+  ihtiyac: "Bir soruyla birlikte metadata filtresi verildiğinde, sistem sonuçları program kodu ve belge türüne göre süzmelidir."
+  kabul: "program_kodu=1507 filtresiyle yalnızca 1507 belgeleri döner; filtre REST API ve `rag ask` ile verilir."
+  oncelik: Önemli
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "test_filters.py::test_apply_filters_program_and_type; test_api.py::test_ask_forwards_filters_and_config; test_cli.py::test_ask_cli_program_and_type_become_filters."
+  not: "Web arayüzündeki filtreler sohbet sayfasına geçişte kaldırıldı."
+- id: FR-RR1
+  kat: R
+  tip: Opsiyonel
+  ihtiyac: "Yeniden sıralayıcı etkinleştirildiğinde, sistem ilk aşama adaylarını cross-encoder ile yeniden sıralayıp en iyi n parçayı döndürmelidir."
+  kabul: "Varsayılan 30 aday → 5 sonuç; yeniden sıralama skoru sonuçla birlikte döner."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "reranking/cross_encoder.py; test_cross_encoder.py::test_rerank_with_returns_top_n_sorted; test_pipeline.py::test_reranker_used_when_present_and_scores_kept; v2→v3 Recall@5 0,543→0,699."
+
+# ------------------------------------------------------------ Cevap üretimi ve atıf
+- id: FR-G3
+  kat: G
+  tip: Her zaman
+  ihtiyac: "Sistem, cevaptaki her atıfı belge adı, madde veya sayfa bilgisi ve kaynak bağlantısıyla birlikte sunmalıdır."
+  kabul: "Cevaptaki [n] işaretleri numaralı kaynaklara karşılık gelir; her atıf bu üç bilgiyi taşır."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "test_generator.py::test_citations_have_title_location_url; test_prompts.py::test_sources_numbered_from_one; test_pipeline.py::test_valid_answer_has_citations_sources_and_disclaimer."
+- id: FR-G4
+  kat: G
+  tip: Her zaman
+  ihtiyac: "Sistem, cevap üreten dil modelinin yapılandırmayla Ollama üzerinden yerel bir model veya OpenAI uyumlu bir API (ör. OpenRouter, Groq, Hugging Face Inference Providers) olarak seçilmesine izin vermelidir."
+  kabul: "Kod değişmeden yalnız llm.provider ve llm.model değiştirilir: ollama (varsayılan, yerel qwen3:4b) veya openai_compat (/chat/completions; adres LLM_BASE_URL, anahtar LLM_API_KEY ortam değişkeninden). Aynı alanla anthropic (Claude API) ve transformers (model süreç içinde; Hugging Face Space) da seçilebilir."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "config.py LlmConfig, OpenAICompatConfig; factory.py build_llm; adapters/ollama_llm.py, openai_compat_llm.py, anthropic_llm.py, transformers_llm.py; test_factory.py::test_provider_switch_by_config_only; test_openai_compat_llm.py::test_factory_builds_it_from_config, ::test_api_key_read_from_the_named_environment_variable, ::test_rejected_json_schema_falls_back_to_json_object_and_remembers; test_ollama_llm.py::test_request_body_has_think_false_format_and_temperature_zero; test_transformers_llm.py::test_factory_builds_it_from_config; test_anthropic_llm.py. Ollama yolu altı deney koşusunda gerçek olarak kullanıldı; transformers yolu canlı Space'te çalışıyor (FR-HF1)."
+  not: "OpenAI uyumlu bağdaştırıcı yalnız birim testlerinde, sahte HTTP taşıyıcısıyla ve Ollama'nın /v1 uç noktasıyla aynı istek/yanıt biçiminde doğrulandı; gerçek ücretli bir sağlayıcıyla (OpenRouter, Groq, Hugging Face) denenmedi. Anthropic bağdaştırıcısı da sahte SDK ile test edildi."
+- id: FR-G7
+  kat: G
+  tip: Her zaman
+  ihtiyac: "Sistem, değerlendirmede kullanılan hakem modelinin sağlayıcısının ve modelinin cevap modelinden bağımsız olarak yapılandırmayla seçilmesine izin vermelidir."
+  kabul: "eval.judge.provider ve eval.judge.model ayrı ayarlanır (ollama, openai_compat, anthropic, transformers); bağlantı ayarları llm bölümünden gelir; hakem sıcaklığı 0'dır; varsayılan yerel Ollama qwen3:4b'dir."
+  oncelik: Önemli
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "config.py JudgeConfig; interfaces/cli.py _judge_llm_config; test_cli_run.py::test_run_cli_judge_is_local_and_deterministic, ::test_run_cli_warns_when_an_api_provider_is_configured."
+  not: "Hakem isteğe bağlıdır (FR-E34); raporlanan cevap metrikleri hakemden değil Claude (Opus) incelemesinden gelir."
+- id: FR-G5
+  kat: G
+  tip: Her zaman
+  ihtiyac: "Sistem, her cevabı bilginin resmî görüş olmadığını belirten bir uyarıyla birlikte sunmalıdır."
+  kabul: "Uyarı API cevabının uyari alanında ve arayüzde bir kez görünür; cevap metninde tekrar edilmez."
+  oncelik: Önemli
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "test_pipeline.py::test_disclaimer_is_given_once_in_its_own_field; test_pages.py::test_disclaimer_is_shown_once_on_the_page; test_api.py::test_ask_returns_answer_with_citations_and_disclaimer."
+- id: FR-G6
+  kat: G
+  tip: Her zaman
+  ihtiyac: "Sistem, kaynak metinleri dil modeline talimat olarak değil veri olarak işaretleyerek vermelidir."
+  kabul: "Sistem istemi kaynaklardaki talimatların uygulanmayacağını söyler; kaynaklar ve soru ayrı etiketler içindedir."
+  oncelik: Önemli
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "generation/prompts.py; test_prompts.py::test_system_prompt_treats_sources_as_data_not_instructions, ::test_user_prompt_delimits_data_and_question, ::test_faq_question_text_stays_inside_source_tags."
+
+# ------------------------------------------------------------ Güvenlik önlemleri
+- id: FR-GR1
+  kat: GR
+  tip: İstenmeyen
+  ihtiyac: "En yüksek arama skoru yapılandırılmış eşiğin altında kaldığı durumunda, sistem dil modelini çağırmadan 'bilgi bulunamadı' cevabı döndürmelidir."
+  kabul: "Eşik altı soruda LLM çağrı sayısı 0'dır; eşikler skor türü başına yapılandırma dosyasından okunur."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "guardrails/gate.py; test_pipeline.py::test_below_threshold_returns_bilgi_bulunamadi_with_no_llm_call_and_no_sources; test_gate.py::test_thresholds_from_config_not_constants."
+- id: FR-GR2
+  kat: GR
+  tip: İstenmeyen
+  ihtiyac: "Sistem bir soruyu reddettiği durumunda, sistem cevapla birlikte hiçbir kaynak göstermemelidir."
+  kabul: "Bilgi bulunamadı, kapsam dışı ve atıf reddi cevaplarında kaynak ve atıf listesi boştur."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "test_api.py::test_refusals_return_no_sources; test_pipeline.py::test_llm_not_answerable_returns_no_sources; test_pages.py::test_not_found_is_a_reply_without_sources."
+- id: FR-GR3
+  kat: GR
+  tip: İstenmeyen
+  ihtiyac: "Dil modeli atıfsız bir cevap veya verilmemiş bir kaynağa atıf ürettiği durumunda, sistem cevabı 'bilgi bulunamadı' cevabına dönüştürmelidir."
+  kabul: "Uydurma atıflı ve atıfsız sahte LLM çıktıları reddedilir."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "guardrails/citations.py; test_pipeline.py::test_llm_answer_with_fabricated_citation_is_rejected_to_bilgi_bulunamadi, ::test_uncited_answer_is_refused; test_citations.py."
+- id: FR-GR4
+  kat: GR
+  tip: İstenmeyen
+  ihtiyac: "Soru TÜBİTAK destek programları ve Ar-Ge mevzuatı kapsamı dışında olduğu durumunda, sistem soruyu kapsam dışı olduğunu belirterek reddetmelidir."
+  kabul: "Kapsam dışı sorularda arama yapılmaz; test setindeki kapsam dışı soruların ret oranı raporlanır."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "guardrails/scope.py; test_pipeline.py::test_out_of_scope_returns_kapsam_disi_without_retrieval_or_sources; 6 koşunun hepsinde kapsam dışı ret oranı 1,0 (docs/sample-reports/*.metrics.json)."
+  not: "v3b'de 2 kapsam içi soru yanlışlıkla kapsam dışı sayıldı (counts.scope_false_rejections)."
+- id: FR-GR5
+  kat: GR
+  tip: Durum
+  ihtiyac: "Soru kaynaklarla yalnızca kısmen cevaplanabilirken, sistem cevaplanamayan kısmı cevapta açıkça belirtmelidir."
+  kabul: "Model 'eksik kısım' bildirdiğinde bu kısım cevaba eklenir."
+  oncelik: Önemli
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "guardrails/postprocess.py; test_pipeline.py::test_missing_part_appended; test_postprocess.py::test_missing_part_appended."
+  not: "Mekanizma test edildi; etkisi ayrı bir metrikle ölçülmüyor."
+- id: FR-GR6
+  kat: GR
+  tip: Durum
+  ihtiyac: "Atıf yapılan kaynak bilgiyi çağrı duyurusuna yönlendirirken, sistem cevapta ilgili duyuru sayfasının bağlantısını vermelidir."
+  kabul: "'çağrı duyurusunda belirtilir' içeren kaynakta cevap program sayfası URL'sini içerir."
+  oncelik: Önemli
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "test_pipeline.py::test_announcement_link_added_when_cited_source_defers_to_call, ::test_announcement_link_prefers_cited_program_page, ::test_no_announcement_link_from_uncited_source."
+- id: FR-GR7
+  kat: GR
+  tip: Durum
+  ihtiyac: "Aynı konuda farklı sürüm tarihli kaynaklar bulunurken, sistem cevabı en güncel sürüm tarihli kaynağa dayandırmalıdır."
+  kabul: "Test setindeki sürüm sorularında cevap en güncel değeri verir."
+  oncelik: Önemli
+  dogrulama: Test
+  durum: Kısmi
+  kanit: "generation/prompts.py en yeni sürümü öne alır (test_prompts.py::test_newer_version_listed_first_same_type_program); v3b sürüm sorularında doğruluk 0,9 (qwen3:4b hakem)."
+  not: "Claude incelemesinde sürüm sorularında eski değeri seçme hataları görüldü (docs/sample-reports/claude-degerlendirme.md); 111 belgede sürüm tarihi yok."
+- id: FR-GR8
+  kat: GR
+  tip: Durum
+  ihtiyac: "Program belirtilmeyen bir sorunun cevabı programa göre değişirken, sistem cevabı programlara göre ayrıştırarak vermelidir."
+  kabul: "Test setindeki belirsiz sorularda cevap programları ayrı ayrı adlandırır (programs_split_rate)."
+  oncelik: Önemli
+  dogrulama: Test
+  durum: Karşılanmadı
+  kanit: "Kural istemde var (generation/prompts.py, kural 7) ama 6 koşunun hepsinde programs_split_rate 0,0; v3b belirsiz sorularda doğruluk 0,6."
+  not: "Küçük LLM tek programın değerini genel kural gibi veriyor (claude-degerlendirme.md)."
+- id: FR-GR11
+  kat: GR
+  tip: İstenmeyen
+  ihtiyac: "Cevap kaynaklarda geçmeyen bir sayı içerdiği durumunda, sistem o cümleyi cevaptan çıkarmalıdır."
+  kabul: "number_check: strip varsayılandır; sayı yalnız atıf yapılmamış bir kaynakta geçiyorsa atıf onarılır; hiçbir cümle kalmazsa cevap reddedilir."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Kısmi
+  kanit: "guardrails/numbers.py; test_numbers.py::test_fabricated_duration_sentence_is_stripped, ::test_number_in_uncited_prompt_source_repairs_the_citation; test_pipeline.py::test_number_guardrail_strip_drops_the_ungrounded_sentence."
+  not: "Bilinen açıklar: q083'te uydurma tutar denetimden geçiyor; sorudaki sayı kanıt sayılabiliyor (test_question_grounding_security.py, strict xfail); 'yüzde doksan beşi' 90 okunuyordu, düzeltildi (test_numbers.py::test_suffix_on_the_last_number_word_keeps_the_whole_number)."
+
+# ------------------------------------------------------------ Test seti
+- id: FR-E1
+  kat: E
+  tip: Her zaman
+  ihtiyac: "Test seti, TÜBİTAK başvuru süreçleri ve mevzuatı hakkında en az 100 soru içermelidir."
+  kabul: "Soru türleri: tek belgeli, çok belgeli, sürüm ve belirsiz (cevaplanmalı); cevabı corpus'ta olmayan ve kapsam dışı (reddedilmeli). eval/testset_v1.jsonl şema doğrulamasından geçer."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "eval/testset_v1.jsonl: 104 soru = 43 tek belgeli + 16 çok belgeli + 10 sürüm + 10 belirsiz + 15 cevapsız + 10 kapsam dışı; 32 program kodu; test_testset.py::test_repo_testset_is_valid_and_distributed, ::test_type_distribution."
+- id: FR-E3
+  kat: E
+  tip: Her zaman
+  ihtiyac: "Test seti, corpus'tan cevaplanması gereken tek belgeli ve çok belgeli sorular içermelidir."
+  kabul: "Çok belgeli sorunun cevabı en az iki belgenin birleşimini gerektirir ve kanıt alıntıları en az iki farklı belgeden gelir."
+  oncelik: Zorunlu
+  dogrulama: Analiz
+  durum: Karşılandı
+  kanit: "43 tek belgeli + 16 çok belgeli soru (eval/README.md, tür dağılımı); test_testset.py::test_validate_multi_doc_types_need_two_documents."
+- id: FR-E9
+  kat: E
+  tip: Her zaman
+  ihtiyac: "Test seti, sistemin reddetmesi gereken kapsam dışı ve cevabı corpus'ta bulunmayan sorular içermelidir."
+  kabul: "Cevabı olmayan sorular corpus'ta tek tek aranarak doğrulanır; kapsam dışı sorular TÜBİTAK ve Ar-Ge ile ilgisizdir."
+  oncelik: Zorunlu
+  dogrulama: Analiz
+  durum: Karşılandı
+  kanit: "15 cevapsız + 10 kapsam dışı soru (eval/README.md, 'Cevapsız soruların tasarımı')."
+- id: FR-E11
+  kat: E
+  tip: Her zaman
+  ihtiyac: "Test seti, program belirtilmeden sorulan ve cevabı programa göre değişen belirsiz sorular içermelidir."
+  kabul: "Beklenen cevap programları ayrı ayrı verir; kanıt alıntıları en az iki belgeden gelir."
+  oncelik: Önemli
+  dogrulama: Analiz
+  durum: Karşılandı
+  kanit: "10 belirsiz soru (eval/README.md, tür dağılımı); test_testset.py::test_validate_multi_doc_types_need_two_documents."
+- id: FR-E12
+  kat: E
+  tip: Her zaman
+  ihtiyac: "Test seti, eski ve yeni değeri bulunan bilgilere ilişkin sürüm soruları içermelidir."
+  kabul: "Beklenen cevap ve beklenen belgeler en güncel kaynağı esas alır; eski değer beklenen cevapta veya notta belirtilir."
+  oncelik: Önemli
+  dogrulama: Analiz
+  durum: Karşılandı
+  kanit: "10 sürüm sorusu (eval/README.md, tür dağılımı ve 'surum sözleşmesi')."
+  not: "10 sorudan 4'ü corpus içinde gerçek bir eski/yeni değer çatışmasıdır; diğer 6'sı tarihli veya çağrıya bağlı değerlerdir."
+- id: FR-E16
+  kat: E
+  tip: Her zaman
+  ihtiyac: "Test seti, her sorunun cevaplanması mı yoksa reddedilmesi mi gerektiğini belirtmelidir."
+  kabul: "Soru türü bunu belirler: tek belgeli, çok belgeli, sürüm ve belirsiz sorular cevaplanmalı (79); cevapsız ve kapsam dışı sorular reddedilmeli (25). Reddedilmesi gereken soruda beklenen cevap 'bilgi bulunamadı' veya 'kapsam dışı'dır, kanıt alıntısı ve beklenen belge yoktur."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "evaluation/testset.py ANSWERABLE, evaluation/metrics.py UNANSWERABLE; test_testset.py::test_validate_unanswerable_expected_answer_text, ::test_validate_rejects_quotes_for_unanswerable."
+- id: FR-E22
+  kat: E
+  tip: Her zaman
+  ihtiyac: "Test setindeki her soru, kısa bir beklenen cevap içermelidir."
+  kabul: "Beklenen cevap cevabın doğruluğunu değerlendirmede referans olarak kullanılır; beklenen sayılar beklenen cevapta tam sayı olarak geçer."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "domain/evaluation.py TestQuestion.beklenen_cevap; test_testset.py::test_validate_expected_numbers_appear_in_answer, ::test_repo_testset_is_valid_and_distributed."
+- id: FR-E13
+  kat: E
+  tip: Her zaman
+  ihtiyac: "Test setindeki her cevaplanabilir soru, corpus metninde birebir geçen 1–3 kanıt alıntısı içermelidir."
+  kabul: "Her alıntı beklenen belgenin ayrıştırılmış metninde bulunur; büyük/küçük harf ve boşluk farkı dışında kelimeler değişmez."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "117 alıntı: 48 soruda 1, 24 soruda 2, 7 soruda 3 alıntı; test_testset.py::test_validate_requires_quotes_for_answerable, ::test_validate_limits_quote_count, ::test_repo_testset_quotes_match_parsed_corpus."
+- id: FR-E23
+  kat: E
+  tip: Her zaman
+  ihtiyac: "Test setindeki her cevaplanabilir soru, cevabın dayandığı beklenen belgeleri listelemelidir."
+  kabul: "Her alıntının belgesi beklenen belgeler arasındadır; sürüm sorularında yalnız en güncel belge listelenir."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "test_testset.py::test_validate_quote_doc_must_be_expected, ::test_validate_unknown_document; belge isabeti metriği bu alanı kullanır (FR-E26)."
+- id: FR-E24
+  kat: E
+  tip: Durum
+  ihtiyac: "Beklenen cevap bir oran, tutar, süre veya tarih içerirken, test seti bu sayıları beklenen sayılar alanında listelemelidir."
+  kabul: "Listelenen her sayı beklenen cevapta tam sayı olarak geçer ('2', '24 ay' içinde bulunmuş sayılmaz)."
+  oncelik: Önemli
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "104 sorunun 69'unda beklenen_sayilar dolu; test_testset.py::test_validate_expected_numbers_appear_in_answer, ::test_validate_expected_number_needs_number_boundaries."
+- id: FR-E4
+  kat: E
+  tip: Her zaman
+  ihtiyac: "Test seti dokümantasyonu, soruların nasıl üretildiğini, şemasını, tür dağılımını ve inceleme durumunu açıklamalıdır."
+  kabul: "eval/README.md soruların bir dil modeli (Claude) tarafından ayrıştırılmış belgeler okunarak yazıldığını (sentetik), bunun yarattığı yanlılığı ve henüz insan incelemesinden geçmediğini açıkça yazar."
+  oncelik: Önemli
+  dogrulama: İnceleme
+  durum: Karşılandı
+  kanit: "eval/README.md (Şema, Soru türleri ve dağılım, Üretim yöntemi, Bilinen sınırlar, durum notu)."
+  not: "Şemadaki uretim alanı 104 soruda 'manuel'dir; bu değer 'otomatik aday üreticisiyle değil, doğrudan yazıldı' anlamındadır, soruların bir insan tarafından yazıldığını göstermez."
+- id: FR-E14
+  kat: E
+  tip: Her zaman
+  ihtiyac: "Test setindeki her soru, sonuçları raporlanmadan önce bir insan tarafından gözden geçirilmelidir."
+  kabul: "Tüm sorularda dogrulandi: true; düzeltmeler review_notes alanındadır."
+  oncelik: Önemli
+  dogrulama: İnceleme
+  durum: Karşılanmadı
+  kanit: "104 sorunun hepsi dogrulandi: false; inceleme listesi eval/review_queue.md (bekliyor). Yapılan tek inceleme bir dil modeline (Fable) aittir."
+  not: "Metrikler doğrulanmış/doğrulanmamış ayrımıyla da raporlanabiliyor (test_metrics.py::test_by_verified); şu an tüm sonuçlar doğrulanmamış sorulara dayanır."
+
+# ------------------------------------------------------------ Arama değerlendirmesi
+- id: FR-E5
+  kat: ER
+  tip: Olay
+  ihtiyac: "Getirilen parçalar beklenen belgedeki kanıt alıntısını içerdiğinde, Değerlendirme modülü aramayı isabetli saymalıdır."
+  kabul: "Eşleşme büyük/küçük harf ve boşluk farklarından bağımsızdır; alıntı aynı belgenin parçasında geçmelidir; ölçüm parçalama stratejisinden bağımsızdır, bu yüzden farklı parçalama yöntemleri aynı ölçüyle karşılaştırılır."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "evaluation/matching.py; test_matching.py::test_quote_matches_across_whitespace_and_case, ::test_hits_require_same_doc, ::test_quote_split_across_two_chunks_is_miss."
+- id: FR-E6
+  kat: ER
+  tip: Her zaman
+  ihtiyac: "Değerlendirme modülü, cevaplanabilir sorular için Recall@5, Recall@10 ve MRR değerlerini hesaplamalıdır."
+  kabul: "Reddedilmesi gereken sorular arama metriklerine katılmaz; değerler her koşunun metrics.json dosyasına ve raporuna yazılır."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "evaluation/metrics.py; test_metrics.py::test_recall_at_k_partial, ::test_mrr, ::test_unanswerable_excluded. Ölçülen (docs/sample-reports/ozet.md, RAG rehberi §4.4): R@5 v0 0,284 · v0r 0,487 · v1 0,439 · v2 0,543 · v3 0,699 · v3b 0,727; v3b R@10 0,784, MRR 0,623."
+- id: FR-E26
+  kat: ER
+  tip: Her zaman
+  ihtiyac: "Değerlendirme modülü, beklenen belgelerden en az birinin ilk 5 ve ilk 10 sonuç içinde gelme oranını (belge isabeti) hesaplamalıdır."
+  kabul: "metrics.json doc_hit_at_5 ve doc_hit_at_10 alanlarını içerir; belge isabeti alıntı isabetinden yüksekse doğru belge gelmiş ama doğru bölüm gelmemiştir."
+  oncelik: Önemli
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "evaluation/matching.py; test_matching.py::test_doc_hit_k; v3b belge isabeti@5 0,844, @10 0,896 (v3b.metrics.json)."
+- id: FR-E27
+  kat: ER
+  tip: Her zaman
+  ihtiyac: "Değerlendirme modülü, arama metriklerini soru türüne göre ayrı ayrı raporlamalıdır."
+  kabul: "metrics.json by_type alanı tek belgeli, çok belgeli, sürüm ve belirsiz sorular için Recall@k, MRR ve belge isabetini ayrı verir."
+  oncelik: Önemli
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "evaluation/metrics.py by_type; test_metrics.py::test_by_type_groups. v3b R@5: tek belgeli 0,881 · çok belgeli 0,625 · sürüm 0,800 · belirsiz 0,111 (v3b.metrics.json; RAG rehberi §4.4)."
+- id: FR-E29
+  kat: ER
+  tip: Her zaman
+  ihtiyac: "Değerlendirme modülü, her cevaplanabilir soru için kanıtın aday havuzundaki ilk sırasını kaydetmelidir."
+  kabul: "per_question.jsonl her soru için kanıt alıntısı başına ilk sırayı (evidence_hits) ve ilk isabet sırasını (first_hit_rank) içerir; sıra yeniden sıralanmış sonuçlardan sonra havuzun kalanını da (30 aday) kapsar; kanıt hiç gelmediyse boştur."
+  oncelik: Önemli
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "domain/evaluation.py QuestionResult.first_hit_rank; test_matching.py::test_first_hit_rank, ::test_each_quote_gets_its_own_rank; test_runner.py::test_ranked_results_puts_reranked_first_then_rest_of_pool, ::test_per_question_rows_valid_schema."
+- id: FR-E30
+  kat: ER
+  tip: Her zaman
+  ihtiyac: "Rapor üretici, her yapılandırma için kanıtın ilk sırasının dağılımını (1. sıra, 2–5, 6–30, havuzda yok) göstermelidir."
+  kabul: "Dağılım hangi katmanın neyi düzelttiğini gösterir: reranker '6–30' sütununu, parçalama ve embedding modeli 'yok' sütununu küçültür."
+  oncelik: İsteğe bağlı
+  dogrulama: İnceleme
+  durum: Kısmi
+  kanit: "RAG rehberi §4.4 tablosu (77 soru): v0 11/16/21/29 · v0r 24/19/5/29 · v3 38/22/5/12 · v3b 38/24/7/8."
+  not: "Dağılım per_question.jsonl'deki first_hit_rank'tan elle çıkarıldı; rapor üretici (reporting/report.py, summary.py) bu tabloyu otomatik üretmiyor."
+
+# ------------------------------------------------------------ Cevap değerlendirmesi
+- id: FR-E7
+  kat: EG
+  tip: Her zaman
+  ihtiyac: "Cevap değerlendirmesi, her yapılandırmanın cevaplanabilir sorulara verdiği her cevabı beklenen cevap ve atıf yapılan kaynaklarla karşılaştırarak doğru veya yanlış olarak işaretlemelidir."
+  kabul: "Altı yapılandırmanın 624 cevabı Claude (Opus) ile tek tek okunur; kararlar artifacts/judge/<koşu>_claude.json dosyalarındadır; gereksiz ret yanlış sayılır; doğruluk = doğru cevap / 79 cevaplanabilir soru; rapor üretici yalnız koşunun tüm sorularını kapsayan güncel bir incelemeyi kullanır."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "reporting/review.py; test_review.py::test_apply_review_replaces_judge_metrics_and_notes, ::test_review_must_cover_every_row, ::test_stale_review_of_other_answers_is_ignored. Ölçülen (docs/sample-reports/claude-degerlendirme.md): v0 0,380 (30/79) · v0r 0,557 · v1 0,418 · v2 0,519 · v3 0,633 (50/79) · v3b 0,620 (49/79); tür bazında doğru sayıları aynı raporda."
+  not: "İnceleme sistemin dışında, Claude (Opus) ile yapıldı; soruları da Claude yazdığı için aynı model ailesi hem beklenen cevabı hem kararı vermiş olur."
+- id: FR-E17
+  kat: EG
+  tip: Her zaman
+  ihtiyac: "Cevap değerlendirmesi, cevap verilen her soruda cevabın her iddiasının atıf yapılan kaynaklarda geçip geçmediğini (sadakat) işaretlemelidir."
+  kabul: "Sadakat = her iddiası atıf yapılan kaynakta geçen cevapların oranı; karar verilemeyen cevaplar orana katılmaz."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "reporting/review.py apply_review (sadik); test_review.py::test_apply_review_replaces_judge_metrics_and_notes. Ölçülen: v0 0,532 · v2 0,696 · v3 0,806 · v3b 0,761 (claude-degerlendirme.md)."
+  not: "İncelemede her kaynağın yaklaşık ilk 1.000 karakteri gösterildi; dayanak kesilen kısımda kaldıysa cevap sadık değil sayılmış olabilir."
+- id: FR-E18
+  kat: EG
+  tip: Her zaman
+  ihtiyac: "Cevap değerlendirmesi, reddedilmesi gereken sorularda doğru ret oranını ölçmelidir."
+  kabul: "25 soru (15 cevapsız + 10 kapsam dışı) üzerinden hesaplanır; cevap metninde 'kaynakta yok' diyen cevap da doğru ret sayılır; ret nedenleri (kapsam dışı, eşik altı, modelin 'cevaplanamaz' demesi, atıfsız cevap, dayanaksız sayı) raporda ayrıca sayılır."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "reporting/review.py (dogru_ret); evaluation/metrics.py refusal_counts; test_metrics.py::test_correct_rejection, ::test_refusal_counts. Ölçülen: v3b 0,880 (22/25, en iyi) · v3 0,800 · v0r 0,680; kapsam dışı sorular altı koşunun hepsinde 10/10 (claude-degerlendirme.md)."
+- id: FR-E19
+  kat: EG
+  tip: Her zaman
+  ihtiyac: "Cevap değerlendirmesi, cevaplanabilir sorularda gereksiz ret oranını ölçmelidir."
+  kabul: "Gereksiz ret = reddedilen cevaplanabilir soru / 79; metrics.json generation.false_rejection_rate alanını içerir."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "test_metrics.py::test_false_rejection. Ölçülen: v3b 0,076 (6/79) · v3 0,063 · en düşük v0r 0,051 · en yüksek v1 0,114 (docs/sample-reports/ozet.md)."
+- id: FR-E31
+  kat: EG
+  tip: Olay
+  ihtiyac: "Cevaplanabilir bir soru reddedildiğinde, cevap değerlendirmesi reddin hangi aşamadan kaynaklandığını (arama, üretim ve denetim, belirsiz) kaydetmelidir."
+  kabul: "Kanıt ilk 5 kaynakta yoksa hata aramadadır; kanıt ilk 5'te olduğu hâlde model veya denetim cevap vermediyse üretimdedir; karar verilemiyorsa belirsizdir. Sayılar her koşunun raporunda tek satırda verilir."
+  oncelik: Önemli
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "reporting/review.py review_counts (hata_yeri); reporting/report.py ERROR_PLACES, _review_line; test_report.py::test_reviewed_report_shows_claude_metrics_and_notes. Ölçülen: altı koşudaki 36 gereksiz retin 9'u arama, 16'sı üretim ve denetim, 11'i belirsiz (claude-degerlendirme.md)."
+- id: FR-E32
+  kat: EG
+  tip: İstenmeyen
+  ihtiyac: "Reddedilmesi gereken bir soruya dayanaksız bir cevap verildiği durumunda, cevap değerlendirmesi bu cevabı uydurma olarak saymalıdır."
+  kabul: "Uydurma sayısı her koşunun raporunda ve özet değerlendirmede verilir."
+  oncelik: Önemli
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "reporting/review.py (karar: uydurma); reporting/report.py _review_line; test_report.py::test_reviewed_report_shows_claude_metrics_and_notes. Ölçülen: v0 6 · v0r 8 · v1 4 · v2 6 · v3 5 · v3b 3 (claude-degerlendirme.md)."
+  not: "Uydurmaların çoğu corpus'ta başka anlamda geçen bir tutarın soruya mal edilmesidir; sayı kaynakta geçtiği için sayı denetimi bunları yakalamaz."
+- id: FR-E20
+  kat: EG
+  tip: Her zaman
+  ihtiyac: "Değerlendirme modülü, beklenen sayıların (oran, tutar, süre) cevapta geçip geçmediğini kural tabanlı olarak denetlemelidir."
+  kabul: "Yüzde işareti ve binlik ayırıcı farkları eşleşmeyi bozmaz; hakemsiz koşuda doğruluk bu kurala göre hesaplanır."
+  oncelik: Önemli
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "evaluation/judge.py numbers_present; test_judge.py::test_numbers_present_ignores_percent_and_separators; test_metrics.py::test_without_judge_accuracy_is_the_number_rule."
+- id: FR-E33
+  kat: EG
+  tip: Her zaman
+  ihtiyac: "Değerlendirme modülü, cevaptaki atıfların beklenen kanıtı içeren kaynaklara işaret etme oranını (atıf kesinliği) kural tabanlı olarak ölçmelidir."
+  kabul: "metrics.json generation.citation_precision alanını içerir; atıfın verilen kaynaklardan birine işaret etmesi ayrıca her cevapta güvenlik önlemiyle zorunludur (FR-GR3) ve onarılan atıflar citation_repair_rate ile sayılır."
+  oncelik: Önemli
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "evaluation/judge.py, evaluation/runner.py (rule_check.atif_kesinligi); test_judge.py::test_citation_precision; test_metrics.py::test_citation_repair_rate_only_when_reported. v3b atıf kesinliği 0,463 (v3b.metrics.json)."
+- id: FR-E21
+  kat: EG
+  tip: Her zaman
+  ihtiyac: "Değerlendirme modülü, kaynaklarda bulunmayan (uydurma) sayı içeren cevapların oranını ölçmelidir."
+  kabul: "Güvenlik önleminden geçmiş cevaplarda da kaynakta olmayan sayılar sayılır ve raporlanır."
+  oncelik: Önemli
+  dogrulama: Test
+  durum: Kısmi
+  kanit: "metrics.py number_rejection_rate / number_strip_rate yalnız güvenlik önleminin yakaladıklarını sayar (v3b 0,033 / 0,0); test_metrics.py::test_number_guardrail_rates_over_questions_that_reached_the_llm."
+  not: "Denetimden geçen uydurma sayılar (ör. q083) otomatik ölçülmüyor; Claude incelemesi uydurma cevapları elle saydı (FR-E32)."
+- id: FR-E34
+  kat: EG
+  tip: Opsiyonel
+  ihtiyac: "Otomatik hakem etkinleştirildiğinde, Değerlendirme modülü cevap doğruluğunu ve sadakati yapılandırılmış hakem modeliyle puanlamalıdır."
+  kabul: "`rag run --no-judge` hakemi kapatır; hakemin adı metrics.json'a yazılır; raporlar otomatik hakemin kararlarını göstermez, Claude incelemesi yoksa doğruluk göstermez."
+  oncelik: İsteğe bağlı
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "evaluation/judge.py LlmJudge; test_judge.py::test_judge_parses_verdict; test_runner.py::test_judge_called_only_for_answered_answerable; test_cli_run.py::test_run_cli_no_judge; test_report.py::test_write_report_without_review_has_no_accuracy."
+  not: "Raporlanan sayılarda kullanılmaz. Yerel qwen3:4b hakem iyimser çıktı: v3b doğruluğu hakemle 0,848, Claude incelemesinde 0,620."
+- id: FR-GR10
+  kat: EG
+  tip: Her zaman
+  ihtiyac: "Değerlendirme modülü, güvenlik önlemi eşiği için farklı eşik değerlerindeki doğru ret ve yanlış ret oranlarına dayanarak bir eşik önermelidir."
+  kabul: "Önerilen eşik, yanlış ret sınırı içinde doğru reti en yüksek tutan değerdir; raporda oranlarıyla yazılır."
+  oncelik: Önemli
+  dogrulama: Gösterim
+  durum: Karşılandı
+  kanit: "evaluation/calibration.py; test_calibration.py::test_suggest_respects_false_rejection_cap; test_report.py::test_calibration_uses_the_run_rows; docs/sample-reports/v3.md: rerank eşiği için önerilen 2 (doğru ret 0,533, yanlış ret 0,078)."
+
+# ------------------------------------------------------------ Deney karşılaştırma ve dokümantasyon
+- id: FR-X1
+  kat: X
+  tip: Her zaman
+  ihtiyac: "Sistem, bir deneyi tek bir YAML yapılandırma dosyasıyla tanımlayıp tek bir komutla çalıştırmalıdır."
+  kabul: "`rag run configs/experiments/v3.yaml` uçtan uca koşar; v0, v0r, v1, v2, v3, v3b hazır gelir; çıktılar artifacts/runs/<run_id>/ altına yazılır."
+  oncelik: Zorunlu
+  dogrulama: Gösterim
+  durum: Karşılandı
+  kanit: "configs/experiments/ (6 dosya); test_config.py::test_experiment_configs_match_ladder; test_runner.py::test_run_writes_three_files_and_report_path; 6 koşu 2026-10-16 (artifacts/runs/)."
+- id: FR-X3
+  kat: X
+  tip: Her zaman
+  ihtiyac: "Rapor üretici, her koşu için yöntemi, önceki basamakla karşılaştırmalı ana metrikleri ve iyi ve kötü örnek soruları içeren kısa bir Markdown rapor üretmelidir."
+  kabul: "Başlıkta yöntem, corpus ve hakem adı; fark sütunlu metrik tablosu; ret nedenleri ve eşik önerisi birer satır; 1 iyi ve 2 kötü örnek (soru, kanıt, cevap, hakem kararı)."
+  oncelik: Zorunlu
+  dogrulama: İnceleme
+  durum: Karşılandı
+  kanit: "reporting/report.py; test_report.py::test_report_is_short_and_has_sections_in_order, ::test_key_metrics_table_with_previous_rung, ::test_header_names_run_corpus_and_judge; test_examples.py::test_examples_one_good_two_bad; docs/sample-reports/v0.md…v3b.md."
+  not: "Raporlar 2026-10-19'da kısaltıldı; tekniklerin kavramsal anlatımı ve dersler rehbere taşındı (FR-X12). Doğruluk, sadakat ve doğru ret Claude incelemesi varsa ondan gelir (FR-E7)."
+- id: FR-X8
+  kat: X
+  tip: Her zaman
+  ihtiyac: "Rapor üretici, tüm deney yapılandırmalarını aynı test setinde arama ve cevap metrikleriyle karşılaştıran bir özet rapor üretmelidir."
+  kabul: "Özet rapor koşuları merdiven sırasıyla, yöntemleri yazılı olarak tek tabloda gösterir."
+  oncelik: Önemli
+  dogrulama: İnceleme
+  durum: Karşılandı
+  kanit: "reporting/summary.py; test_summary.py::test_summary_table_lists_runs_in_ladder_order, ::test_highlight_sentence; docs/sample-reports/ozet.md."
+- id: FR-X12
+  kat: X
+  tip: Her zaman
+  ihtiyac: "Proje dokümantasyonu, her deney yapılandırmasının yöntemini ve ölçülen sonuçlarını ders anlatımı biçiminde açıklamalıdır."
+  kabul: "Her basamak için ne değiştiği, metriklere etkisi ve nedeni anlatılır; örnek raporlar depodadır."
+  oncelik: Önemli
+  dogrulama: İnceleme
+  durum: Karşılandı
+  kanit: "docs/RAG-GELISTIRME-REHBERI.md §0 (yapılandırma tablosu), §2–§5 (yöntemler ve ölçülen etkileri), §7; docs/sample-reports/ (6 rapor + metrics.json + ozet.md + claude-degerlendirme.md)."
+
+# ------------------------------------------------------------ Web arayüzü
+- id: FR-U2
+  kat: U
+  tip: Her zaman
+  ihtiyac: "Web arayüzü, soruları ve cevapları aynı sayfada sohbet akışı olarak göstermelidir."
+  kabul: "Her soru akışa bir tur olarak eklenir; JavaScript kapalıyken de soru tam sayfa olarak cevaplanır."
+  oncelik: Zorunlu
+  dogrulama: Gösterim
+  durum: Karşılandı
+  kanit: "interfaces/web/pages.py, templates/sorgu.html; test_pages.py::test_sorgu_page_is_a_conversation_panel, ::test_turn_has_the_question_and_the_reply, ::test_full_page_with_question_renders_the_turn_without_javascript."
+- id: FR-U7
+  kat: U
+  tip: Her zaman
+  ihtiyac: "Web arayüzü, her cevabın altında yalnızca o cevapta atıf yapılan kaynakları numaralı olarak listelemelidir."
+  kabul: "Kaynak satırı belge adı, konum ve bağlantı içerir; birden fazla cevabın kaynak bağlantıları çakışmaz."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "test_pages.py::test_sources_block_lists_only_cited_sources, ::test_sources_block_lists_cited_sources_with_location_and_links, ::test_two_turns_never_share_anchors."
+- id: FR-U8
+  kat: U
+  tip: Her zaman
+  ihtiyac: "Web arayüzü, kullanıcının cevabı üretecek yapılandırmayı (v0–v3b) yöntemleri açıkça yazılmış bir seçiciden seçmesine izin vermelidir."
+  kabul: "Seçili yapılandırmanın parçalama, embedding, arama, reranker ve LLM bilgisi gösterilir; indeksi olmayan yapılandırma 'indeks yok' notuyla pasiftir."
+  oncelik: Önemli
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "interfaces/web/about.py describe_methods; test_pages.py::test_config_selector_uses_plain_labels, ::test_selected_config_methods_are_shown_under_the_selector, ::test_configs_without_index_are_disabled_in_the_selector."
+- id: FR-U3
+  kat: U
+  tip: Her zaman
+  ihtiyac: "Web arayüzü, corpus kaynaklarını, belge sayılarını, kullanılan modelleri, yöntemleri ve güvenlik önlemlerini anlatan bir Hakkında sayfası sunmalıdır."
+  kabul: "Sayfa yapılandırma ve manifestlerden üretilir; ingest gibi yönetim düğmeleri içermez."
+  oncelik: Önemli
+  dogrulama: Gösterim
+  durum: Karşılandı
+  kanit: "templates/hakkinda.html; test_pages.py::test_about_page_describes_corpus_models_and_methods, ::test_about_page_has_no_ingest_controls, ::test_old_documents_page_redirects_to_about."
+  not: "Eski Belgeler ve Deneyler sayfaları kaldırıldı; /belgeler adresi /hakkinda'ya yönlenir."
+- id: FR-U11
+  kat: U
+  tip: Olay
+  ihtiyac: "Kullanıcı bir kaynağın önizleme bağlantısına tıkladığında, Web arayüzü belgenin kimlik bilgilerini ve ayrıştırılmış bölümlerini göstermelidir."
+  kabul: "Önizleme bölümlere bağlantı verir; bilinmeyen belge için 404 sayfası açılır."
+  oncelik: İsteğe bağlı
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "test_pages.py::test_document_preview_lists_sections_with_anchors, ::test_unknown_document_is_404_page."
+- id: FR-U5
+  kat: U
+  tip: Her zaman
+  ihtiyac: "Web arayüzü, betik, stil ve yazı tiplerini harici bir sunucuya bağlanmadan ve ayrı bir frontend derleme adımı gerektirmeden sunmalıdır."
+  kabul: "Sayfalar sunucu tarafında üretilir (FastAPI + Jinja2 + HTMX); Node/npm gerekmez; CDN bağlantısı yoktur."
+  oncelik: Önemli
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "interfaces/web/static/ (htmx.min.js, fonts/); test_pages.py::test_no_external_scripts_or_styles; test_app.py::test_static_assets_are_served_locally."
+
+# ------------------------------------------------------------ Barındırılan sürüm
+- id: FR-HF1
+  kat: HF
+  tip: Her zaman
+  ihtiyac: "Barındırılan sürüm, Hugging Face Spaces'te ZeroGPU üzerinde çalışan bir Gradio uygulaması olarak cevap modelini (Qwen3 4B), embedding modellerini ve yeniden sıralayıcıyı Space'in GPU'sunda çalıştırmalıdır."
+  kabul: "Space yerel kurulum ve API anahtarı gerektirmeden açılır ve soru cevaplar; dil modeli Qwen/Qwen3-4B, llm.provider: transformers ile süreç içinde çalışır; embedder, reranker ve LLM cuda'dadır; GPU yalnız soru cevaplanırken bağlanır."
+  oncelik: Önemli
+  dogrulama: Gösterim
+  durum: Karşılandı
+  kanit: "app_gradio.py; interfaces/gradio_app/ (app.py, chat.py, gpu.py, settings.py); deploy/hf-space-gradio/space-overlay.yaml (embedder/reranker/llm device: cuda, llm.provider: transformers); test_settings.py::test_repository_zerogpu_overlay_is_valid; test_gpu.py::test_with_spaces_the_function_is_wrapped_with_the_duration; test_transformers_llm.py. Canlı Space https://huggingface.co/spaces/lolalol57/tubitak-mevzuat-rag 2026-10-21'de denendi: kaynaklı cevap verdi, kapsam dışı soruyu reddetti."
+- id: FR-HF2
+  kat: HF
+  tip: Her zaman
+  ihtiyac: "Barındırılan sürüm, Qdrant ve Ollama olmadan önceden hesaplanmış NumPy indeks paketiyle arama yapmalıdır."
+  kabul: "Paket `rag export-space` ile üretilir (3 koleksiyon, ~149 MB); vektör deposu salt okunur vector_store.provider: numpy'dir ve bellekte Qdrant ile aynı kosinüs skorlarını verir; yöntemler (parçalama, hibrit arama, reranker, eşikler) deney yapılandırmalarıyla aynıdır."
+  oncelik: Önemli
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "adapters/numpy_store.py; interfaces/space_bundle.py; deploy/hf-space-gradio/prepare_space.py, KURULUM.md; test_settings.py::test_build_backend_fetches_the_space_index_for_the_numpy_store; tests/unit/adapters/test_numpy_store.py; tests/unit/interfaces/test_space_bundle.py."
+- id: FR-HF3
+  kat: HF
+  tip: Her zaman
+  ihtiyac: "Barındırılan sürüm, web arayüzüyle aynı sohbet akışını, yapılandırma seçicisini ve cevap başına numaralı kaynak listesini sunmalıdır."
+  kabul: "Arka uç web arayüzüyle aynıdır (PipelineBackend); Hakkında içeriği ve uyarı metni aynıdır; ret cevapları kaynaksızdır."
+  oncelik: Önemli
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "interfaces/gradio_app/view.py, content.py; test_view.py::test_answered_turn_has_linked_citations_and_numbered_sources, ::test_selector_helpers; test_chat.py::test_selector_choices_default_and_methods; test_content.py::test_answer_lists_only_cited_sources_with_links_and_context, ::test_about_sections_mirror_the_web_page, ::test_refusals_follow_the_web_texts."
+
+# ------------------------------------------------------------ REST API
+- id: FR-A1
+  kat: A
+  tip: Her zaman
+  ihtiyac: "REST API, soru sorma, belge listeleme, ingest başlatma, koşu listeleme, koşu başlatma, koşu ayrıntısı, rapor ve sağlık kontrolü uç noktalarını OpenAPI belgeleriyle sunmalıdır."
+  kabul: "8 uç nokta /api altında yanıt verir; /docs sayfası açılır; uzun işler 202 ve iş kimliğiyle başlar."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "interfaces/web/api.py; test_api.py::test_ask_returns_answer_with_citations_and_disclaimer, ::test_ingest_starts_job_202, ::test_runs_list_and_detail, ::test_run_report_markdown_and_html, ::test_health_ok, ::test_openapi_docs_available."
+- id: FR-A4
+  kat: A
+  tip: İstenmeyen
+  ihtiyac: "Bir istek geçersiz olduğu veya işlenirken hata oluştuğu durumunda, REST API Türkçe ve tutarlı bir {hata, detay} gövdesi döndürmelidir."
+  kabul: "Geçersiz istek 422, bilinmeyen kayıt 404, GPU meşgul 409, servis kapalı 503, beklenmeyen hata 500 döner; gövde aynı şemadadır."
+  oncelik: Önemli
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "interfaces/web/errors.py; test_errors.py::test_validation_error_is_422_with_turkish_title_and_details, ::test_gpu_lock_is_409, ::test_unavailable_service_is_503, ::test_unexpected_error_is_500_with_message."
+- id: FR-A5
+  kat: A
+  tip: İstenmeyen
+  ihtiyac: "Yetkisiz bir istek ingest veya deney koşusu başlatmaya çalıştığı durumunda, REST API isteği işi başlatmadan reddetmelidir."
+  kabul: "Kimlik doğrulaması olmayan POST /api/ingest ve POST /api/runs istekleri iş başlatmaz; sahte localhost başlıkları yetki vermez."
+  oncelik: Önemli
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "interfaces/web/api.py require_admin (TUBITAK_RAG_ADMIN_TOKEN + Bearer); test_admin_security.py (anonim, geçersiz anahtar, sahte localhost başlığı, sunucu anahtarı yok, geçerli anahtar)."
+  not: "Anahtar tanımlı değilse ingest ve deney başlatma uç noktaları kapalıdır (403); soru sorma açık kalır."
+
+# ------------------------------------------------------------ Komut satırı arayüzü
+- id: FR-CLI1
+  kat: CLI
+  tip: Her zaman
+  ihtiyac: "Komut satırı arayüzü, fetch, ingest, run, report, ask, serve, export-index ve export-space komutlarını sunmalıdır."
+  kabul: "`rag --help` bu komutları listeler; geçersiz yapılandırmada komut 2 koduyla durur."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "interfaces/cli.py; test_cli.py::test_help_lists_six_commands, ::test_ask_cli_prints_answer_and_sources, ::test_serve_starts_uvicorn_with_the_lazy_pipeline_backend; test_index_bundle_cli.py."
+  not: "Uygulanmamış eval-gen yer tutucusu kaldırıldı."
+- id: FR-CLI2
+  kat: CLI
+  tip: Her zaman
+  ihtiyac: "Komut satırı arayüzü, kurulu indeksi başka bir makinede yüklenebilecek, SHA-256 özetli bir pakete aktarmalıdır."
+  kabul: "`rag export-index` her yapılandırmanın koleksiyonunu, BM25 indeksini ve manifest.json'u yazar."
+  oncelik: Önemli
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "interfaces/index_bundle.py; test_index_bundle.py::test_export_writes_snapshots_bm25_meta_and_manifest; test_index_bundle_cli.py::test_export_index_uses_every_experiment_collection; ölçüm: 3 koleksiyon, 7,5 s; paket 243,7 MB (.env.example, README ~244 MB)."
+- id: FR-CLI3
+  kat: CLI
+  tip: Olay
+  ihtiyac: "Yapılandırma ücretli bir harici dil modeli API'si seçtiğinde, Komut satırı arayüzü deney koşusu başlamadan önce isteklerin dış servise gideceğini ve ücretlendirileceğini bildirmelidir."
+  kabul: "Uyarı cevap modeli veya hakem harici bir API olduğunda stderr'e yazılır."
+  oncelik: Önemli
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "interfaces/cli.py run uyarısı, config.py LlmConfig.is_external; test_cli_run.py::test_run_cli_warns_when_an_api_provider_is_configured, ::test_run_cli_warns_for_a_hosted_openai_compatible_endpoint, ::test_run_cli_does_not_warn_for_a_local_openai_compatible_endpoint."
+  not: "Anthropic ve yerel olmayan OpenAI uyumlu uç noktalar için uyarı verilir; yerel Ollama /v1 için verilmez."
+
+# ------------------------------------------------------------ Docker paketi ve donanım
+- id: NFR-DOCKER1
+  kat: DK
+  tip: Her zaman
+  ihtiyac: "Docker paketi, uygulamayı, Qdrant'ı ve Ollama'yı gerekli modelleri indirerek tek bir docker compose komutuyla başlatmalıdır."
+  kabul: "`docker compose up` sonrası arayüz localhost'ta açılır; indeks, modeller ve koşu sonuçları adlandırılmış volume'larda kalıcıdır."
+  oncelik: Zorunlu
+  dogrulama: Gösterim
+  durum: Karşılandı
+  kanit: "docker-compose.yml; test_compose_file.py::test_stack_has_app_qdrant_ollama_and_init, ::test_named_volumes_persist_index_models_and_runs; test_bootstrap.py::test_first_start_pulls_model_warms_and_ingests; README: paketle ilk açılış imaj derleme hariç ~4 dk (GPU), sonraki ~15 s; README, Docker bölümü."
+- id: NFR-DOCKER4
+  kat: DK
+  tip: Opsiyonel
+  ihtiyac: "GPU eki etkinleştirildiğinde, Docker paketi CUDA'lı PyTorch içeren imajla modelleri NVIDIA GPU üzerinde çalıştırmalıdır."
+  kabul: "docker-compose.gpu.yml GPU ayırır ve ayrı etiketli imaj derler; GPU görünmezse sessizce CPU'ya düşülmez."
+  oncelik: Önemli
+  dogrulama: Gösterim
+  durum: Karşılandı
+  kanit: "docker-compose.gpu.yml, Dockerfile (TORCH_INDEX_URL); test_compose_file.py::test_gpu_override_reserves_nvidia_devices; README: RTX 3080'de sıcak soru ~2,3 s."
+- id: NFR-DOCKER5
+  kat: DK
+  tip: Olay
+  ihtiyac: "Hazır indeks paketi bulunduğunda, Docker paketi belge indirme, ayrıştırma ve embedding adımlarını atlayıp indeksi paketten yüklemelidir."
+  kabul: "Paket yerel klasörden veya INDEX_BUNDLE_URL'den alınır; her dosya SHA-256 ile doğrulanır; dolu bir koleksiyonun üzerine yazılmaz."
+  oncelik: Önemli
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "test_bootstrap.py::test_bundle_restore_skips_fetch_and_ingest; test_index_bundle.py::test_restore_rejects_a_tampered_file, ::test_restore_is_idempotent_and_never_overwrites, ::test_remote_bundle_downloads_verifies_and_restores; test_compose_file.py::test_init_reads_the_prebuilt_index_bundle (varsayılan INDEX_BUNDLE_URL: Hugging Face veri seti lolalol57/tubitak-mevzuat-rag-index); ölçüm: boş volume'larla GPU'da init 227 s (paket geri yükleme 9 s)."
+- id: NFR-DOCKER6
+  kat: DK
+  tip: Opsiyonel
+  ihtiyac: "HF_TOKEN ortam değişkeni tanımlandığında, Docker paketi bu token'ı imaja yazmadan model indirmelerinde kullanmalıdır."
+  kabul: "Token yalnız tanımlıysa container'a geçer; erişim reddinde HF_TOKEN'ı açıklayan Türkçe hata verilir."
+  oncelik: İsteğe bağlı
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "test_compose_file.py::test_hf_token_is_passed_through_only_when_set; test_bootstrap.py::test_hf_access_error_explains_hf_token."
+- id: NFR-HW1
+  kat: DK
+  tip: Her zaman
+  ihtiyac: "Sistem, varsayılan yapılandırmayla GPU bulunmayan sıradan bir bilgisayarda çalışmalıdır."
+  kabul: "Varsayılan LLM 8 milyar parametrenin altındadır (qwen3:4b); CPU modunda bir soru uçtan uca cevaplanır."
+  oncelik: Zorunlu
+  dogrulama: Gösterim
+  durum: Karşılandı
+  kanit: "test_config.py::test_default_llm_is_under_8b; test_compose_file.py::test_default_stack_is_cpu_and_local; README: CPU Docker yığınında uçtan uca soru 12–57 s."
+- id: NFR-HW2
+  kat: DK
+  tip: Durum
+  ihtiyac: "Cihaz ayarı 'auto' iken, sistem modelleri uyumlu bir GPU varsa GPU'da, yoksa CPU'da çalıştırmalıdır."
+  kabul: "TUBITAK_RAG_DEVICE=auto|cpu|cuda ayarı ezer; 'cuda' seçilip GPU yoksa yapılandırma hatası verilir."
+  oncelik: Önemli
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "device_policy.py; test_device_policy.py::test_choose_device, ::test_apply_policy_on_cpu_only_machine, ::test_cuda_without_gpu_is_a_config_error."
+- id: NFR-PERF1
+  kat: DK
+  tip: Her zaman
+  ihtiyac: "Sistem, varsayılan CPU modunda tek bir soru için arama ve yeniden sıralamayı 5 saniyenin altında tamamlamalıdır."
+  kabul: "CPU'da yeniden sıralanacak aday sayısı yapılandırılabilir bir üst sınırla kısıtlanır."
+  oncelik: Önemli
+  dogrulama: Analiz
+  durum: Karşılandı
+  kanit: "device_policy.py (cpu_max_candidates: 6); test_device_policy.py::test_plan_caps_candidates_on_cpu; README: Docker CPU'da 6 adayla 4,7 s."
+
+# ------------------------------------------------------------ Yazılım kalitesi ve testler
+- id: NFR-MOD2
+  kat: Q
+  tip: Her zaman
+  ihtiyac: "Sistem, yeni bir embedding, reranker, dil modeli veya vektör veritabanı uygulamasının tek bir dosya ve tek bir kayıt satırıyla eklenmesine izin vermelidir."
+  kabul: "Bileşenler ports/ altındaki arayüzlerle kullanılır; docs/mimari.md 'yeni reranker ekleme' örneğini içerir."
+  oncelik: Önemli
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "ports/; factory.py; test_factory.py::test_registering_new_component_is_one_line; test_protocols.py; docs/mimari.md §6."
+- id: NFR-MOD3
+  kat: Q
+  tip: Her zaman
+  ihtiyac: "Çekirdek paket, hiçbir web çatısını (FastAPI, Gradio) içe aktarmamalıdır."
+  kabul: "interfaces/ dışındaki modüllerde fastapi/gradio import'u yoktur; web ve Gradio arayüzleri aynı çekirdeği kullanır."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "test_architecture.py::test_core_does_not_import_web_frameworks, ::test_heavy_libs_only_in_adapters_and_lazily."
+- id: NFR-TEST1
+  kat: Q
+  tip: Her zaman
+  ihtiyac: "Proje deposu, her kaynak modülü için bir birim testi modülü içermelidir."
+  kabul: "tests/unit/ yapısı src/ yapısını aynalar (testle denetlenir)."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "test_architecture.py::test_unit_tests_mirror_src; pytest tests/unit 2026-10-21: 1520 geçti, 12 bilinen açık strict xfail (test_question_grounding_security.py)."
+- id: NFR-TEST2
+  kat: Q
+  tip: Her zaman
+  ihtiyac: "Birim testleri, harici servis, model indirmesi veya API anahtarı gerektirmeden çalışmalıdır."
+  kabul: "Servisler kapalıyken ve torch kurulu değilken `pytest tests/unit` geçer."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "tests/fakes/; pyproject.toml addopts \"-m 'not integration'\"; test_architecture.py::test_heavy_libs_only_in_adapters_and_lazily; tam birim test süresi ~60 s (2026-10-21)."
+- id: NFR-TEST3
+  kat: Q
+  tip: Her zaman
+  ihtiyac: "Çekirdek paketin birim testi satır kapsamı en az %80 olmalıdır."
+  kabul: "pytest-cov raporu ≥ %80."
+  oncelik: Önemli
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "pytest tests/unit --cov=tubitak_rag 2026-10-21: %98 (6.843 ifade, 129 kapsanmayan)."
+
+# ------------------------------------------------------------ Güvenlik, gizlilik ve dil
+- id: NFR-PRIV1
+  kat: N
+  tip: Her zaman
+  ihtiyac: "Sistem, varsayılan yapılandırmada soruları ve belgeleri hiçbir harici servise göndermemelidir."
+  kabul: "Varsayılan cevap modeli ve hakem yerel Ollama'dır; harici API yalnız açıkça seçilince kullanılır (model indirme hariç)."
+  oncelik: Zorunlu
+  dogrulama: İnceleme
+  durum: Karşılandı
+  kanit: "configs/default.yaml (llm.provider, eval.judge.provider: ollama); test_factory.py::test_default_llm_is_local_and_small; test_compose_file.py::test_default_stack_is_cpu_and_local."
+- id: NFR-SEC1
+  kat: N
+  tip: Her zaman
+  ihtiyac: "Web arayüzü, kullanıcı girdisini ve kaynak metinlerini HTML olarak yorumlamadan göstermelidir."
+  kabul: "Soru ve kaynak metnindeki HTML etiketleri kaçışlanır."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "test_pages.py::test_user_text_is_escaped."
+- id: NFR-CONF1
+  kat: N
+  tip: İstenmeyen
+  ihtiyac: "Yapılandırma dosyası geçersiz olduğu durumunda, sistem çalışmaya başlamadan anlaşılır bir hata mesajıyla durmalıdır."
+  kabul: "Bilinmeyen alan, yanlış tip veya geçersiz seçenek hatalı alanın adıyla raporlanır; komut 2 koduyla biter."
+  oncelik: Zorunlu
+  dogrulama: Test
+  durum: Karşılandı
+  kanit: "test_config.py::test_unknown_field_raises_config_error, ::test_invalid_literal_raises_config_error; test_cli.py::test_invalid_config_field_exits_with_code_2."
+- id: NFR-CONF2
+  kat: N
+  tip: Her zaman
+  ihtiyac: "Sistem, gizli anahtarları yalnızca ortam değişkenlerinden veya .env dosyasından okumalıdır."
+  kabul: "Depoda anahtar bulunmaz; .env gitignore içindedir; .env.example yalnız yorum satırı örnek içerir."
+  oncelik: Zorunlu
+  dogrulama: İnceleme
+  durum: Karşılandı
+  kanit: ".gitignore (.env); .env.example; test_config.py::test_dotenv_is_loaded_without_overriding_env."
+- id: NFR-LANG1
+  kat: N
+  tip: Her zaman
+  ihtiyac: "Sistem, kullanıcı arayüzünü, hata mesajlarını, komut çıktılarını ve raporları Türkçe sunmalıdır."
+  kabul: "Arayüz metinleri, API hata gövdeleri, CLI çıktıları ve raporlar Türkçedir."
+  oncelik: Zorunlu
+  dogrulama: İnceleme
+  durum: Karşılandı
+  kanit: "test_prompts.py::test_fixed_messages_are_turkish; test_errors.py::test_validation_error_is_422_with_turkish_title_and_details; test_pipeline.py::test_every_refusal_reason_has_a_turkish_label; docs/sample-reports/."
+- id: NFR-LIC1
+  kat: N
+  tip: Her zaman
+  ihtiyac: "Proje deposu, MIT lisans dosyasını ve kullanılan modellerin lisans listesini içermelidir."
+  kabul: "LICENSE ve README'de model lisans tablosu bulunur."
+  oncelik: Önemli
+  dogrulama: İnceleme
+  durum: Kısmi
+  kanit: "LICENSE (MIT); README §Lisans; static/fonts/OFL.txt, static/htmx.LICENSE.txt."
+  not: "README'de EmbeddingGemma 2, bge-m3, bge-reranker-v2-m3 ve Qwen3 için lisans tablosu yok."

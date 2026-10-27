@@ -1,0 +1,18 @@
+# v3 — Endüstri standardı tam pipeline: yapı bazlı + hibrit + reranker.
+extends: ../default.yaml
+
+experiment:
+  name: v3
+  description: "Endüstri standardı tam pipeline: yapı bazlı chunking, hibrit arama ve cross-encoder reranker."
+  concept: full_pipeline
+  previous: v2
+
+chunker:
+  name: structural
+  context_header: true
+
+retriever:
+  mode: hybrid
+
+reranker:
+  enabled: true

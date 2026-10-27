@@ -1,0 +1,101 @@
+{
+  "run_id": "v1_20261016-120000",
+  "experiment": "v1",
+  "started_at": "2026-10-16T12:00:00",
+  "finished_at": "2026-10-16T12:30:00",
+  "wall_clock_s": 1805.0,
+  "judge_model": "qwen3:4b",
+  "llm_model": "qwen3:4b",
+  "embedder": "google/embeddinggemma-2",
+  "chunker": "structural_ctx",
+  "retriever": "dense",
+  "reranker": null,
+  "counts": {
+    "questions": 8,
+    "docs": 120,
+    "chunks": 4000
+  },
+  "retrieval": {
+    "recall_at_5": 0.7,
+    "recall_at_10": 0.7,
+    "mrr": 0.5666666666666667,
+    "doc_hit_at_5": 0.8,
+    "doc_hit_at_10": 0.8
+  },
+  "generation": {
+    "answer_accuracy": 0.4,
+    "faithfulness": 1.0,
+    "citation_precision": 0.625,
+    "correct_rejection_rate": 0.6666666666666666,
+    "false_rejection_rate": 0.4,
+    "scope_rejection_rate": 1.0,
+    "number_rejection_rate": 0.2,
+    "number_strip_rate": 0.2
+  },
+  "latency_ms": {
+    "retrieval_p50": 22.0,
+    "retrieval_p95": 23.7,
+    "rerank_p50": 0.0,
+    "rerank_p95": 0.0,
+    "llm_p50": 1000.0,
+    "llm_p95": 1090.0,
+    "total_p50": 1005.0,
+    "total_p95": 1112.5
+  },
+  "by_type": {
+    "tek_belge": {
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr": 0.8333333333333334,
+      "doc_hit_at_5": 1.0,
+      "doc_hit_at_10": 1.0,
+      "answer_accuracy": 0.6666666666666666,
+      "faithfulness": 1.0,
+      "citation_precision": 1.0,
+      "false_rejection_rate": 0.3333333333333333,
+      "number_rejection_rate": 0.3333333333333333,
+      "number_strip_rate": 0.0
+    },
+    "cok_belge": {
+      "recall_at_5": 0.5,
+      "recall_at_10": 0.5,
+      "mrr": 0.3333333333333333,
+      "doc_hit_at_5": 1.0,
+      "doc_hit_at_10": 1.0,
+      "answer_accuracy": 0.0,
+      "faithfulness": 1.0,
+      "citation_precision": 0.5,
+      "false_rejection_rate": 0.0,
+      "number_rejection_rate": 0.0,
+      "number_strip_rate": 1.0
+    },
+    "cevapsiz": {
+      "citation_precision": 0.0,
+      "correct_rejection_rate": 0.5,
+      "number_rejection_rate": 0.0,
+      "number_strip_rate": 0.0
+    },
+    "kapsam_disi": {
+      "correct_rejection_rate": 1.0,
+      "scope_rejection_rate": 1.0
+    },
+    "surum": {
+      "recall_at_5": 0.0,
+      "recall_at_10": 0.0,
+      "mrr": 0.0,
+      "doc_hit_at_5": 0.0,
+      "doc_hit_at_10": 0.0,
+      "answer_accuracy": 0.0,
+      "false_rejection_rate": 1.0
+    }
+  },
+  "stage_times_s": {
+    "questions": 1790.0,
+    "judge": 12.5
+  },
+  "refusals": {
+    "esik_alti": 2,
+    "dayanaksiz_sayi": 1,
+    "kapsam_disi": 1
+  }
+}

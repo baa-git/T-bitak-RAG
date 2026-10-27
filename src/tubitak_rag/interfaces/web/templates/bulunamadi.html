@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}{{ baslik or "Bulunamadı" }}{% endblock %}
+{% block content %}
+<div class="sayfa-bas">
+  <h1>{{ baslik or "Sayfa bulunamadı" }}</h1>
+  <p class="giris">{{ mesaj }}</p>
+  <p><a href="/">Sohbete dön</a> · <a href="/hakkinda">Hakkında</a></p>
+</div>
+{% endblock %}

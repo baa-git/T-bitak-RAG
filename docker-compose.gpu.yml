@@ -1,0 +1,44 @@
+# NVIDIA GPU eki (NFR-HW2). Temel dosyanın üzerine yazılır:
+#
+#   docker compose -f docker-compose.yml -f docker-compose.gpu.yml up -d --build
+#
+# Gerekenler: NVIDIA sürücüsü; Windows'ta Docker Desktop + WSL2 GPU desteği, Linux'ta
+# NVIDIA Container Toolkit. Uygulama imajı CUDA'lı PyTorch ile ayrı bir etiketle
+# (tubitak-rag-app:gpu) derlenir; volume'lar CPU kurulumuyla ortaktır (modeller yeniden inmez).
+# TUBITAK_RAG_DEVICE=cuda: GPU görünmezse sessizce CPU'ya düşmek yerine hata verir.
+#
+# Not (GPU kuralı): container içindeki GPU kilidi (artifacts/.gpu.lock) kendi
+# volume'undadır; host'ta aynı anda başka bir GPU işi (ingest, deney koşusu) çalıştırmayın.
+
+x-gpu: &gpu
+  deploy:
+    resources:
+      reservations:
+        devices:
+          - driver: nvidia
+            count: all
+            capabilities: [gpu]
+
+services:
+  ollama:
+    <<: *gpu
+
+  init:
+    <<: *gpu
+    build:
+      context: .
+      args:
+        TORCH_INDEX_URL: ${TORCH_INDEX_URL_GPU:-https://download.pytorch.org/whl/cu128}
+    image: tubitak-rag-app:gpu
+    environment:
+      TUBITAK_RAG_DEVICE: ${TUBITAK_RAG_DEVICE:-cuda}
+
+  app:
+    <<: *gpu
+    build:
+      context: .
+      args:
+        TORCH_INDEX_URL: ${TORCH_INDEX_URL_GPU:-https://download.pytorch.org/whl/cu128}
+    image: tubitak-rag-app:gpu
+    environment:
+      TUBITAK_RAG_DEVICE: ${TUBITAK_RAG_DEVICE:-cuda}

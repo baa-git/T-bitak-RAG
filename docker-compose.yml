@@ -1,0 +1,129 @@
+# TÜBİTAK Mevzuat RAG — tek komutla tam yığın (NFR-DOCKER1..3, NFR-HW1).
+#
+#   docker compose up -d --build          # CPU (varsayılan)
+#   docker compose -f docker-compose.yml -f docker-compose.gpu.yml up -d --build   # NVIDIA GPU
+#
+# Servisler:
+#   qdrant  vektör veritabanı        (yalnız iç ağda: qdrant:6333; host'a port açılmaz)
+#   ollama  yerel LLM sunucusu       (yalnız iç ağda: ollama:11434; host'a port açılmaz)
+#   init    tek seferlik hazırlık    (modelleri indirir; hazır indeks paketini - ./release'de
+#                                     yoksa Hugging Face'ten (INDEX_BUNDLE_URL) - indirip Qdrant'a
+#                                     ve BM25'e yükler; ingest gerekmez. Paket kapalıysa
+#                                     (TUBITAK_RAG_USE_BUNDLE=0) rag fetch + rag ingest)
+#   app     web arayüzü + REST API   (http://localhost:${APP_PORT:-8000})
+#
+# Proje adı sabittir (tubitak-rag): container, ağ ve volume adları host'taki başka
+# Qdrant/Ollama kurulumlarıyla (ör. tubitak-qdrant / tubitak_qdrant) çakışmaz.
+# Ayarlar: .env dosyası (bkz. .env.example, "Docker" bölümü).
+
+name: tubitak-rag
+
+x-app: &app
+  build:
+    context: .
+    args:
+      TORCH_INDEX_URL: ${TORCH_INDEX_URL:-https://download.pytorch.org/whl/cpu}
+  image: tubitak-rag-app:${APP_IMAGE_TAG:-cpu}
+  init: true # tini: sinyalleri iletir, alt süreçleri (ingest/koşu işleri) toplar
+  environment: &app-env
+    QDRANT_URL: http://qdrant:6333
+    OLLAMA_URL: http://ollama:11434
+    TUBITAK_RAG_CONFIG: ${APP_CONFIG:-configs/default.yaml}
+    TUBITAK_RAG_DEVICE: ${TUBITAK_RAG_DEVICE:-auto}
+    RERANKER_CPU_CANDIDATES: ${RERANKER_CPU_CANDIDATES:-6}
+    LLM_TIMEOUT_S: ${LLM_TIMEOUT_S:-300}
+    # Yalnız llm.provider: openai_compat seçilince kullanılır (README, "OpenAI uyumlu API").
+    # Varsayılan adres yığının kendi Ollama'sının /v1 uç noktasıdır; anahtar boşsa gönderilmez.
+    LLM_BASE_URL: ${LLM_BASE_URL:-http://ollama:11434/v1}
+    LLM_API_KEY: ${LLM_API_KEY:-}
+    HF_HOME: /hf_cache
+    # Yalnız erişimi kısıtlı (gated) bir HF modeli için; boşsa anonim indirme.
+    HF_TOKEN: ${HF_TOKEN:-}
+  volumes:
+    - raw_data:/app/data/raw
+    - artifacts:/app/artifacts
+    - hf_cache:/hf_cache
+
+services:
+  qdrant:
+    image: qdrant/qdrant:v1.19.0
+    restart: unless-stopped
+    volumes:
+      - qdrant_storage:/qdrant/storage
+    healthcheck:
+      # İmajda curl yok; bash'in /dev/tcp'si ile /healthz çağrılır.
+      test:
+        - CMD-SHELL
+        - >-
+          bash -c 'exec 3<>/dev/tcp/127.0.0.1/6333 &&
+          printf "GET /healthz HTTP/1.0\r\n\r\n" >&3 && grep -q "200 OK" <&3'
+      interval: 5s
+      timeout: 5s
+      retries: 30
+      start_period: 5s
+
+  ollama:
+    image: ${OLLAMA_IMAGE:-ollama/ollama:latest}
+    restart: unless-stopped
+    environment:
+      OLLAMA_NUM_PARALLEL: "1" # tek istek; bellek ve ısı sınırlı kalır
+      OLLAMA_MAX_LOADED_MODELS: "1"
+      OLLAMA_KEEP_ALIVE: ${OLLAMA_KEEP_ALIVE:-10m}
+    volumes:
+      - ollama_models:/root/.ollama
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+      start_period: 5s
+
+  init:
+    <<: *app
+    entrypoint: ["python", "-m", "tubitak_rag.interfaces.bootstrap"]
+    command: []
+    restart: "no"
+    environment:
+      <<: *app-env
+      TUBITAK_RAG_AUTO_INGEST: ${TUBITAK_RAG_AUTO_INGEST:-1}
+      TUBITAK_RAG_WARMUP: ${TUBITAK_RAG_WARMUP:-1}
+      # Hazır indeks paketi (rag export-index): önce ./release (aşağıdaki bağlama), yoksa bu
+      # adresteki manifest.json + dosyalar (SHA-256 doğrulanır). .env'de INDEX_BUNDLE_URL ezer.
+      INDEX_BUNDLE_URL: ${INDEX_BUNDLE_URL:-https://huggingface.co/datasets/lolalol57/tubitak-mevzuat-rag-index/resolve/main/}
+      TUBITAK_RAG_USE_BUNDLE: ${TUBITAK_RAG_USE_BUNDLE:-1}
+      TUBITAK_RAG_BUNDLE_FETCH: ${TUBITAK_RAG_BUNDLE_FETCH:-0}
+    volumes:
+      - raw_data:/app/data/raw
+      - artifacts:/app/artifacts
+      - hf_cache:/hf_cache
+      # Paket klasörü salt-okunur bağlanır; yoksa Docker boş bir klasör oluşturur (paket yok).
+      - ${INDEX_BUNDLE_DIR:-./release}:/app/release:ro
+    healthcheck:
+      disable: true
+    depends_on:
+      qdrant:
+        condition: service_healthy
+      ollama:
+        condition: service_healthy
+
+  app:
+    <<: *app
+    command: ["serve", "--host", "0.0.0.0", "--port", "8000", "-c", "${APP_CONFIG:-configs/default.yaml}"]
+    restart: unless-stopped
+    ports:
+      # Varsayılan yalnız bu bilgisayardan erişim (127.0.0.1). Ağa açmak için APP_BIND=0.0.0.0.
+      - "${APP_BIND:-127.0.0.1}:${APP_PORT:-8000}:8000"
+    depends_on:
+      init:
+        condition: service_completed_successfully
+      qdrant:
+        condition: service_healthy
+      ollama:
+        condition: service_healthy
+
+volumes:
+  qdrant_storage: # Qdrant koleksiyonları (vektör indeksi)
+  ollama_models: # Ollama model ağırlıkları (qwen3:4b ~2,5 GB)
+  hf_cache: # HuggingFace modelleri (EmbeddingGemma 2, bge-reranker-v2-m3)
+  artifacts: # BM25 indeksi, ayrıştırma/parça/embedding önbellekleri, raporlar, koşular
+  raw_data: # indirilen kaynak belgeler (~160 MB)

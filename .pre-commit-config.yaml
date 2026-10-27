@@ -1,0 +1,15 @@
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.17.1
+    hooks:
+      - id: ruff-check
+      - id: ruff-format
+  - repo: local
+    hooks:
+      # Uses the project venv on Windows (double backslashes survive pre-commit's shlex split).
+      - id: mypy
+        name: mypy (src)
+        entry: '.venv\\Scripts\\python.exe -m mypy src'
+        language: system
+        types: [python]
+        pass_filenames: false

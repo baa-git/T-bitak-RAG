@@ -1,0 +1,39 @@
+# Corpus ve üretilen çıktılar (yalnızca manifestler repoda)
+data/raw/
+artifacts/
+# Hazır indeks paketi (rag export-index çıktısı; Hugging Face veri setine yüklenir, repoya girmez)
+release/*
+!release/.gitkeep
+
+# Gizli anahtarlar
+.env
+
+# Kişisel çalışma notları (Obsidian köprüsü)
+_calisma-notlari.md
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Editör / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+~$*.xlsx
+
+# Arayüz tasarım skill'i (yerel kopya) ve yerel veritabanları
+.taste-skill/
+*.sqlite
+coverage.xml
+.claude/

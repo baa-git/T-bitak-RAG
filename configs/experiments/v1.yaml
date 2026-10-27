@@ -1,0 +1,18 @@
+# v1 — Yapı bazlı chunking + bağlam başlığı, dense arama.
+extends: ../default.yaml
+
+experiment:
+  name: v1
+  description: "Yapı ve bağlam neden önemli? Madde/bölüm sınırlarına göre parçalama ve her parçaya bağlam başlığı."
+  concept: structural_context
+  previous: v0
+
+chunker:
+  name: structural
+  context_header: true
+
+retriever:
+  mode: dense
+
+reranker:
+  enabled: false

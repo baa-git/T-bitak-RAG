@@ -1,0 +1,135 @@
+{
+  "run_id": "v1_20261016-011056",
+  "experiment": "v1",
+  "started_at": "2026-10-16T01:10:56",
+  "finished_at": "2026-10-16T01:17:30",
+  "wall_clock_s": 394.25143800000023,
+  "judge_model": "qwen3:4b",
+  "llm_model": "qwen3:4b",
+  "embedder": "google/embeddinggemma-2",
+  "chunker": "structural_ctx",
+  "retriever": "dense",
+  "reranker": null,
+  "counts": {
+    "questions": 104,
+    "chunks": 7017,
+    "docs": 282,
+    "judge_errors": 1,
+    "scope_false_rejections": 2
+  },
+  "retrieval": {
+    "recall_at_5": 0.43939393939393945,
+    "recall_at_10": 0.5541125541125541,
+    "mrr": 0.4189895948490296,
+    "doc_hit_at_5": 0.6753246753246753,
+    "doc_hit_at_10": 0.8181818181818182
+  },
+  "generation": {
+    "answer_accuracy": 0.6835443037974683,
+    "faithfulness": 0.8115942028985508,
+    "citation_precision": 0.4475555555555556,
+    "correct_rejection_rate": 0.8,
+    "false_rejection_rate": 0.11392405063291139,
+    "scope_rejection_rate": 1.0,
+    "programs_split_rate": 0.0,
+    "number_rejection_rate": 0.06521739130434782,
+    "number_strip_rate": 0.010869565217391304,
+    "error_rate": 0.0,
+    "citation_repair_rate": 0.02666666666666667
+  },
+  "latency_ms": {
+    "retrieval_p50": 102.10495000001174,
+    "retrieval_p95": 138.964025000314,
+    "llm_p50": 1032.2206499995445,
+    "llm_p95": 2795.432979999579,
+    "total_p50": 1104.7069999999621,
+    "total_p95": 2633.8867849996386
+  },
+  "by_type": {
+    "tek_belge": {
+      "recall_at_5": 0.5952380952380952,
+      "recall_at_10": 0.7023809523809523,
+      "mrr": 0.5328426741066797,
+      "doc_hit_at_5": 0.8333333333333334,
+      "doc_hit_at_10": 0.9285714285714286,
+      "answer_accuracy": 0.813953488372093,
+      "faithfulness": 0.8947368421052632,
+      "citation_precision": 0.624561403508772,
+      "false_rejection_rate": 0.11627906976744186,
+      "number_rejection_rate": 0.07142857142857142,
+      "number_strip_rate": 0.023809523809523808,
+      "error_rate": 0.0,
+      "citation_repair_rate": 0.02631578947368421
+    },
+    "cok_belge": {
+      "recall_at_5": 0.23958333333333334,
+      "recall_at_10": 0.3645833333333333,
+      "mrr": 0.35866384432560905,
+      "doc_hit_at_5": 0.625,
+      "doc_hit_at_10": 0.8125,
+      "answer_accuracy": 0.5,
+      "faithfulness": 0.6428571428571429,
+      "citation_precision": 0.35714285714285715,
+      "false_rejection_rate": 0.125,
+      "number_rejection_rate": 0.125,
+      "number_strip_rate": 0.0,
+      "error_rate": 0.0,
+      "citation_repair_rate": 0.07142857142857142
+    },
+    "cevapsiz": {
+      "citation_precision": 0.0,
+      "correct_rejection_rate": 0.6666666666666666,
+      "number_rejection_rate": 0.06666666666666667,
+      "number_strip_rate": 0.0,
+      "error_rate": 0.0,
+      "citation_repair_rate": 0.0
+    },
+    "kapsam_disi": {
+      "correct_rejection_rate": 1.0,
+      "scope_rejection_rate": 1.0,
+      "error_rate": 0.0
+    },
+    "surum": {
+      "recall_at_5": 0.5,
+      "recall_at_10": 0.7,
+      "mrr": 0.391025641025641,
+      "doc_hit_at_5": 0.7,
+      "doc_hit_at_10": 0.9,
+      "answer_accuracy": 0.7,
+      "faithfulness": 0.6666666666666666,
+      "citation_precision": 0.537037037037037,
+      "false_rejection_rate": 0.1,
+      "number_rejection_rate": 0.0,
+      "number_strip_rate": 0.0,
+      "error_rate": 0.0,
+      "citation_repair_rate": 0.0
+    },
+    "belirsiz": {
+      "recall_at_5": 0.0,
+      "recall_at_10": 0.037037037037037035,
+      "mrr": 0.025992063492063493,
+      "doc_hit_at_5": 0.0,
+      "doc_hit_at_10": 0.2222222222222222,
+      "answer_accuracy": 0.4,
+      "faithfulness": 0.875,
+      "citation_precision": 0.0,
+      "false_rejection_rate": 0.1,
+      "programs_split_rate": 0.0,
+      "number_rejection_rate": 0.0,
+      "number_strip_rate": 0.0,
+      "error_rate": 0.0,
+      "citation_repair_rate": 0.0
+    }
+  },
+  "stage_times_s": {
+    "ingest": 8.859685400000672,
+    "questions": 142.32506489999378,
+    "judge": 243.0622664000066
+  },
+  "refusals": {
+    "kapsam_disi": 12,
+    "cevaplanamaz": 10,
+    "dayanaksiz_sayi": 6,
+    "gecersiz_atif": 1
+  }
+}

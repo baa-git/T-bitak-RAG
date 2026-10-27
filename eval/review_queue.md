@@ -1,0 +1,574 @@
+# Test seti inceleme kuyruğu
+
+Her soruyu kaynak belgeye bakarak kontrol et: soru doğal mı, beklenen cevap doğru ve
+tam mı, alıntı cevabı gerçekten kanıtlıyor mu? Onaylanan soruda kutuyu işaretle ve
+`eval/testset_v1.jsonl` içinde `dogrulandi: true` yap; düzeltme gerekiyorsa
+`review_notes` alanına yaz.
+
+| Tür | Soru sayısı |
+|---|---|
+| tek_belge | 43 |
+| cok_belge | 16 |
+| cevapsiz | 15 |
+| kapsam_disi | 10 |
+| surum | 10 |
+| belirsiz | 10 |
+| **Toplam** | **104** |
+
+## Parti 1 — tek_belge (q001 … q012)
+
+- [ ] **q001** (tek_belge/kolay) KOBİ olarak 1507 programından proje desteği alırsam TÜBİTAK harcamalarımın en fazla yüzde kaçını karşılar?
+  - Beklenen: 1507 programında destek oranı her dönem için en fazla %75'tir.
+  - Beklenen sayılar: 75
+  - Kanıt: "Bu programda uygulanacak destek oranı her dönem için en fazla %75 olarak belirlenmiştir." (TÜBİTAK 1507- KOBİ Ar-Ge Başlangıç Destek Programı Uygulama Esasları [mevzuat-031], Madde 7, s. 6)
+  - İnceleme notu: ___
+- [ ] **q003** (tek_belge/zor) 1501 projesinde doktoralı bir personelin aylık maliyeti beyan edilirken brüt asgari ücretin kaç katıyla sınırlandırılır? Lisans mezunu için durum nedir?
+  - Beklenen: Ortalama aylık maliyet doktoralılar için brüt asgari ücretin 12 katı, lisans/yüksek lisans mezunları için 8 katı ile sınırlandırılır.
+  - Beklenen sayılar: 12, 8
+  - Kanıt: "Eğitim Durumu Asgari Ücret Katı Doktora 12 katı Lisans/Yüksek Lisans 8 katı" (TÜBİTAK 1501- Sanayi Araştırma Teknoloji Geliştirme ve Yenilik Projeleri Destekleme Programı Uygulama Esasları [mevzuat-030], Madde 11, s. 9–11)
+  - İnceleme notu: ___
+- [ ] **q004** (tek_belge/zor) 1501 projesi için aldığımız kalıp seri üretimde de kullanılacak. Bu kalıbın maliyeti desteğe nasıl dahil edilir?
+  - Beklenen: Seri üretimde de kullanılacak alet, teçhizat ve kalıp gibi alımlar proje süresiyle orantılı olarak aylık %2 oranıyla destek kapsamına alınır (maliyet x proje süresi (ay) x %2).
+  - Beklenen sayılar: 2
+  - Kanıt: "ilgili giderler proje süresiyle orantılı olarak aylık % 2 oranı ile destek kapsamına alınır" (TÜBİTAK 1501- Sanayi Araştırma Teknoloji Geliştirme ve Yenilik Projeleri Destekleme Programı Uygulama Esasları [mevzuat-030], Madde 13, s. 11–12)
+  - İnceleme notu: ___
+- [ ] **q005** (tek_belge/orta) 1501'de dönem raporunu (AGY300) son tarihten sonra gönderirsem ne olur, kesinti var mı?
+  - Beklenen: Son gönderim tarihini izleyen 30 gün içinde sunulursa geciken her gün için %1, en fazla %30 kesinti yapılarak değerlendirme tamamlanır; 30 günü aşan gecikmede %30 kesinti uygulanır.
+  - Beklenen sayılar: 30, 1
+  - Kanıt: "geciken her gün için %1 ve en fazla %30 oranında kesinti yapılarak dönem değerlendirmesi tamamlanır" (TÜBİTAK 1501- Sanayi Araştırma Teknoloji Geliştirme ve Yenilik Projeleri Destekleme Programı Uygulama Esasları [mevzuat-030], Madde 32, s. 25–26)
+  - İnceleme notu: ___
+- [ ] **q006** (tek_belge/orta) 1507 KOBİ Ar-Ge Başlangıç programında bir firmanın kaç projesi desteklenebiliyor?
+  - Beklenen: KOBİ ölçeğindeki işletmelerin, en az ikisi ortaklı başvuru olmak kaydıyla ilk beş projesi desteklenir.
+  - Beklenen sayılar: beş
+  - Kanıt: "KOBİ ölçeğindeki işletmelerin en az ikisi ortaklı başvuru olmak kaydıyla ilk beş projesi desteklenir" (TÜBİTAK 1507- KOBİ Ar-Ge Başlangıç Destek Programı Uygulama Esasları [mevzuat-031], Madde 14, s. 13–14)
+  - İnceleme notu: ___
+- [ ] **q007** (tek_belge/zor) 1509 uluslararası projemizde yurt dışından danışmanlık ve hizmet almayı planlıyoruz. Bunun bir sınırı var mı?
+  - Beklenen: Toplam yurt dışı danışmanlık ve hizmet alımlarının dönemsel desteklemeye esas harcama tutarları toplamı içindeki payı %20 ile sınırlıdır; ana Ar-Ge faaliyetlerinin Türkiye'de yapılması gerekir.
+  - Beklenen sayılar: 20
+  - Kanıt: "projenin dönemsel desteklemeye esas harcama tutarları toplamı içindeki payı %20 ile sınırlandırılır" (TÜBİTAK 1509 - Uluslararası Sanayi Ar-Ge Projeleri Destekleme Programı Uygulama Esasları [mevzuat-032], Madde 11, s. 11)
+  - İnceleme notu: ___
+- [ ] **q009** (tek_belge/orta) 1511 projesinde aynı personel için bir ay içinde TÜBİTAK'a kaç günlük maliyet beyan edebilirim?
+  - Beklenen: Her ay için en fazla 30 günlük maliyet beyan edilebilir.
+  - Beklenen sayılar: 30
+  - Kanıt: "Desteklenen proje kapsamında her ay için TÜBİTAK’a en fazla 30 günlük maliyet beyan edilebilir." (TÜBİTAK 1511 - Öncelikli Alanlar Araştırma Teknoloji Geliştirme ve Yenilik Projeleri Destekleme Programı Uygulama Esasları [mevzuat-079], Madde 10, s. 10–13)
+  - İnceleme notu: ___
+- [ ] **q010** (tek_belge/orta) 1512 Girişimcilik Destek Programında Aşama 2 iş planı faaliyetleri en fazla ne kadar sürebilir?
+  - Beklenen: Aşama 2 kapsamında destek süresi ek süreler dahil en fazla 18 aydır.
+  - Beklenen sayılar: 18
+  - Kanıt: "destek süresi ek süreler de dâhil olmak üzere en fazla onsekiz (18) aydır" (TÜBİTAK 1512 - Girişimcilik Destek Programı Uygulama Esasları [mevzuat-101], Madde 7, s. 6–7)
+  - İnceleme notu: ___
+- [ ] **q011** (tek_belge/zor) BiGG Yatırım 2026-2 çağrısında TÜBİTAK BİGG Fonu girişim şirketine ne kadar yatırım yapıyor ve karşılığında kaç hisse alıyor?
+  - Beklenen: Yatırım ve Pay Sahipleri Sözleşmesi kapsamında kuruluşun %3 payı karşılığında 1.350.000 TL yatırım yapılır.
+  - Beklenen sayılar: 3, 1.350.000
+  - Kanıt: "kuruluşun %3 payı karşılığında TÜBİTAK BİGG Fonu kuruluşa 1.350.000 TL yatırım yapacaktır" (BiGG Yatırım Programı 2026-2 Çağrı Metni [dosya-4a616f06b928], Bölüm: 5.5 TÜBİTAK BİGG Fonu ve Yatırım Süreci, s. 7–8)
+  - İnceleme notu: ___
+- [ ] **q012** (tek_belge/orta) BiGG Yatırım hızlandırma programına kabul edilmek için iş fikrimin değerlendirmede kaç puan alması gerekiyor?
+  - Beklenen: Uygulayıcı kuruluşun puanlamasında (10 üzerinden) değerlendirilen boyutların her birinden en az 7 puan alınmalıdır.
+  - Beklenen sayılar: 7
+  - Kanıt: "her bir boyut için 10 üzerinden yapılacak puanlama sonucunda; ilgili boyutların her birinden en az 7 puan almalıdır" (BiGG Yatırım Programı 2026-2 Çağrı Metni [dosya-4a616f06b928], Bölüm: 4.2 Hızlandırma Programı için Değerlendirme ve Kabul, s. 3)
+  - İnceleme notu: ___
+
+## Parti 2 — tek_belge (q014 … q024)
+
+- [ ] **q014** (tek_belge/kolay) Sipariş Ar-Ge (1707) 2026-3 çağrısında proje süresi uzatılırsa 24 ayı geçebilir mi?
+  - Beklenen: Hayır. Proje süresi en fazla 24 aydır ve destek süresi uzatılsa dahi 24 ay aşılmaz.
+  - Beklenen sayılar: 24
+  - Kanıt: "Proje süresi en fazla 24 aydır. Destek süresi uzatılsa dahi yirmi dört ay aşılmaz." (Sipariş Ar-ge 2026-3 Çağrı Dokümanı [dosya-b5665606654f], Bölüm: 6. Çağrı Kapsamı, s. 2–5)
+  - İnceleme notu: ___
+- [ ] **q015** (tek_belge/orta) Eurostars (1709) 2026/2 ulusal çağrısında Türk ortağın proje bütçesi en fazla ne kadar olabilir?
+  - Beklenen: Türk proje ortaklarının proje bütçesi 600.000 Avroyu geçemez; Türk kurum/kuruluşlarının ortaklı başvurularında en fazla 850.000 Avro olabilir. Ulusal çağrı bütçesi 4.000.000 Avrodur.
+  - Beklenen sayılar: 600.000
+  - Kanıt: "proje bütçesi 600.000 Avroyu geçemez" (1709-EUREKA-EUROSTARS ÇAĞRI DUYURUSU 2026/2 [dosya-0f5159f6f65e], Bölüm: 8. Proje Bütçesi Üst Sınırı, s. 4)
+  - İnceleme notu: ___
+- [ ] **q017** (tek_belge/kolay) 1001 projemde aynı anda kaç lisans öğrencisini bursiyer olarak çalıştırabilirim?
+  - Beklenen: Bir projede aynı anda en fazla 4 lisans öğrencisi bursiyer olarak yer alabilir.
+  - Beklenen sayılar: 4
+  - Kanıt: "Bir projede aynı anda en fazla 4 (dört) lisans öğrencisi bursiyer olarak yer alabilir." (1001 - Bilimsel ve Teknolojik Araştırma Projelerini Destekleme Programı [sayfa-akademik__ulusal-destek-programlari__1001-bilimsel-ve-teknolojik-arastirma-projelerini-destekleme-programi], Bölüm: Kimler Başvurabilir?)
+  - İnceleme notu: ___
+- [ ] **q018** (tek_belge/orta) Özel bir şirkette çalışıyorum; 1001 projesine yürütücü olarak başvurabilmem için şirkette ne kadar süredir çalışıyor olmam gerekir?
+  - Beklenen: Özel kuruluşta yürütülecek projelerde yürütücünün proje öneri tarihi itibarıyla o kuruluşta en az altı ay görev almış olması gerekir.
+  - Beklenen sayılar: altı
+  - Kanıt: "proje yürütücüsünün söz konusu kuruluşta, projenin öneri tarihi itibariyle en az altı ay görev almış olması gerekmektedir" (1001 - Bilimsel ve Teknolojik Araştırma Projelerini Destekleme Programı [sayfa-akademik__ulusal-destek-programlari__1001-bilimsel-ve-teknolojik-arastirma-projelerini-destekleme-programi], Bölüm: Kimler Başvurabilir?)
+  - İnceleme notu: ___
+- [ ] **q019** (tek_belge/kolay) 1002-B Acil Destek Modülünde proje süresi ve bütçe sınırı nedir?
+  - Beklenen: Proje süresi en fazla 6 aydır; 1 Şubat 2026 itibarıyla proje destek üst limiti (burs dahil) 100.000 TL'dir ve PTİ ödenmez.
+  - Beklenen sayılar: 6, 100.000
+  - Kanıt: "Proje süresi en fazla 6 ay olabilir." (1002 - B Acil Destek Modülü [sayfa-akademik__ulusal-destek-programlari__1002-b-acil-destek-modulu], Bölüm: 1002 - B Acil Destek Modülü)
+  - Kanıt: "proje destek üst limiti (burs dahil) 100.000 TL’dir" (1002 - B Acil Destek Modülü [sayfa-akademik__ulusal-destek-programlari__1002-b-acil-destek-modulu], Bölüm: 1002 - B Acil Destek Modülü)
+  - İnceleme notu: ___
+- [ ] **q020** (tek_belge/kolay) 1003 Öncelikli Alanlar Ar-Ge projeleri en fazla kaç ay sürebilir?
+  - Beklenen: 1003 kapsamında desteklenecek projelerin süresi en fazla 36 aydır.
+  - Beklenen sayılar: 36
+  - Kanıt: "Bu destek programı kapsamında desteklenecek projelerin süresi en fazla 36 aydır." (1003-Öncelikli Alanlar Ar-Ge Projeleri Destekleme Programı Usul ve Esasları [mevzuat-073], Madde 9, s. 4)
+  - İnceleme notu: ___
+- [ ] **q021** (tek_belge/orta) 1004 Mükemmeliyet Merkezi programında faaliyetlerin hangi Teknoloji Hazırlık Seviyesinde olması bekleniyor?
+  - Beklenen: Araştırma programındaki Ar-Ge ve yenilik faaliyetlerinin THS 3-6 düzeyinde olması beklenir.
+  - Beklenen sayılar: 3-6
+  - Kanıt: "Teknoloji Hazırlık Seviyesi (THS) 3-6 düzeyinde olması beklenir" (1004 - Mükemmeliyet Merkezi Destek Programı [sayfa-akademik__ulusal-destek-programlari__1004-mukemmeliyet-merkezi-destek-programi], Bölüm: 1004 - Mükemmeliyet Merkezi Destek Programı)
+  - İnceleme notu: ___
+- [ ] **q022** (tek_belge/kolay) 1005 Ulusal Yeni Fikirler ve Ürünler programında bütçe üst limiti ne kadar?
+  - Beklenen: 1 Şubat 2026 itibarıyla proje destek üst limiti (burs dahil, PTİ ve kurum hissesi hariç) 1.200.000 TL'dir.
+  - Beklenen sayılar: 1.200.000
+  - Kanıt: "proje destek üst limiti (burs dahil, proje teşvik ikramiyesi (PTİ)* ve kurum hissesi hariç) 1.200.000 TL’dir" (1005 - Ulusal Yeni Fikirler ve Ürünler Araştırma Destek Programı [sayfa-akademik__ulusal-destek-programlari__1005-ulusal-yeni-fikirler-ve-urunler-arastirma-destek-programi], Bölüm: 1005 - Ulusal Yeni Fikirler ve Ürünler Araştırma Destek Programı)
+  - İnceleme notu: ___
+- [ ] **q023** (tek_belge/orta) 1007 programında fizibilite projesi nedir, süresi ne kadar olabilir?
+  - Beklenen: Diğer nitelikteki bir projenin yapılabilirliğine karar vermeye yönelik, süresi bir yılı geçmeyen, bütçesi çağrıda belirlenen ve ek süre/ek ödenek verilmeyen projedir.
+  - Beklenen sayılar: bir
+  - Kanıt: "Fizibilite Projesi: Diğer 3 nitelikte olabilecek projenin yapılabilirliğine karar vermeye yönelik, süresi bir yılı geçmeyen" (1007 - Kamu Kurumları Araştırma ve Geliştirme Projelerini Destekleme Programı [sayfa-akademik__ulusal-destek-programlari__1007-kamu-kurumlari-arastirma-ve-gelistirme-projelerini-destekleme-programi], Bölüm: Destek Kapsamı)
+  - İnceleme notu: ___
+- [ ] **q024** (tek_belge/kolay) 3001 Başlangıç Ar-Ge projeleri en fazla kaç ay desteklenir?
+  - Beklenen: 3001 kapsamında desteklenecek projelerin süresi en fazla 24 aydır.
+  - Beklenen sayılar: 24
+  - Kanıt: "Bu destek programı kapsamında desteklenecek projelerin süresi en fazla 24 aydır." (3001–Başlangıç Ar-Ge ve Sosyal ve Beşeri Bilimlerde Yenilikçi Çözümler Araştırma Projeleri Destekleme Programı Usul ve Esasları [mevzuat-085], Madde 11, s. 6)
+  - İnceleme notu: ___
+
+## Parti 3 — tek_belge (q025 … q036)
+
+- [ ] **q025** (tek_belge/orta) 3501 Kariyer Geliştirme programına doktoramı bitirdikten kaç yıl sonrasına kadar başvurabilirim?
+  - Beklenen: Doktora veya eşdeğer derecenin alındığı tarihi izleyen 7 yıl içinde başvurulmalıdır (doğum izni gibi istisnalar ayrıca belirtilir).
+  - Beklenen sayılar: 7
+  - Kanıt: "Doktora veya eşdeğer derecenin alındığı tarihi izleyen 7 yıl içinde başvuruda bulunması" (3501 - Kariyer Geliştirme Programı [sayfa-akademik__ulusal-destek-programlari__3501-kariyer-gelistirme-programi], Bölüm: Kimler Başvurabilir?)
+  - İnceleme notu: ___
+- [ ] **q026** (tek_belge/orta) 2211 Yurt İçi Doktora Burs Programında burs en fazla kaç ay ödenir?
+  - Beklenen: Yüksek lisans sonrası doktora için en çok 48 ay, bütünleşik doktora için 60 ay ödenir.
+  - Beklenen sayılar: 48, 60
+  - Kanıt: "yüksek lisans sonrası doktora programı için en çok 48 ay, bütünleşik doktora programı için 60 aydır" (TÜBİTAK Bilim İnsanı Destek Programları Başkanlığı Burs ve Destek Programlarının Yürütülmesine İlişkin Usul ve Esaslar [mevzuat-040], Madde 17, s. 8–9)
+  - İnceleme notu: ___
+- [ ] **q027** (tek_belge/orta) 2213 Yurt Dışı Lisansüstü Burs Programında yurt dışında toplam ne kadar süre burs alınabilir?
+  - Beklenen: Yurt dışında öğrenime başlama tarihinden itibaren toplamda 24 aya kadar burs ve destek ödenebilir; geriye dönük ödeme yapılmaz.
+  - Beklenen sayılar: 24
+  - Kanıt: "toplamda 24 aya kadar burs ve destek ödenebilir" (TÜBİTAK Bilim İnsanı Destek Programları Başkanlığı Burs ve Destek Programlarının Yürütülmesine İlişkin Usul ve Esaslar [mevzuat-040], Madde 18, s. 9)
+  - İnceleme notu: ___
+- [ ] **q028** (tek_belge/kolay) 2224-A desteğinden aynı yıl içinde ikinci kez yararlanabilir miyim?
+  - Beklenen: Hayır; başvuru koşullarından biri 2224-A programından ilgili yıl içinde yararlanılmamış olmasıdır.
+  - Kanıt: "2224-A programından ilgili yıl içinde yararlanılmamış olması" (2224-A_Programi_Cagri_Duyurusu_2224_a.pdf [dosya-b82f05be2ea3], Bölüm: 4.1. Başvuru Koşulları, s. 5–7)
+  - İnceleme notu: ___
+- [ ] **q029** (tek_belge/orta) 2224-A ile konferansa katıldıktan sonra izleme belgelerini ne kadar süre içinde sisteme yüklemem gerekiyor?
+  - Beklenen: Etkinliğin bitiş tarihinden ya da destek sonuç tarihinden sonraki otuz gün içinde BİDEB sistemine yüklenmelidir.
+  - Beklenen sayılar: otuz
+  - Kanıt: "etkinliğin bitiş tarihinden ya da destek sonuç tarihinden sonraki otuz gün içinde" (2224-A_Programi_Cagri_Duyurusu_2224_a.pdf [dosya-b82f05be2ea3], Bölüm: 8. YÜKÜMLÜLÜKLER, s. 9–10)
+  - İnceleme notu: ___
+- [ ] **q031** (tek_belge/orta) 4007 kapsamında büyük ölçekli bilim festivali düzenlersek ne kadar destek alabiliriz?
+  - Beklenen: Bilim Festivalleri için destek üst limiti (PTİ hariç) 1.500.000 TL'dir (KDV dahil); bilim şenlikleri için 450.000 TL'dir.
+  - Beklenen sayılar: 1.500.000
+  - Kanıt: "Bilim Festivalleri (Büyük Ölçekli Bilim Şenlikleri) için 1.500.000 TL (KDV dâhil)’dir" (4007 Çağrı Metni (2026) [dosya-4806f8f8bca1], Bölüm: C. DESTEK MİKTARI VE KAPSAMI, s. 10–13)
+  - İnceleme notu: ___
+- [ ] **q032** (tek_belge/zor) 4006-A bilim fuarında 20 alt proje sergilenecekse okulumuza toplam ne kadar destek ödenir?
+  - Beklenen: Destek = hazırlık desteği 7.000 TL + alt proje başına 750 TL; 20 alt proje için toplam 22.000 TL (KDV dahil) ödenir.
+  - Beklenen sayılar: 22.000
+  - Kanıt: "Bilim Fuarı Hazırlık Desteği (7.000 TL) + (Sergilenecek Alt Proje Sayısı x 750 TL)" (4006-A Çağrı Metni (13. Dönem) [dosya-0f15ecfa44a1], Bölüm: C. DESTEK MİKTARI VE KAPSAMI, s. 9–10)
+  - Kanıt: "20 alt projesi kabul edilen bir proje yürütücüsüne toplam 22.000 TL (KDV dâhil) proje destek miktarı ödenir" (4006-A Çağrı Metni (13. Dönem) [dosya-0f15ecfa44a1], Bölüm: C. DESTEK MİKTARI VE KAPSAMI, s. 9–10)
+  - İnceleme notu: ___
+- [ ] **q033** (tek_belge/orta) 4008 projesinde her bir etkinlik dönemi en az kaç gün olmalı?
+  - Beklenen: Her bir etkinlik dönemi en az 4 gün olacak şekilde planlanmalıdır.
+  - Beklenen sayılar: 4
+  - Kanıt: "Her bir etkinlik dönemi en az 4 gün olacak şekilde planlanmalıdır." (4008 Çağrı Metni (2025) [dosya-fc6dead14833], Bölüm: 1. Çağrı Amacı ve Hedef Kitlesi, s. 3–4)
+  - İnceleme notu: ___
+- [ ] **q035** (tek_belge/orta) Kurum hissesinden bursiyer ödemesi veya PTİ ödemesi yapabilir miyiz?
+  - Beklenen: Hayır. Kurum hissesinden burs ve PTİ ödemesi yapılamaz.
+  - Kanıt: "Kurum hissesinden burs ve PTİ ödemesi yapılamaz." (Araştırma Projelerinde Uygulanacak İdari ve Mali Esaslar [mevzuat-048], Madde 10, s. 9)
+  - İnceleme notu: ___
+- [ ] **q036** (tek_belge/kolay) TÜBİTAK başvurumun reddine itiraz etmek için kaç günüm var?
+  - Beklenen: İtiraz başvuru süresi, işlemin tebliğinden itibaren 15 gündür; son gün tatile denk gelirse izleyen ilk iş gününün bitimine kadar uzar. Başvuru TÜBİMER Online Sistemi'nden yapılır.
+  - Beklenen sayılar: 15
+  - Kanıt: "itiraza konu işlemin ilgiliye tebliğinden (yazılı veya elektronik olarak gerçekleştirilen bildirimden) itibaren 15 gündür" (TÜBİTAK Tarafından Yürütülen Programların Başvuru Değerlendirme Süreçlerine Yapılacak İtirazlara İlişkin Yönetmelik [mevzuat-116], Madde 11, s. 5)
+  - İnceleme notu: ___
+
+## Parti 4 — tek_belge (q037 … q107)
+
+- [ ] **q037** (tek_belge/orta) ARDEB panel değerlendirmesinde bir panelde kaç panelist bulunur ve en fazla kaç öneri görüşülür?
+  - Beklenen: Her panel en çok on proje önerisini değerlendirmek üzere en az beş, en çok dokuz panelistten oluşturulur.
+  - Beklenen sayılar: beş, dokuz, on
+  - Kanıt: "Her panel, en çok on proje önerisinin bilimsel değerlendirmesini yapmak üzere, en az beş en çok dokuz panelistten oluşturulur." (TÜBİTAK Proje Önerilerinin Panel Yönetimi ile Değerlendirilmesine İlişkin Yönerge [mevzuat-044], Madde 5, s. 3)
+  - İnceleme notu: ___
+- [ ] **q038** (tek_belge/zor) Teknoparkta yönetici şirketin kurucuları arasında kimlerin bulunması zorunludur?
+  - Beklenen: Yönetici şirketin kurucuları arasında Bölgenin içinde veya bulunduğu ilde yer alan en az bir üniversite veya yüksek teknoloji enstitüsü ya da kamu AR-GE merkez veya enstitüsü bulunur.
+  - Kanıt: "yönetici şirketin kurucuları arasında, Bölgenin içinde veya bulunduğu ilde yer alan en az bir üniversite veya yüksek teknoloji enstitüsü ya da kamu AR-GE merkez veya enstitüsü bulunur" (Teknoloji Geliştirme Bölgeleri Kanunu [kanun-4691], Madde 5)
+  - İnceleme notu: ___
+- [ ] **q039** (tek_belge/zor) 5746 sayılı Kanuna göre doktoralı Ar-Ge personelinin gelir vergisi stopajının yüzde kaçı terkin edilir?
+  - Beklenen: Doktoralılar (ve desteklenecek alanlarda en az yüksek lisanslılar) için %95; yüksek lisanslılar için %90; diğerleri için %80 terkin edilir.
+  - Beklenen sayılar: 95, 90, 80
+  - Kanıt: "doktoralı olanlar ile desteklenecek program alanlarından birinde en az yüksek lisans derecesine sahip olanlar için yüzde doksan beşi" (Araştırma, Geliştirme ve Tasarım Faaliyetlerinin Desteklenmesi Hakkında Kanun [kanun-5746], Madde 3)
+  - İnceleme notu: ___
+- [ ] **q040** (tek_belge/kolay) Şahıs şirketim var; 1505 projesinde müşteri kuruluş olabilir miyim?
+  - Beklenen: Hayır. 1505'te müşteri kuruluşun sermaye şirketi olması gerekir; şahıs işletmeleri müşteri kuruluş olamaz.
+  - Kanıt: "Şahıs işletmeleri müşteri kuruluş olabilir mi? Hayır. Müşteri kuruluş sermaye şirketi olmalıdır." (Sıkça Sorulan Sorular [dosya-358f2addd2d5], Bölüm: (TEYDEB), s. 1–6)
+  - İnceleme notu: ___
+- [ ] **q042** (tek_belge/zor) TEYDEB destek limitleri tablosuna göre 1515 Öncül Ar-Ge Laboratuvarları programında proje bütçesi üst limiti nedir?
+  - Beklenen: Üst limit tablosunda 1515 için proje bütçesi üst limiti yıllık 25.000.000 TL'dir.
+  - Beklenen sayılar: 25.000.000
+  - Kanıt: "1515: 25.000.000 TL (Yıllık)" (Proje bütçesine ve diğer destek üst limitlerine ulaşmak için lütfen tıklayınız. [dosya-6a5eda267423], Bölüm: Limitler)
+  - Yazar notu: Kaynak 2024-03 tarihli üst limit tablosu (XLSX); daha güncel bir değer yayımlanmış olabilir.
+  - İnceleme notu: ___
+- [ ] **q043** (tek_belge/zor) 1513 Teknoloji Transfer Ofisleri programında Kapasite Geliştirme Aşamasında destek oranı yüzde kaç?
+  - Beklenen: Kapasite Geliştirme Aşamasında destek oranı %80'dir; Hedef Odaklı Gelişim Aşamasında oran %40+%[(performans puanı-1)x10] formülüyle hesaplanır.
+  - Beklenen sayılar: 80
+  - Kanıt: "Program kapsamında desteklenen projelerin Kapasite Geliştirme Aşaması’nda destek oranı %80’dir." (Proje bütçesine ve diğer destek üst limitlerine ulaşmak için lütfen tıklayınız. [dosya-6a5eda267423], Bölüm: Limitler)
+  - Yazar notu: Kaynak 2024-03 tarihli üst limit tablosu; 1513 uygulama esaslarıyla (mevzuat-103) çapraz kontrol edilebilir.
+  - İnceleme notu: ___
+- [ ] **q081** (tek_belge/zor) Teknopark personelinin bölge dışında geçirdiği süreler gelir vergisi stopajı teşvikinden ne ölçüde yararlanır?
+  - Beklenen: 4691 sayılı Kanun Geçici 2. maddeye göre, teşvike konu toplam çalışma sürelerinin %20'sini aşmamak kaydıyla bölge dışı süreler de teşvik kapsamındadır; Cumhurbaşkanı bu oranı %100'e kadar artırabilir.
+  - Beklenen sayılar: 20
+  - Kanıt: "teşvike konu edilen toplam çalışma sürelerinin yüzde yirmisini aşmamak kaydıyla" (Teknoloji Geliştirme Bölgeleri Kanunu [kanun-4691], Madde Geçici 2)
+  - Yazar notu: Review 1: önce cevapsiz idi (TGB Uygulama Yönetmeliği varsayımı); 4691 Geçici 2/3 cevaplıyor, tek_belge yapıldı.
+  - İnceleme notu: ___
+- [ ] **q105** (tek_belge/orta) TEYDEB projesinde bir faturayı dönem içinde ödeyemedim; ödemenin en geç ne zamana kadar bankadan yapılması gerekir?
+  - Beklenen: Giderlere ait ödemelerin en geç ilgili döneme ait Mali Müşavirlik (MM) Raporunun düzenlendiği tarihe kadar bankadan yapılmış olması gerekir.
+  - Kanıt: "Giderlere ait ödemelerin en geç ilgili döneme ait MM Raporunun düzenlendiği tarihe kadar, ilgili mevzuat hükümlerine göre bankadan gerçekleştirilmiş olması gerekir" (Mali Rapor Hazırlama Kılavuzu [dosya-08e1be95461e], Bölüm: 2) Sermaye Aktarım Çağrısına ait “Ödeme çağrısı formu” vb. belgeler, s. 16–21)
+  - İnceleme notu: ___
+- [ ] **q106** (tek_belge/kolay) 1501/1507 başvurusunda proje adını İngilizce ya da kısaltma olarak yazabilir miyim?
+  - Beklenen: Hayır. Proje adı Türkçe kelimelerden oluşmalı; 'Ar-Ge Projesi' gibi ibareler, anlamsız kısaltmalar veya özel kodlar içermemelidir.
+  - Kanıt: "Projenin adı Türkçe kelimelerden oluşmalıdır." (Proje Öneri Bilgileri Formu Hazırlama Kılavuzu [dosya-2c81d167d070], Bölüm: BÖLÜM A. KURULUŞ BİLGİLERİ VE PROJE ÖZETİ, s. 9–11)
+  - İnceleme notu: ___
+- [ ] **q107** (tek_belge/orta) Şirketimizde imza yetkilisi değişti; TEYDEB sisteminde kuruluş yetkilisini güncellemek için hangi belgeyi göndermeliyiz?
+  - Beklenen: Yeni imza sirkülerinin aslı veya noter onaylı asıl sureti, dilekçe ekinde TEYDEB Başkanlığına iletilmelidir.
+  - Kanıt: "Kuruluş yetkilisi değişikliği için yeni imza sirkülerinin aslının veya noter onaylı asıl suretinin dilekçe ekinde TEYDEB Başkanlığına iletilmesi gerekmektedir." (Kuruluş Bazlı Ön Kayıt Kullanıcı Kılavuzu (Sermaye Şirketleri) [dosya-4143d0e19ee4], Bölüm: ÖNEMLİ HATIRLATMA, s. 3)
+  - İnceleme notu: ___
+
+## Parti 5 — tek_belge (q108 … q110)
+
+- [ ] **q108** (tek_belge/orta) 4007 kapsamında bilim festivali düzenleyeceğiz; toplam katılımcı sayısı en az kaç kişi olmalı?
+  - Beklenen: Şenlik süresince tüm etkinliklere katılan toplam katılımcı sayısı bilim festivali için en az 50.000, bilim şenliği için en az 5.000 kişi olacak şekilde planlanmalıdır.
+  - Beklenen sayılar: 50.000, 5.000
+  - Kanıt: "Bilim Festivali (Büyük Ölçekli Bilim Şenliği) için en az 50.000," (4007 Proje Hazırlama Kılavuzu (2026) [dosya-6462c100a947], Bölüm: 1.500.000 TL 450.000 TL, s. 6–13)
+  - Kanıt: "Bilim Şenliği için en az 5.000 kişi olacak şekilde planlanmalıdır." (4007 Proje Hazırlama Kılavuzu (2026) [dosya-6462c100a947], Bölüm: 1.500.000 TL 450.000 TL, s. 6–13)
+  - İnceleme notu: ___
+- [ ] **q109** (tek_belge/orta) Yenilik Destek Programı çağrılarında (ör. 1707, 1711) destek süresi uzatmalarla birlikte en fazla ne kadar olabilir?
+  - Beklenen: Yenilik Destek Programı Uygulama Esasları Yönergesine göre destek süresi, süre uzatımı ile beraber en fazla 60 ay olmak üzere çağrı duyurusunda belirtilir; ticarileşme izleme süreci buna dahil değildir.
+  - Beklenen sayılar: 60
+  - Kanıt: "Destek süresi, bu Yönergenin 54 üncü maddesine göre verilebilecek süre uzatımı ile beraber en fazla 60 ay olmak üzere çağrı duyurusunda belirtilir." (Yenilik Destek Programı Uygulama Esasları Yönergesi [mevzuat-118], Madde 18, s. 12)
+  - Yazar notu: Çağrıya özel üst sınırlar (ör. 1707/1711 2026 çağrılarında 24 ay) daha düşüktür.
+  - İnceleme notu: ___
+- [ ] **q110** (tek_belge/zor) Yenilik Destek Programı projesinde bursiyerim; aynı anda TÜBİTAK'ın başka bir programından da burs alabilir miyim?
+  - Beklenen: Genel kural olarak hayır: bursiyer aynı anda TÜBİTAK'ın farklı iki programından burs alamaz; doktora öğrencileri ve hiçbir kurumda çalışmayan doktora sonrası araştırmacılar için Yönergede istisna vardır.
+  - Kanıt: "Bursiyer aynı anda TÜBİTAK'ın farklı iki programından burs alamaz." (Yenilik Destek Programı Uygulama Esasları Yönergesi [mevzuat-118], Madde 21, s. 15–17)
+  - İnceleme notu: ___
+
+## Parti 6 — cok_belge (q002 … q052)
+
+- [ ] **q002** (cok_belge/kolay) Büyük ölçekli bir firmayız; 1501 programından hangi destek oranıyla yararlanabiliriz?
+  - Beklenen: 1501 Uygulama Esaslarına göre destek oranı büyük kuruluşlar için en fazla %60, KOBİ'ler için en fazla %75'tir. Ancak güncel 2026-2 çağrısına göre 1501'e yalnız KOBİ niteliğindeki sermaye şirketleri başvurabilir; büyük ölçekli firma bu çağrıya başvuramaz.
+  - Beklenen sayılar: 60, 75
+  - Kanıt: "Destek oranı büyük kuruluşlar için en fazla % 60 ve KOBİ ölçeğindeki kuruluşlar içinse en fazla %75 olarak uygulanır." (TÜBİTAK 1501- Sanayi Araştırma Teknoloji Geliştirme ve Yenilik Projeleri Destekleme Programı Uygulama Esasları [mevzuat-030], Madde 7, s. 6)
+  - Kanıt: "1501 ve 1507 destek programlarına sadece KOBİ niteliğinde olan sermaye şirketleri başvuru yapabilmektedir." (1501-Sanayi Ar-Ge Destek Programı 2026 yılı 2. Çağrı Dokümanı [dosya-10f733d7f6a2], Bölüm: PROGRAMI BAŞVURU SÜRECİ KISA BİLGİ NOTU, s. 7)
+  - İnceleme notu: ___
+- [ ] **q044** (cok_belge/orta) 1501 Uygulama Esaslarında proje süresi üst sınırı nedir ve 2026 yılı 2. çağrısına kaç aylık proje ile başvurulabilir?
+  - Beklenen: Esaslara göre destek süresi en fazla 36 aydır; 2026-2 çağrısına ise en fazla 24 ay süreli proje ile başvurulabilir (gerekirse izleme sırasında 36 ayı geçmemek üzere en fazla %50 uzatılabilir).
+  - Beklenen sayılar: 36, 24
+  - Kanıt: "Destek süresi proje bazında en fazla otuz altı aydır." (TÜBİTAK 1501- Sanayi Araştırma Teknoloji Geliştirme ve Yenilik Projeleri Destekleme Programı Uygulama Esasları [mevzuat-030], Madde 6, s. 6)
+  - Kanıt: "Çağrıya en fazla 24 ay süreli proje başvurusu yapılabilir." (1501-Sanayi Ar-Ge Destek Programı 2026 yılı 2. Çağrı Dokümanı [dosya-10f733d7f6a2], Bölüm: 7. Çağrıya Özel Şartlar, s. 3–4)
+  - İnceleme notu: ___
+- [ ] **q045** (cok_belge/orta) 1501 ve 1507 programları arasında azami proje süresi açısından fark nedir?
+  - Beklenen: 1501'de destek süresi en fazla 36 ay, 1507'de en fazla 18 aydır; yani 1501 projeleri 18 ay daha uzun olabilir.
+  - Beklenen sayılar: 36, 18
+  - Kanıt: "Destek süresi proje bazında en fazla otuz altı aydır." (TÜBİTAK 1501- Sanayi Araştırma Teknoloji Geliştirme ve Yenilik Projeleri Destekleme Programı Uygulama Esasları [mevzuat-030], Madde 6, s. 6)
+  - Kanıt: "Destek süresi proje bazında en fazla on sekiz (18) aydır." (TÜBİTAK 1507- KOBİ Ar-Ge Başlangıç Destek Programı Uygulama Esasları [mevzuat-031], Madde 6, s. 5)
+  - İnceleme notu: ___
+- [ ] **q046** (cok_belge/zor) 1501 projesinde çalışan Ar-Ge personelim 5746 sayılı Kanundaki gelir vergisi stopajı teşvikinden yararlanıyor. Bu teşvik tutarını TÜBİTAK'a personel maliyeti olarak beyan edebilir miyim?
+  - Beklenen: Hayır. 5746 kapsamında TÜBİTAK tarafından yürütülen projelerde çalışan Ar-Ge personeli stopaj teşvikinden yararlanabilir; ancak 1501 Esaslarına göre bu teşvik, istisna ve destekler proje personel maliyetine dahil edilmez, TÜBİTAK'a beyan edilmez ve desteklenmez.
+  - Kanıt: "ya da TÜBİTAK tarafından yürütülen Ar-Ge ve yenilik projelerinde" (Araştırma, Geliştirme ve Tasarım Faaliyetlerinin Desteklenmesi Hakkında Kanun [kanun-5746], Madde 3)
+  - Kanıt: "proje personel maliyetine dahil edilmez, TÜBİTAK’a beyan edilmez ve desteklenmez" (TÜBİTAK 1501- Sanayi Araştırma Teknoloji Geliştirme ve Yenilik Projeleri Destekleme Programı Uygulama Esasları [mevzuat-030], Madde 11, s. 9–11)
+  - İnceleme notu: ___
+- [ ] **q047** (cok_belge/orta) Teknoparktaki yazılım kazançlarına tanınan vergi istisnası ile 5746 sayılı Kanun kapsamındaki destekler hangi tarihe kadar geçerli?
+  - Beklenen: Her ikisi de 31/12/2028'e kadar geçerlidir: 4691 sayılı Kanun'daki kazanç istisnası 31/12/2028'e kadar, 5746 sayılı Kanun da 31/12/2028'e kadar uygulanır.
+  - Beklenen sayılar: 31/12/2028
+  - Kanıt: "elde ettikleri kazançları 31/12/2028 tarihine kadar gelir ve kurumlar vergisinden müstesnadır" (Teknoloji Geliştirme Bölgeleri Kanunu [kanun-4691], Madde Geçici 2)
+  - Kanıt: "Bu Kanun 31/12/2028 tarihine kadar uygulanmak üzere" (Araştırma, Geliştirme ve Tasarım Faaliyetlerinin Desteklenmesi Hakkında Kanun [kanun-5746], Madde 6)
+  - İnceleme notu: ___
+- [ ] **q048** (cok_belge/zor) 1501 projemizde destek kapsamına itiraz etmek istiyoruz; ayrıca başka bir başvurumuz reddedildi. Bu iki itiraz için süreler nedir?
+  - Beklenen: 1501 Esaslarına göre destek kapsamına itiraz, destek karar yazısı tarihinden itibaren en fazla 2 ay içinde yapılır. Başvuru değerlendirme sonucuna (ret) itiraz ise İtiraz Yönetmeliğine göre tebliğden itibaren 15 gün içinde TÜBİMER'den yapılır.
+  - Beklenen sayılar: 2, 15
+  - Kanıt: "Destek kapsamına itirazlar, proje destek karar yazısı tarihinden itibaren en fazla iki (2) ay içinde yapılabilir." (TÜBİTAK 1501- Sanayi Araştırma Teknoloji Geliştirme ve Yenilik Projeleri Destekleme Programı Uygulama Esasları [mevzuat-030], Madde 26, s. 20–21)
+  - Kanıt: "itiraza konu işlemin ilgiliye tebliğinden (yazılı veya elektronik olarak gerçekleştirilen bildirimden) itibaren 15 gündür" (TÜBİTAK Tarafından Yürütülen Programların Başvuru Değerlendirme Süreçlerine Yapılacak İtirazlara İlişkin Yönetmelik [mevzuat-116], Madde 11, s. 5)
+  - İnceleme notu: ___
+- [ ] **q049** (cok_belge/orta) 1507 Uygulama Esaslarında azami proje bütçesi rakam olarak yazıyor mu? Güncel bütçe sınırı nedir?
+  - Beklenen: Esaslar azami bütçeyi rakam vermeden Yönetim Kurulunun belirleyeceğini söyler; program sayfasına göre proje bütçesi en fazla 3.500.000 TL'dir.
+  - Beklenen sayılar: 3.500.000
+  - Kanıt: "Bu programa başvuran projelerin azami bütçesi Yönetim Kurulu tarafından belirlenir." (TÜBİTAK 1507- KOBİ Ar-Ge Başlangıç Destek Programı Uygulama Esasları [mevzuat-031], Madde 7, s. 6)
+  - Kanıt: "Proje bütçesi en fazla 3.500.000 TL’dir." (1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı [sayfa-sanayi__ulusal-destek-programlari__1507-tubitak-kobi-ar-ge-baslangic-destek-programi], Bölüm: Önemli Hususlar)
+  - İnceleme notu: ___
+- [ ] **q050** (cok_belge/orta) Büyük ölçekli bir şirket 1505 projesinde müşteri kuruluş olabilir mi; olursa bütçenin ne kadarını TÜBİTAK karşılar?
+  - Beklenen: Evet, şirket ölçeğine kısıtlama yoktur (SSS). Müşteri büyük ölçekli ise bütçenin %60'ını TÜBİTAK, %40'ını müşteri kuruluş karşılar (Uygulama Esasları).
+  - Beklenen sayılar: 60, 40
+  - Kanıt: "Büyük ölçekli şirketler müşteri kuruluş olabilir mi? Evet." (Sıkça Sorulan Sorular [dosya-358f2addd2d5], Bölüm: (TEYDEB), s. 1–6)
+  - Kanıt: "destek kapsamına alınan proje bütçesinin %60'ı TÜBİTAK, kalan %40'ı müşteri kuruluş tarafından karşılanır" (TÜBİTAK Üniversite-Sanayi İşbirliği Destek Programı Uygulama Esasları [mevzuat-070], Madde 6, s. 7)
+  - İnceleme notu: ___
+- [ ] **q051** (cok_belge/orta) 1001 projesinde bütçe üst limiti nedir ve buna ek olarak kurum hissesi ne kadar verilir?
+  - Beklenen: 1001'de 2026 1. dönem itibarıyla destek üst limiti (burs dahil, PTİ ve kurum hissesi hariç) 3.000.000 TL'dir; kurum hissesi ayrıca proje bütçesinin %10'una kadar hesaplanarak eklenir.
+  - Beklenen sayılar: 3.000.000, 10
+  - Kanıt: "yıllık bütçe sınırlaması olmaksızın 3.000.000 TL’dir" (1001 - Bilimsel ve Teknolojik Araştırma Projelerini Destekleme Programı [sayfa-akademik__ulusal-destek-programlari__1001-bilimsel-ve-teknolojik-arastirma-projelerini-destekleme-programi], Bölüm: 1001 - Bilimsel ve Teknolojik Araştırma Projelerini Destekleme Programı)
+  - Kanıt: "Kurum hissesi ödeneği, proje bütçesinin %10’una kadar hesaplanır." (Araştırma Projelerinde Uygulanacak İdari ve Mali Esaslar [mevzuat-048], Madde 10, s. 9)
+  - İnceleme notu: ___
+- [ ] **q052** (cok_belge/zor) Patent desteği için bireysel olarak yılda kaç başvuruda destek alabilirim ve ulusal patent başvuruları hâlâ destekleniyor mu?
+  - Beklenen: Gerçek kişiler yılda en fazla 5 patent başvurusu için destek alabilir (Uygulama Esasları). Ancak program sayfasına göre 03.01.2019 tarihli YK kararıyla ulusal patent başvurularına verilen destek ve ödüller başvuruya kapalıdır; PCT kapsamındaki uluslararası başvurular desteklenir.
+  - Beklenen sayılar: 5
+  - Kanıt: "Gerçek kişiler bir takvim yılı içerisinde en fazla 5 (beş) patent başvurusu için" (TÜBİTAK Patent Destek Programı Uygulama Esasları [mevzuat-068], Madde 9, s. 6)
+  - Kanıt: "ulusal patent başvurularına verilen destek ve ödüller başvuruya kapalıdır" (1602 - TÜBİTAK Patent Destek Programı [sayfa-sanayi__ulusal-destek-programlari__1602-tubitak-patent-destek-programi], Bölüm: Destek Kapsamı)
+  - İnceleme notu: ___
+
+## Parti 7 — cok_belge (q053 … q058)
+
+- [ ] **q053** (cok_belge/orta) 1004 Mükemmeliyet Merkezi programında KOBİ ortağa uygulanacak destek oranı ve araştırma programının azami süresi nedir?
+  - Beklenen: KOBİ'lerin bütçesinin %75'ine kadar destek verilir (büyük ölçekli %60, üniversite/kamu %100); süre en fazla 48 aydır.
+  - Beklenen sayılar: 75, 48
+  - Kanıt: "KOBİ'lerin bütçesinin %75'ine kadar" (1004 - Mükemmeliyet Merkezi Destek Programı Usul ve Esasları [mevzuat-100], Madde 10, s. 7–9)
+  - Kanıt: "Süre en fazla 48 ay olabilir." (1004 - Mükemmeliyet Merkezi Destek Programı [sayfa-akademik__ulusal-destek-programlari__1004-mukemmeliyet-merkezi-destek-programi], Bölüm: 1004 - Mükemmeliyet Merkezi Destek Programı)
+  - İnceleme notu: ___
+- [ ] **q054** (cok_belge/zor) 1501 ve 1507 2026-2 çağrılarına aynı anda başvurmak istiyoruz. Toplam kaç proje önerisi verebiliriz ve 1507'de destek oranı ne olur?
+  - Beklenen: İki çağrı için kuruluş başına toplam en fazla 2 proje önerisi verilebilir (ör. 1+1 ya da 2+0). 1507'de destek oranı her dönem için en fazla %75'tir.
+  - Beklenen sayılar: 2, 75
+  - Kanıt: "Bu çağrı ile eş zamanlı olarak açılmış olan 1501-Sanayi Ar-Ge Destek Programı 2026 yılı 2. Çağrısına yapılan başvurular da bu limitin uygulanacağı başvuru sayısına dâhildir." (1507-KOBİ Ar-Ge Başlangıç Destek Programı 2026 yılı 2. Çağrı Dokümanı [dosya-3c4c2d391f25], Bölüm: 7. Çağrıya Özel Şartlar, s. 3–4)
+  - Kanıt: "Bu programda uygulanacak destek oranı her dönem için en fazla %75 olarak belirlenmiştir." (TÜBİTAK 1507- KOBİ Ar-Ge Başlangıç Destek Programı Uygulama Esasları [mevzuat-031], Madde 7, s. 6)
+  - İnceleme notu: ___
+- [ ] **q055** (cok_belge/zor) ARDEB projesinde süre uzatımı ne kadar yapılabilir, 1501 projesinde durum farklı mı?
+  - Beklenen: ARDEB İdari ve Mali Esaslarına göre proje süresi toplam sürenin en fazla %50'sine kadar uzatılabilir. 1501'de de destek süresi en fazla %50 oranında ve bir defaya mahsus artırılabilir, ancak toplam süre 36 ayı geçemez.
+  - Beklenen sayılar: 50, 36
+  - Kanıt: "Proje süresi, toplam sürenin en fazla yüzde ellisine kadar uzatılabilir." (Araştırma Projelerinde Uygulanacak İdari ve Mali Esaslar [mevzuat-048], Madde 9, s. 8)
+  - Kanıt: "proje destek süresi otuzaltı ayı geçmemek üzere ve proje destek süresinin en fazla yüzde ellisi (%50) oranında bir defaya mahsus olmak üzere" (TÜBİTAK 1501- Sanayi Araştırma Teknoloji Geliştirme ve Yenilik Projeleri Destekleme Programı Uygulama Esasları [mevzuat-030], Madde 39, s. 29)
+  - İnceleme notu: ___
+- [ ] **q056** (cok_belge/orta) 1002-A Hızlı Destek ile 1001 arasında proje süresi ve bütçe bakımından fark nedir?
+  - Beklenen: 1002-A'da proje süresi en fazla 12 ay ve destek üst limiti yıllık 150.000 TL'dir; 1001'de süre en fazla 36 ay, üst limit 3.000.000 TL'dir.
+  - Beklenen sayılar: 12, 36, 150.000, 3.000.000
+  - Kanıt: "Proje süresi en fazla 12 ay olabilir." (1002 - A Hızlı Destek Modülü [sayfa-akademik__ulusal-destek-programlari__1002-hizli-destek-modulu], Bölüm: 1002 - A Hızlı Destek Modülü)
+  - Kanıt: "Proje süresi en fazla 36 aydır." (1001 - Bilimsel ve Teknolojik Araştırma Projelerini Destekleme Programı [sayfa-akademik__ulusal-destek-programlari__1001-bilimsel-ve-teknolojik-arastirma-projelerini-destekleme-programi], Bölüm: 1001 - Bilimsel ve Teknolojik Araştırma Projelerini Destekleme Programı)
+  - Kanıt: "yıllık bütçe sınırlaması olmaksızın 3.000.000 TL’dir" (1001 - Bilimsel ve Teknolojik Araştırma Projelerini Destekleme Programı [sayfa-akademik__ulusal-destek-programlari__1001-bilimsel-ve-teknolojik-arastirma-projelerini-destekleme-programi], Bölüm: 1001 - Bilimsel ve Teknolojik Araştırma Projelerini Destekleme Programı)
+  - İnceleme notu: ___
+- [ ] **q057** (cok_belge/zor) 4004 projesinde yer alan bir öğrenci aynı çağrı döneminde 4005 projesine de katılımcı olabilir mi? 4005'te destek üst limiti nedir?
+  - Beklenen: Hayır; katılımcılar aynı çağrı döneminde herhangi bir 4004, 4005 veya 4008 projesinde katılımcı olarak yer almamış kişilerden oluşturulur. 4005'te destek üst limiti PTİ hariç 425.000 TL'dir.
+  - Beklenen sayılar: 425.000
+  - Kanıt: "Projenin katılımcıları aynı çağrı döneminde herhangi bir 4004, 4005 veya 4008 projesinde katılımcı olarak yer almamış kişilerden oluşturulur." (4004 Çağrı Metni (19. Çağrı) [dosya-6e23ae041c05], Bölüm: 1. Çağrı Amacı ve Hedef Kitlesi, s. 3)
+  - Kanıt: "Destek üst limiti, PTİ hariç 425.000 TL (KDV dâhil)’dir." (Çağrı Metni 2025 Yılı (13. Çağrı) [dosya-3b4579909814], Bölüm: C. DESTEK MİKTARI VE KAPSAMI, s. 6–9)
+  - İnceleme notu: ___
+- [ ] **q058** (cok_belge/zor) 2211 doktora bursiyeriyim; 1001 projesinde doktora bursiyeri olursam aylık burs ne kadar olur ve 2211 bursum en fazla kaç ay sürer?
+  - Beklenen: 1001 sayfasına göre ücret karşılığı çalışmayan doktora öğrencisi bursiyere aylık 32.500 TL ödenir (1 Ocak 2026 itibarıyla). 2211 bursu yüksek lisans sonrası doktora için en çok 48 ay, bütünleşik doktora için 60 aydır.
+  - Beklenen sayılar: 32.500, 48, 60
+  - Kanıt: "Doktora Öğrencisi | 32.500.-TL/ay | 8.500.-TL/ay" (1001 - Bilimsel ve Teknolojik Araştırma Projelerini Destekleme Programı [sayfa-akademik__ulusal-destek-programlari__1001-bilimsel-ve-teknolojik-arastirma-projelerini-destekleme-programi], Bölüm: 1001 - Bilimsel ve Teknolojik Araştırma Projelerini Destekleme Programı)
+  - Kanıt: "yüksek lisans sonrası doktora programı için en çok 48 ay, bütünleşik doktora programı için 60 aydır" (TÜBİTAK Bilim İnsanı Destek Programları Başkanlığı Burs ve Destek Programlarının Yürütülmesine İlişkin Usul ve Esaslar [mevzuat-040], Madde 17, s. 8–9)
+  - Yazar notu: Aynı anda iki burstan yararlanma kuralları corpus'ta açık değil; beklenen cevap yalnız iki olguyu birleştirir.
+  - İnceleme notu: ___
+
+## Parti 8 — cevapsiz (q079 … q089)
+
+- [ ] **q079** (cevapsiz/orta) 1507 programında 2027 yılı için belirlenen proje bütçesi üst limiti kaç TL?
+  - Beklenen: bilgi bulunamadı
+  - Yazar notu: Corpus'ta 2027 limiti yok; sistem güncel limiti (3.500.000 TL) 2027 için geçerliymiş gibi sunmamalı.
+  - İnceleme notu: ___
+- [ ] **q080** (cevapsiz/kolay) 1501 programının 2027 yılı 1. çağrısı hangi tarihte açılacak?
+  - Beklenen: bilgi bulunamadı
+  - İnceleme notu: ___
+- [ ] **q082** (cevapsiz/zor) Ar-Ge Merkezleri Uygulama ve Denetim Yönetmeliği'ne göre Ar-Ge merkezi belgesi başvurusu kaç gün içinde sonuçlandırılır?
+  - Beklenen: bilgi bulunamadı
+  - Yazar notu: eksik veri: Ar-Ge Merkezleri Uygulama ve Denetim Yönetmeliği corpus'ta yok.
+  - İnceleme notu: ___
+- [ ] **q083** (cevapsiz/kolay) 2211 Yurt İçi Doktora Bursu kapsamında ayda kaç TL burs ödeniyor?
+  - Beklenen: bilgi bulunamadı
+  - Yazar notu: Corpus'ta 2211 yalnız süre olarak geçiyor (mevzuat-040); aylık tutar yok.
+  - İnceleme notu: ___
+- [ ] **q084** (cevapsiz/orta) 2209-A Üniversite Öğrencileri Araştırma Projeleri programında öğrenci projesine en fazla ne kadar bütçe veriliyor?
+  - Beklenen: bilgi bulunamadı
+  - Yazar notu: 2209 corpus'ta yalnız program listesinde adıyla geçiyor.
+  - İnceleme notu: ___
+- [ ] **q085** (cevapsiz/orta) 121M345 numaralı 1001 projemin ara rapor değerlendirmesi ne durumda?
+  - Beklenen: bilgi bulunamadı
+  - Yazar notu: Kişiye/projeye özel durum bilgisi; corpus'ta olamaz.
+  - İnceleme notu: ___
+- [ ] **q086** (cevapsiz/orta) 1719 Eureka Network çağrılarında proje bütçesi en fazla kaç avro olabilir?
+  - Beklenen: bilgi bulunamadı
+  - Yazar notu: Program sayfası bütçe/süre için çağrı duyurusuna yönlendiriyor; 1719 çağrı metni corpus'ta yok.
+  - İnceleme notu: ___
+- [ ] **q087** (cevapsiz/orta) 2224-A ile Japonya'daki bir konferansa katılırsam destek üst limiti kaç TL olur?
+  - Beklenen: bilgi bulunamadı
+  - Yazar notu: Ülkelere göre limitler bağlantılı ayrı dosyada; corpus'ta yok.
+  - İnceleme notu: ___
+- [ ] **q088** (cevapsiz/orta) 2026 yılında 1001 programına yapılan başvuruların yüzde kaçı desteklendi?
+  - Beklenen: bilgi bulunamadı
+  - Yazar notu: İstatistik sayfası boş; başarı oranı corpus'ta yok.
+  - İnceleme notu: ___
+- [ ] **q089** (cevapsiz/kolay) 1832 Sanayide Yeşil Dönüşüm çağrısının 2027-1 dönemi ne zaman açılacak?
+  - Beklenen: bilgi bulunamadı
+  - İnceleme notu: ___
+
+## Parti 9 — cevapsiz (q090 … q104)
+
+- [ ] **q090** (cevapsiz/orta) Ufuk Avrupa Marie Skłodowska-Curie doktora sonrası bursunda araştırmacıya aylık kaç avro ödeniyor?
+  - Beklenen: bilgi bulunamadı
+  - Yazar notu: Ufuk Avrupa sayfası yalnız kısa yönlendirme içeriyor.
+  - İnceleme notu: ___
+- [ ] **q091** (cevapsiz/orta) TÜBİTAK 1001 projelerinde 2026 yılı için proje yürütücüsüne ödenecek aylık PTİ üst sınırı kaç TL?
+  - Beklenen: bilgi bulunamadı
+  - Yazar notu: İdari ve Mali Esaslar PTİ üst sınırının her yıl YK kararıyla belirlendiğini söylüyor; tutar corpus'ta yok. İnceleyici doğrulamalı.
+  - İnceleme notu: ___
+- [ ] **q092** (cevapsiz/orta) 1515 Öncül Ar-Ge Laboratuvarları programında bugüne kadar kaç laboratuvar desteklendi?
+  - Beklenen: bilgi bulunamadı
+  - İnceleme notu: ___
+- [ ] **q093** (cevapsiz/zor) TÜBİTAK'ın 2027 yılı Ar-Ge destek bütçesi toplam kaç milyar TL olarak planlandı?
+  - Beklenen: bilgi bulunamadı
+  - İnceleme notu: ___
+- [ ] **q104** (cevapsiz/orta) Teknoparkta ofis kiralarken metrekare başına aylık kira bedeli için yasal bir üst sınır var mı, varsa ne kadar?
+  - Beklenen: bilgi bulunamadı
+  - Yazar notu: Review 1: q081 yerine. Corpus'ta (4691 dahil) teknopark kira bedeli/üst sınırı geçmiyor (metin araması).
+  - İnceleme notu: ___
+
+## Parti 10 — kapsam_disi (q094 … q103)
+
+- [ ] **q094** (kapsam_disi/kolay) Yarın Ankara'da hava yağmurlu olacak mı?
+  - Beklenen: kapsam dışı
+  - İnceleme notu: ___
+- [ ] **q095** (kapsam_disi/kolay) Dün akşamki Galatasaray - Fenerbahçe maçı kaç kaç bitti?
+  - Beklenen: kapsam dışı
+  - İnceleme notu: ___
+- [ ] **q096** (kapsam_disi/kolay) Fırında mercimek köftesi nasıl yapılır, tarifini verir misin?
+  - Beklenen: kapsam dışı
+  - İnceleme notu: ___
+- [ ] **q097** (kapsam_disi/orta) Python'da bir listeyi tersine çeviren bir fonksiyon yazar mısın?
+  - Beklenen: kapsam dışı
+  - İnceleme notu: ___
+- [ ] **q098** (kapsam_disi/orta) Baş ağrım üç gündür geçmiyor, hangi ilacı almalıyım?
+  - Beklenen: kapsam dışı
+  - İnceleme notu: ___
+- [ ] **q099** (kapsam_disi/zor) İhracat yaptığım için KDV iadesini nasıl alırım?
+  - Beklenen: kapsam dışı
+  - İnceleme notu: ___
+- [ ] **q100** (kapsam_disi/orta) İstanbul'dan Berlin'e en ucuz uçak bileti hangi havayolunda?
+  - Beklenen: kapsam dışı
+  - İnceleme notu: ___
+- [ ] **q101** (kapsam_disi/orta) Bana sonbahar üzerine kısa bir şiir yazar mısın?
+  - Beklenen: kapsam dışı
+  - İnceleme notu: ___
+- [ ] **q102** (kapsam_disi/zor) Elimdeki birikimi borsada hangi hisselere yatırmalıyım?
+  - Beklenen: kapsam dışı
+  - İnceleme notu: ___
+- [ ] **q103** (kapsam_disi/kolay) Bu cümleyi İngilizceye çevir: Yarın toplantıya geç kalacağım.
+  - Beklenen: kapsam dışı
+  - İnceleme notu: ___
+
+## Parti 11 — surum (q059 … q068)
+
+- [ ] **q059** (surum/orta) 1707 Sipariş Ar-Ge çağrısında proje bütçesi üst sınırı ne kadar?
+  - Beklenen: En güncel 2026-3 çağrı dokümanına göre bütçe en fazla 10.000.000 TL'dir. (2024 tarihli üst limit tablosu 2022 çağrıları için 5.000.000 TL yazıyordu; güncel çağrı esas alınmalıdır.)
+  - Beklenen sayılar: 10.000.000
+  - Kanıt: "Başvurulan projelerin bütçesi en fazla 10.000.000 TL (on milyon Türk Lirası) olacaktır." (Sipariş Ar-ge 2026-3 Çağrı Dokümanı [dosya-b5665606654f], Bölüm: 6. Çağrı Kapsamı, s. 2–5)
+  - Yazar notu: Eski değer: dosya-6a5eda267423 (2024-03 üst limit tablosu, 2022 çağrıları: 5.000.000).
+  - İnceleme notu: ___
+- [ ] **q060** (surum/orta) 1711 Yapay Zekâ Ekosistem çağrısında proje bütçesi en fazla ne kadar olabilir?
+  - Beklenen: 2026 çağrı metnine göre genel gider, PTİ ve kurum hissesi hariç en fazla 10.000.000 TL'dir. (2024 tarihli üst limit tablosunda 5.000.000 TL yazıyordu.)
+  - Beklenen sayılar: 10.000.000
+  - Kanıt: "Genel Gider, Proje Teşvik İkramiyesi ve Kurum Hissesi hariç en fazla 10.000.000 TL (on milyon Türk Lirası) olacaktır" (1711 - Yapay Zekâ Ekosistem 2026 Çağrı Metni [dosya-60d1d7043d13], Bölüm: 6.3.2 Niyet beyan formu: Proje başvuru öncesinde, YZE ile yapılan görüşmeler, s. 6–10)
+  - Yazar notu: Eski değer: dosya-6a5eda267423 (5.000.000 TL).
+  - İnceleme notu: ___
+- [ ] **q061** (surum/orta) 5746 sayılı Ar-Ge Kanunu ne zamana kadar yürürlükte kalacak? Daha önce 2023'te bitmiyor muydu?
+  - Beklenen: Güncel metne göre Kanun 31/12/2028 tarihine kadar uygulanır (2021 değişikliğinden önce 31/12/2023 idi).
+  - Beklenen sayılar: 31/12/2028
+  - Kanıt: "Bu Kanun 31/12/2028 tarihine kadar uygulanmak üzere" (Araştırma, Geliştirme ve Tasarım Faaliyetlerinin Desteklenmesi Hakkında Kanun [kanun-5746], Madde 6)
+  - Yazar notu: Önceki tarih (31/12/2023) değişiklik notunda; ayrıştırıcı düzeltmesinden sonra notun metinden çıkması beklenir.
+  - İnceleme notu: ___
+- [ ] **q062** (surum/zor) ARDEB İdari ve Mali Esaslarında kurum hissesine ilişkin son değişiklikler hangi projelerden itibaren uygulanıyor?
+  - Beklenen: Esasların 10. maddesine göre kurum hissesinin belirlenmesi ve harcanmasına ilişkin değişiklikler 01/01/2026 tarihinden itibaren desteklenmesine karar verilen projelerde uygulanır.
+  - Beklenen sayılar: 01/01/2026
+  - Kanıt: "01/01/2026 tarihinden itibaren desteklenmesine karar verilen projelerde uygulanır" (Araştırma Projelerinde Uygulanacak İdari ve Mali Esaslar [mevzuat-048], Madde Geçici 4, s. 10)
+  - İnceleme notu: ___
+- [ ] **q063** (surum/kolay) 1001 programında güncel proje bütçe üst limiti ne kadar?
+  - Beklenen: 2026 yılı 1. dönemi itibarıyla destek üst limiti (burs dahil, PTİ ve kurum hissesi hariç) yıllık bütçe sınırlaması olmaksızın 3.000.000 TL'dir (özel çağrılarda çağrı metnindeki daha düşük limitler geçerlidir).
+  - Beklenen sayılar: 3.000.000
+  - Kanıt: "2026 yılı 1. dönemi itibariyle proje destek üst limiti (burs dahil, proje teşvik ikramiyesi (PTİ) ve kurum hissesi hariç) yıllık bütçe sınırlaması olmaksızın 3.000.000 TL’dir" (1001 - Bilimsel ve Teknolojik Araştırma Projelerini Destekleme Programı [sayfa-akademik__ulusal-destek-programlari__1001-bilimsel-ve-teknolojik-arastirma-projelerini-destekleme-programi], Bölüm: 1001 - Bilimsel ve Teknolojik Araştırma Projelerini Destekleme Programı)
+  - Yazar notu: Başvuru kılavuzu (2024-04, dosya-88eb01895fb2) yalnız 'programın destek üst limiti' der; güncel rakam program sayfasındadır.
+  - İnceleme notu: ___
+- [ ] **q064** (surum/orta) ARDEB projelerinde doktora öğrencisi bursiyere güncel olarak ayda ne kadar burs ödeniyor?
+  - Beklenen: 1 Ocak 2026'dan itibaren geçerli üst sınırlara göre ücret karşılığı çalışmayan doktora öğrencisine 32.500 TL/ay, ücretli çalışan doktora öğrencisine 8.500 TL/ay ödenir.
+  - Beklenen sayılar: 32.500, 8.500
+  - Kanıt: "Burslar ile ilgili üst sınırlar, 1 Ocak 2026 tarihinden itibaren geçerli" (1001 - Bilimsel ve Teknolojik Araştırma Projelerini Destekleme Programı [sayfa-akademik__ulusal-destek-programlari__1001-bilimsel-ve-teknolojik-arastirma-projelerini-destekleme-programi], Bölüm: 1001 - Bilimsel ve Teknolojik Araştırma Projelerini Destekleme Programı)
+  - Kanıt: "Doktora Öğrencisi | 32.500.-TL/ay | 8.500.-TL/ay" (1001 - Bilimsel ve Teknolojik Araştırma Projelerini Destekleme Programı [sayfa-akademik__ulusal-destek-programlari__1001-bilimsel-ve-teknolojik-arastirma-projelerini-destekleme-programi], Bölüm: 1001 - Bilimsel ve Teknolojik Araştırma Projelerini Destekleme Programı)
+  - İnceleme notu: ___
+- [ ] **q065** (surum/orta) 4006 bilim fuarı destek tutarları sabit mi, güncellenecek mi?
+  - Beklenen: 13. dönem çağrısındaki tutar hazırlık desteği 7.000 TL + alt proje başına 750 TL'dir; bu tutar enflasyon verileri dikkate alınarak güncellenecek ve Ekim ayında yeniden duyurulacaktır.
+  - Beklenen sayılar: 7.000, 750
+  - Kanıt: "Belirtilen destek miktarı, enflasyon verileri dikkate alınarak güncellenecek ve Ekim ayı içinde tekrar duyurulacaktır." (4006-A Çağrı Metni (13. Dönem) [dosya-0f15ecfa44a1], Bölüm: C. DESTEK MİKTARI VE KAPSAMI, s. 9–10)
+  - Yazar notu: Güncellenmiş tutar corpus'ta yok; sistem mevcut tutarı verip güncelleneceğini belirtmeli.
+  - İnceleme notu: ___
+- [ ] **q066** (surum/zor) BiGG kapsamında girişim şirketine sağlanan destek miktarı ne kadar? Eski tabloda 900 bin TL görmüştüm.
+  - Beklenen: En güncel 1812 BiGG Yatırım 2026-2 çağrısına göre TÜBİTAK BİGG Fonu kuruluşun %3 payı karşılığında 1.350.000 TL yatırım yapar. 900.000 TL, önceki çağrı dönemlerinde (2025 SSS, 2026-1 dönemi) aynı %3 pay için uygulanan eski tutardır.
+  - Beklenen sayılar: 1.350.000
+  - Kanıt: "kuruluşun %3 payı karşılığında TÜBİTAK BİGG Fonu kuruluşa 1.350.000 TL yatırım yapacaktır" (BiGG Yatırım Programı 2026-2 Çağrı Metni [dosya-4a616f06b928], Bölüm: 5.5 TÜBİTAK BİGG Fonu ve Yatırım Süreci, s. 7–8)
+  - Yazar notu: Eski değer (900.000 TL, %3 pay): dosya-896a91e64c3b (BiGG Yatırım SSS, 2025-08) ve dosya-5421b87f8f3c (1601 2025-1 çağrısı). Review 1'de düzeltildi (önce yanlışlıkla 1512 tablo değeri sanılmıştı).
+  - İnceleme notu: ___
+- [ ] **q067** (surum/orta) 2224-A çağrı duyurusunun son halinde neler güncellendi?
+  - Beklenen: Güncel duyuruda başvuru koşulları (4.1.6 ve 4.1.10.4) ve yükümlülükler (8.2) güncellenmiştir.
+  - Beklenen sayılar: 4.1.6, 8.2
+  - Kanıt: "Başvuru koşulları güncellenmiştir. (Lütfen bakınız 4.1.6. )" (2224-A_Programi_Cagri_Duyurusu_2224_a.pdf [dosya-b82f05be2ea3], Bölüm: DESTEKLEME PROGRAMI, s. 2)
+  - Kanıt: "Yükümlülükler güncellenmiştir. (Lütfen bakınız 8.2.)" (2224-A_Programi_Cagri_Duyurusu_2224_a.pdf [dosya-b82f05be2ea3], Bölüm: DESTEKLEME PROGRAMI, s. 2)
+  - İnceleme notu: ___
+- [ ] **q068** (surum/orta) 1501 2026 yılı 2. çağrısının son başvuru tarihi ne?
+  - Beklenen: 2026-2 çağrısında kuruluş bazlı ön kayıt son tarihi 22.10.2026, çağrı kapanış tarihi 26.10.2026 (saat 23:59)'dur.
+  - Beklenen sayılar: 26.10.2026
+  - Kanıt: "Çağrı Kapanış Tarihi3 26.10.2026 (Saat 23:59)" (1501-Sanayi Ar-Ge Destek Programı 2026 yılı 2. Çağrı Dokümanı [dosya-10f733d7f6a2], Bölüm: 6. Çağrı Takvimi, s. 3)
+  - Yazar notu: Çağrı tarihleri her dönem değişir; en güncel çağrı dokümanı esas alınır.
+  - İnceleme notu: ___
+
+## Parti 12 — belirsiz (q069 … q111)
+
+- [ ] **q069** (belirsiz/kolay) TÜBİTAK projelerinde proje süresi en fazla kaç ay olabilir?
+  - Beklenen: Programa göre değişir: örneğin 1001'de en fazla 36 ay, 1005'te 18 ay, 1002-A Hızlı Destek'te 12 ay. Hangi programı kastettiğinizi belirtirseniz kesin süre verilebilir.
+  - Beklenen sayılar: 36, 18, 12
+  - Kanıt: "Proje süresi en fazla 36 aydır." (1001 - Bilimsel ve Teknolojik Araştırma Projelerini Destekleme Programı [sayfa-akademik__ulusal-destek-programlari__1001-bilimsel-ve-teknolojik-arastirma-projelerini-destekleme-programi], Bölüm: 1001 - Bilimsel ve Teknolojik Araştırma Projelerini Destekleme Programı)
+  - Kanıt: "projelerin süresi en fazla 18 aydır" (1005-Ulusal Yeni Fikirler ve Ürünler Araştırma Destek Programı Usul ve Esasları [mevzuat-086], Madde 11, s. 5)
+  - Kanıt: "Proje süresi en fazla 12 ay olabilir." (1002 - A Hızlı Destek Modülü [sayfa-akademik__ulusal-destek-programlari__1002-hizli-destek-modulu], Bölüm: 1002 - A Hızlı Destek Modülü)
+  - İnceleme notu: ___
+- [ ] **q070** (belirsiz/kolay) Destek oranı yüzde kaç?
+  - Beklenen: Programa göre değişir. 1501 Esaslarına göre büyük kuruluş %60 / KOBİ %75; güncel 1501 çağrısında yalnız KOBİ'ler başvurabilir ve oran ilk 5 projede %75, sonraki projelerde %60'tır. 1507'de destek oranı her dönem için en fazla %75'tir.
+  - Beklenen sayılar: 60, 75
+  - Kanıt: "Destek oranı büyük kuruluşlar için en fazla % 60 ve KOBİ ölçeğindeki kuruluşlar içinse en fazla %75 olarak uygulanır." (TÜBİTAK 1501- Sanayi Araştırma Teknoloji Geliştirme ve Yenilik Projeleri Destekleme Programı Uygulama Esasları [mevzuat-030], Madde 7, s. 6)
+  - Kanıt: "Destek oranı %60 ve hibe destek tutarı en fazla 20 Milyon TL" (1501-Sanayi Ar-Ge Destek Programı 2026 yılı 2. Çağrı Dokümanı [dosya-10f733d7f6a2], Bölüm: 8. Proje Bütçe Üst Limiti ve Destek Oranı, s. 4)
+  - Kanıt: "Bu programda uygulanacak destek oranı her dönem için en fazla %75 olarak belirlenmiştir." (TÜBİTAK 1507- KOBİ Ar-Ge Başlangıç Destek Programı Uygulama Esasları [mevzuat-031], Madde 7, s. 6)
+  - İnceleme notu: ___
+- [ ] **q071** (belirsiz/orta) Proje bütçesinin üst limiti ne kadar?
+  - Beklenen: Programa göre değişir: 1001'de 3.000.000 TL, 1005'te 1.200.000 TL, 1507'de 3.500.000 TL.
+  - Beklenen sayılar: 3.000.000, 1.200.000, 3.500.000
+  - Kanıt: "yıllık bütçe sınırlaması olmaksızın 3.000.000 TL’dir" (1001 - Bilimsel ve Teknolojik Araştırma Projelerini Destekleme Programı [sayfa-akademik__ulusal-destek-programlari__1001-bilimsel-ve-teknolojik-arastirma-projelerini-destekleme-programi], Bölüm: 1001 - Bilimsel ve Teknolojik Araştırma Projelerini Destekleme Programı)
+  - Kanıt: "kurum hissesi hariç) 1.200.000 TL’dir" (1005 - Ulusal Yeni Fikirler ve Ürünler Araştırma Destek Programı [sayfa-akademik__ulusal-destek-programlari__1005-ulusal-yeni-fikirler-ve-urunler-arastirma-destek-programi], Bölüm: 1005 - Ulusal Yeni Fikirler ve Ürünler Araştırma Destek Programı)
+  - Kanıt: "Proje bütçesi en fazla 3.500.000 TL’dir." (1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı [sayfa-sanayi__ulusal-destek-programlari__1507-tubitak-kobi-ar-ge-baslangic-destek-programi], Bölüm: Önemli Hususlar)
+  - İnceleme notu: ___
+- [ ] **q072** (belirsiz/orta) Bilim ve toplum projelerinde destek üst limiti ne kadar?
+  - Beklenen: Programa göre değişir: 4004 (ve 4005, 4008) için PTİ hariç 425.000 TL; 4007'de bilim şenlikleri için 450.000 TL, bilim festivalleri için 1.500.000 TL.
+  - Beklenen sayılar: 425.000, 450.000, 1.500.000
+  - Kanıt: "Destek üst limiti, Proje Teşvik İkramiyesi hariç 425.000 TL (KDV dâhil)’dir" (4004 Çağrı Metni (19. Çağrı) [dosya-6e23ae041c05], Bölüm: C. DESTEK MİKTARI VE KAPSAMI, s. 7–10)
+  - Kanıt: "Bilim Şenlikleri için 450.000 TL (KDV dâhil)" (4007 Çağrı Metni (2026) [dosya-4806f8f8bca1], Bölüm: C. DESTEK MİKTARI VE KAPSAMI, s. 10–13)
+  - İnceleme notu: ___
+- [ ] **q073** (belirsiz/orta) Başvurular ne zaman kapanıyor?
+  - Beklenen: Çağrıya göre değişir: 1501 2026-2 çağrısı 26.10.2026'da, 1507 2026-2 çağrısı 11.11.2026'da, 4006-A 13. dönem başvuruları 13 Kasım 2026'da kapanır.
+  - Beklenen sayılar: 26.10.2026, 11.11.2026
+  - Kanıt: "Çağrı Kapanış Tarihi3 26.10.2026 (Saat 23:59)" (1501-Sanayi Ar-Ge Destek Programı 2026 yılı 2. Çağrı Dokümanı [dosya-10f733d7f6a2], Bölüm: 6. Çağrı Takvimi, s. 3)
+  - Kanıt: "Çağrı Kapanış Tarihi3 11.11.2026 (Saat 23:59)" (1507-KOBİ Ar-Ge Başlangıç Destek Programı 2026 yılı 2. Çağrı Dokümanı [dosya-3c4c2d391f25], Bölüm: 6. Çağrı Takvimi, s. 3)
+  - Kanıt: "Başvuru Dönemi 21 Eylül - 13 Kasım 2026 (saat 17:30)" (4006-A Çağrı Metni (13. Dönem) [dosya-0f15ecfa44a1], Bölüm: 3. Çağrı Takvimi, s. 5)
+  - İnceleme notu: ___
+- [ ] **q074** (belirsiz/zor) Destek süresi uzatılabiliyor mu?
+  - Beklenen: Programa göre değişir: 1501'de 36 ayı geçmemek ve en fazla %50 oranında bir defaya mahsus uzatılabilir; 1707 Sipariş Ar-Ge çağrısında uzatılsa dahi 24 ay aşılamaz; ARDEB projelerinde süre toplam sürenin en fazla %50'si kadar uzatılabilir.
+  - Beklenen sayılar: 50, 24
+  - Kanıt: "proje destek süresi otuzaltı ayı geçmemek üzere ve proje destek süresinin en fazla yüzde ellisi (%50) oranında bir defaya mahsus olmak üzere" (TÜBİTAK 1501- Sanayi Araştırma Teknoloji Geliştirme ve Yenilik Projeleri Destekleme Programı Uygulama Esasları [mevzuat-030], Madde 39, s. 29)
+  - Kanıt: "Destek süresi uzatılsa dahi yirmi dört ay aşılmaz." (Sipariş Ar-ge 2026-3 Çağrı Dokümanı [dosya-b5665606654f], Bölüm: 6. Çağrı Kapsamı, s. 2–5)
+  - Kanıt: "Proje süresi, toplam sürenin en fazla yüzde ellisine kadar uzatılabilir." (Araştırma Projelerinde Uygulanacak İdari ve Mali Esaslar [mevzuat-048], Madde 9, s. 8)
+  - İnceleme notu: ___
+- [ ] **q075** (belirsiz/orta) Proje yürütücüsüne PTİ (proje teşvik ikramiyesi) ödeniyor mu?
+  - Beklenen: Programa göre değişir: 1002-A Hızlı Destek Modülünde yürütücü, araştırmacı ve danışmanlara PTİ ödenmez; 4007 bilim festivallerinde yürütücü PTİ'si 40.000 TL'dir.
+  - Beklenen sayılar: 40.000
+  - Kanıt: "Bu modül kapsamında yürütücü, araştırmacı ve danışmanlara PTİ ödemesi yapılmamaktadır." (1002 - A Hızlı Destek Modülü [sayfa-akademik__ulusal-destek-programlari__1002-hizli-destek-modulu], Bölüm: 1002 - A Hızlı Destek Modülü)
+  - Kanıt: "PTİ miktarı Bilim Festivalleri için 40.000 TL" (4007 Çağrı Metni (2026) [dosya-4806f8f8bca1], Bölüm: C. DESTEK MİKTARI VE KAPSAMI, s. 10–13)
+  - İnceleme notu: ___
+- [ ] **q076** (belirsiz/orta) Bir kuruluş en fazla kaç proje önerisiyle başvurabilir?
+  - Beklenen: Programa göre değişir: 1501/1507 2026-2 çağrılarında kuruluş başına toplam en fazla 2 proje önerisi; 1505'te bir şirketin müşteri kuruluş olarak yer alabileceği proje sayısında kısıtlama yoktur.
+  - Beklenen sayılar: 2
+  - Kanıt: "Bir kuruluş, çağrıya en fazla 2 proje önerisi ile başvuru yapabilir." (1501-Sanayi Ar-Ge Destek Programı 2026 yılı 2. Çağrı Dokümanı [dosya-10f733d7f6a2], Bölüm: 7. Çağrıya Özel Şartlar, s. 3–4)
+  - Kanıt: "Bir sermaye şirketinin müşteri kuruluş olarak dahil olabileceği proje sayısı konusunda bir kısıtlama yoktur." (Sıkça Sorulan Sorular [dosya-358f2addd2d5], Bölüm: (TEYDEB), s. 1–6)
+  - İnceleme notu: ___
+- [ ] **q077** (belirsiz/zor) Değerlendirmede geçme puanı kaç?
+  - Beklenen: Programa göre değişir: 1507 (ve 1501) 2026-2 çağrılarında Kurul Değerlendirme Eşik Değeri 60 puandır; BiGG Yatırım hızlandırma programında iş fikri her boyuttan (10 üzerinden) en az 7 puan almalıdır.
+  - Beklenen sayılar: 60, 7
+  - Kanıt: "Kurul Değerlendirme Eşik Değeri 60 puandır." (1507-KOBİ Ar-Ge Başlangıç Destek Programı 2026 yılı 2. Çağrı Dokümanı [dosya-3c4c2d391f25], Bölüm: 5. Proje Değerlendirme Süreci, s. 2–3)
+  - Kanıt: "ilgili boyutların her birinden en az 7 puan almalıdır" (BiGG Yatırım Programı 2026-2 Çağrı Metni [dosya-4a616f06b928], Bölüm: 4.2 Hızlandırma Programı için Değerlendirme ve Kabul, s. 3)
+  - İnceleme notu: ___
+- [ ] **q111** (belirsiz/orta) Başvuruyu ortaklı yapmak zorunlu mu?
+  - Beklenen: Programa göre değişir: 1507'de ilk beş projenin en az ikisi ortaklı başvuru olmalıdır; 1505'te başvuru bir yürütücü kuruluş ve bir müşteri kuruluş tarafından ortak yapılır; 1709 Eurostars'ta koordinatörü KOBİ olan, en az iki Eurostars ülkesinden kuruluşlu bir proje gerekir.
+  - Kanıt: "KOBİ ölçeğindeki işletmelerin en az ikisi ortaklı başvuru olmak kaydıyla ilk beş projesi desteklenir" (TÜBİTAK 1507- KOBİ Ar-Ge Başlangıç Destek Programı Uygulama Esasları [mevzuat-031], Madde 14, s. 13–14)
+  - Kanıt: "bir yürütücü kuruluş ve bir müşteri kuruluş ortak olarak başvurabilir" (Sıkça Sorulan Sorular [dosya-358f2addd2d5], Bölüm: (TEYDEB), s. 1–6)
+  - Kanıt: "koordinatörü bir KOBİ olmak üzere, en az iki Eurostars üyesi ülkeden kuruluşun" (1709-EUREKA-EUROSTARS ÇAĞRI DUYURUSU 2026/2 [dosya-0f5159f6f65e], Bölüm: 3. Ön Bilgi ve Çağrı Gerekçesi, s. 2)
+  - Yazar notu: Review 1: q078 (burs süresi; ikinci temiz kaynak yoktu) yerine.
+  - İnceleme notu: ___

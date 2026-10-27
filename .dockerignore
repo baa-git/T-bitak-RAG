@@ -1,0 +1,47 @@
+# Docker derleme bağlamına yalnız imajın ihtiyaç duyduğu dosyalar girer
+# (pyproject.toml, README.md, LICENSE, src/, configs/, data/manifests/, eval/).
+# Büyük veri, üretilen çıktılar ve gizli anahtarlar asla imaja girmez.
+
+# Corpus, üretilen çıktılar, önbellekler (volume'larda tutulur)
+data/raw/
+artifacts/
+release/
+
+# Gizli anahtarlar ve yerel ayarlar
+.env
+.env.*
+!.env.example
+
+# Python / araç önbellekleri
+.venv/
+venv/
+**/__pycache__/
+**/*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Depo ve editör dosyaları
+.git/
+.github/
+.claude/
+.vscode/
+.idea/
+.taste-skill/
+*.sqlite
+_calisma-notlari.md
+
+# İmajda gerekmeyenler: belgeler (README.md hariç, paket meta verisi için gerekli), testler,
+# tek seferlik araçlar ve Docker dosyalarının kendisi
+docs/
+tests/
+tools/
+Dockerfile
+docker-compose*.yml
+.dockerignore

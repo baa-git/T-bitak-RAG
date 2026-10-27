@@ -1,0 +1,34 @@
+# Hugging Face Space (Gradio SDK + ZeroGPU) bağımlılıkları.
+# Space paketi kurmaz (yalnız bu dosyayı okur); app.py src/ klasörünü import yoluna ekler.
+# gradio ve spaces'i Hugging Face kurar (sürümü README.md'deki sdk_version belirler);
+# burada yazılmaz, sabitlemek ZeroGPU'yu bozabilir.
+#
+# torch: ZeroGPU yalnız belirli sürümleri kabul eder (2.8.0, 2.9.1, 2.10.0, 2.11.0).
+# torchvision gerekli (EmbeddingGemma 2'nin işlemcisi onu import ediyor) ve kendi torch
+# sürümünü çeker; sabitlenmezse pip PyPI'daki en yeni torch'u kurar. Bu yüzden ikisi de
+# yerelde denenen eşleşik çifte sabitlendi (Linux tekerleği CUDA'lıdır).
+torch==2.11.0
+torchvision==0.26.0
+
+# Modeller (pyproject.toml → ml)
+transformers>=5.19,<6
+sentence-transformers>=6.1.0
+tokenizers>=0.20
+
+# Çekirdek (pyproject.toml → dependencies)
+pydantic>=2.7
+pyyaml>=6
+python-dotenv>=1
+typer>=0.12
+httpx>=0.27
+pdfplumber>=0.11
+beautifulsoup4>=4.12
+openpyxl>=3.1
+bm25s>=0.2
+snowballstemmer>=2.2
+qdrant-client>=1.12
+numpy>=1.26
+
+# Arayüz yardımcıları (cevap metni ve kaynak alıntıları; web arayüzüyle ortak)
+markdown>=3.6
+markupsafe>=2.1

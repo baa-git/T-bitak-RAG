@@ -1,0 +1,3078 @@
+{
+ "kaynak": "tubitak.gov.tr/tr/destekler program sayfaları (sitemap; cagri-* arşivi hariç)",
+ "indirme_tarihi": "2026-10-15",
+ "secim_kurali": "PDF/XLSX içinden yalnız çağrı metni, duyuru, SSS ve başvuru/hazırlama kılavuzları; görünürlük/kimlik rehberleri, form şablonları, sunumlar, eski kapanmış çağrılar, listeler hariç; aynı içerik sha256 ile tekilleştirildi",
+ "sayfalar": [
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/akademik",
+   "baslik": "Akademik",
+   "slug": "akademik",
+   "html_boyut": 31219,
+   "html_dosya": "html/akademik.html",
+   "sha256": "b41a61d45e6c1be34b15089e47cb68326f51e84f59ea6a8911ba3e93b31b8525"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/akademik/ulusal-destek-programlari",
+   "baslik": "Ulusal Programlar",
+   "slug": "akademik__ulusal-destek-programlari",
+   "html_boyut": 25325,
+   "html_dosya": "html/akademik__ulusal-destek-programlari.html",
+   "sha256": "34484c72d43def9977c2897987f9fe45af36e91d9c08492849cef9d55de0df71"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/akademik/ulusal-destek-programlari/1000-universitelerin-arastirma-ve-gelistirme-potansiyelinin-artirilmasina-yonelik-destek-programi",
+   "baslik": "1000 - Üniversitelerin Araştırma ve Geliştirme Potansiyelinin Artırılmasına Yönelik Destek Programı",
+   "slug": "akademik__ulusal-destek-programlari__1000-universitelerin-arastirma-ve-gelistirme-potansiyelinin-artirilmasina-yonelik-destek-programi",
+   "html_boyut": 5268,
+   "html_dosya": "html/akademik__ulusal-destek-programlari__1000-universitelerin-arastirma-ve-gelistirme-potansiyelinin-artirilmasina-yonelik-destek-programi.html",
+   "sha256": "001b9f017d4723336b9c0c0b1f72c4e95d4ad2e8cba422ea9659646c860ce420"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/akademik/ulusal-destek-programlari/1001-bilimsel-ve-teknolojik-arastirma-projelerini-destekleme-programi",
+   "baslik": "1001 - Bilimsel ve Teknolojik Araştırma Projelerini Destekleme Programı",
+   "slug": "akademik__ulusal-destek-programlari__1001-bilimsel-ve-teknolojik-arastirma-projelerini-destekleme-programi",
+   "html_boyut": 44978,
+   "html_dosya": "html/akademik__ulusal-destek-programlari__1001-bilimsel-ve-teknolojik-arastirma-projelerini-destekleme-programi.html",
+   "sha256": "d2392e9b7950b1c69ae6e0d63dcc2de2c82e48dc0720a97a6101e575bda37b66"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/akademik/ulusal-destek-programlari/1002-b-acil-destek-modulu",
+   "baslik": "1002 - B Acil Destek Modülü",
+   "slug": "akademik__ulusal-destek-programlari__1002-b-acil-destek-modulu",
+   "html_boyut": 36188,
+   "html_dosya": "html/akademik__ulusal-destek-programlari__1002-b-acil-destek-modulu.html",
+   "sha256": "05afa736305d1d23f2af8e29348382e553e70ed7a503f8b189dd5bee84bd621b"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/akademik/ulusal-destek-programlari/1002-hizli-destek-modulu",
+   "baslik": "1002 - A Hızlı Destek Modülü",
+   "slug": "akademik__ulusal-destek-programlari__1002-hizli-destek-modulu",
+   "html_boyut": 37036,
+   "html_dosya": "html/akademik__ulusal-destek-programlari__1002-hizli-destek-modulu.html",
+   "sha256": "8525e85170ccc398d6ddf3d71d676724c85da9ba01f674b909507455ffb69c43"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/akademik/ulusal-destek-programlari/1003-oncelikli-alanlar-ar-ge-projeleri-destekleme-programi",
+   "baslik": "1003 - Öncelikli Alanlar Ar-Ge Projeleri Destekleme Programı",
+   "slug": "akademik__ulusal-destek-programlari__1003-oncelikli-alanlar-ar-ge-projeleri-destekleme-programi",
+   "html_boyut": 30134,
+   "html_dosya": "html/akademik__ulusal-destek-programlari__1003-oncelikli-alanlar-ar-ge-projeleri-destekleme-programi.html",
+   "sha256": "bc40b9c3fcd1344baccb9587a696c22b83fe193f86a0bd942b7586467247c117"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/akademik/ulusal-destek-programlari/1004-mukemmeliyet-merkezi-destek-programi",
+   "baslik": "1004 - Mükemmeliyet Merkezi Destek Programı",
+   "slug": "akademik__ulusal-destek-programlari__1004-mukemmeliyet-merkezi-destek-programi",
+   "html_boyut": 127015,
+   "html_dosya": "html/akademik__ulusal-destek-programlari__1004-mukemmeliyet-merkezi-destek-programi.html",
+   "sha256": "cdf0ed4a7dfabd71c22e65693e5c579660d6156ac0c5317a1baaa64f776810a8"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/akademik/ulusal-destek-programlari/1005-ulusal-yeni-fikirler-ve-urunler-arastirma-destek-programi",
+   "baslik": "1005 - Ulusal Yeni Fikirler ve Ürünler Araştırma Destek Programı",
+   "slug": "akademik__ulusal-destek-programlari__1005-ulusal-yeni-fikirler-ve-urunler-arastirma-destek-programi",
+   "html_boyut": 41964,
+   "html_dosya": "html/akademik__ulusal-destek-programlari__1005-ulusal-yeni-fikirler-ve-urunler-arastirma-destek-programi.html",
+   "sha256": "dd0619c6e4b09cc616904b4b9141afd447f65922e12457abbe8a9c4e61658afa"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/akademik/ulusal-destek-programlari/1007-kamu-kurumlari-arastirma-ve-gelistirme-projelerini-destekleme-programi",
+   "baslik": "1007 - Kamu Kurumları Araştırma ve Geliştirme Projelerini Destekleme Programı",
+   "slug": "akademik__ulusal-destek-programlari__1007-kamu-kurumlari-arastirma-ve-gelistirme-projelerini-destekleme-programi",
+   "html_boyut": 91994,
+   "html_dosya": "html/akademik__ulusal-destek-programlari__1007-kamu-kurumlari-arastirma-ve-gelistirme-projelerini-destekleme-programi.html",
+   "sha256": "8b3cfffc28498fa21dc42cd14c64c28b84cf34802016d10b4e82183f407e712a"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/akademik/ulusal-destek-programlari/3001-baslangic-ar-ge-projeleri-destekleme-programi",
+   "baslik": "3001 - Başlangıç Ar-Ge Projeleri Destekleme Programı",
+   "slug": "akademik__ulusal-destek-programlari__3001-baslangic-ar-ge-projeleri-destekleme-programi",
+   "html_boyut": 5317,
+   "html_dosya": "html/akademik__ulusal-destek-programlari__3001-baslangic-ar-ge-projeleri-destekleme-programi.html",
+   "sha256": "5cc059fb560d0d8e25903d9ba3c32b90a60bfc0e7d97a7dcebf0474165850669"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/akademik/ulusal-destek-programlari/3501-kariyer-gelistirme-programi",
+   "baslik": "3501 - Kariyer Geliştirme Programı",
+   "slug": "akademik__ulusal-destek-programlari__3501-kariyer-gelistirme-programi",
+   "html_boyut": 39368,
+   "html_dosya": "html/akademik__ulusal-destek-programlari__3501-kariyer-gelistirme-programi.html",
+   "sha256": "78666fb2abce23407bbeeb10dbe541addab177061932e88d12707fb45c39d02b"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/akademik/uluslararasi-destek-programlari",
+   "baslik": "Uluslararası Programlar",
+   "slug": "akademik__uluslararasi-destek-programlari",
+   "html_boyut": 3159,
+   "html_dosya": "html/akademik__uluslararasi-destek-programlari.html",
+   "sha256": "b0ce3893551a8343bcce8c1cba710f72ed3201655a568c124d62142e2007f4ec"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/akademik/uluslararasi-destek-programlari/1071-uluslararasi-arastirma-fonlarindan-yararlanma-kapasitesinin-ve-uluslararasi-ar-ge-isbirliklerine-katilimin-arttirilmasina-yonelik-destek-programi",
+   "baslik": "1071 - Uluslararası İşbirliği Projeleri Destek Programı",
+   "slug": "akademik__uluslararasi-destek-programlari__1071-uluslararasi-arastirma-fonlarindan-yararlanma-kapasitesinin-ve-uluslararasi-ar-ge-isbirliklerine-katilimin-arttirilmasina-yonelik-destek-programi",
+   "html_boyut": 18923,
+   "html_dosya": "html/akademik__uluslararasi-destek-programlari__1071-uluslararasi-arastirma-fonlarindan-yararlanma-kapasitesinin-ve-uluslararasi-ar-ge-isbirliklerine-katilimin-arttirilmasina-yonelik-destek-programi.html",
+   "sha256": "56267ea4282aba6a3173f8d4163487908911034b0c9e1a4580d0e42e0d151d84"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/akademik/uluslararasi-destek-programlari/ufuk-avrupa-programi",
+   "baslik": "Ufuk Avrupa Programı",
+   "slug": "akademik__uluslararasi-destek-programlari__ufuk-avrupa-programi",
+   "html_boyut": 3097,
+   "html_dosya": "html/akademik__uluslararasi-destek-programlari__ufuk-avrupa-programi.html",
+   "sha256": "62570b3e267ed9b8bd4fa2e13e1d98d10e1024ed75d5ce5677e4d57be08d96bf"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/akademik/uygulamalar-ve-yonergeler",
+   "baslik": "Uygulamalar ve Yönergeler",
+   "slug": "akademik__uygulamalar-ve-yonergeler",
+   "html_boyut": 6906,
+   "html_dosya": "html/akademik__uygulamalar-ve-yonergeler.html",
+   "sha256": "07e3428f60945baf624b2330179aeffc320946192155604d09b55a992efd60ed"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/akademik/uygulamalar-ve-yonergeler/guncel-tts-duyurulari",
+   "baslik": "Güncel TTS Duyuruları",
+   "slug": "akademik__uygulamalar-ve-yonergeler__guncel-tts-duyurulari",
+   "html_boyut": 33269,
+   "html_dosya": "html/akademik__uygulamalar-ve-yonergeler__guncel-tts-duyurulari.html",
+   "sha256": "9b177639fc2173a68c56bcc410786942851b12b04d7a641749d62cd877b42890"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/akademik/uygulamalar-ve-yonergeler/tts-transfer-takip-sistemi",
+   "baslik": "TTS (Transfer Takip Sistemi)",
+   "slug": "akademik__uygulamalar-ve-yonergeler__tts-transfer-takip-sistemi",
+   "html_boyut": 61518,
+   "html_dosya": "html/akademik__uygulamalar-ve-yonergeler__tts-transfer-takip-sistemi.html",
+   "sha256": "45e3fa6d62c62eb18ecddd386134c986a10f888832b03c247a18ad760444e333"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/belmont-forum",
+   "baslik": "Belmont Forum",
+   "slug": "belmont-forum",
+   "html_boyut": 43601,
+   "html_dosya": "html/belmont-forum.html",
+   "sha256": "730a6daec1a5ba819325e8abda8399e3a0f7eafacd5b3f50f42a9f686da698d1"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/bilim-toplum",
+   "baslik": "Bilim & Toplum",
+   "slug": "bilim-toplum",
+   "html_boyut": 7631,
+   "html_dosya": "html/bilim-toplum.html",
+   "sha256": "169f8d956b14604013d5d445f8f9f287df65a57a6555b47f91a2617bf50c9732"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/bilim-toplum/hakem-panelistler",
+   "baslik": "Hakem & Panelistler",
+   "slug": "bilim-toplum__hakem-panelistler",
+   "html_boyut": 2140,
+   "html_dosya": "html/bilim-toplum__hakem-panelistler.html",
+   "sha256": "17985af55b237ff6a6418c74a00be866497527ec0d86c6eff9f6b3097859c1d2"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/bilim-toplum/ulusal-destek-programlari/4001-ulusal-ve-uluslararasi-yarismaetkinlik-katilim-destegi",
+   "baslik": "4001 - Ulusal ve Uluslararası Yarışma/Etkinlik Katılım Desteği",
+   "slug": "bilim-toplum__ulusal-destek-programlari__4001-ulusal-ve-uluslararasi-yarismaetkinlik-katilim-destegi",
+   "html_boyut": 39624,
+   "html_dosya": "html/bilim-toplum__ulusal-destek-programlari__4001-ulusal-ve-uluslararasi-yarismaetkinlik-katilim-destegi.html",
+   "sha256": "9cd0a415dd55556bb577a1773d9ed79541dc4a59bbae223b84037457ed6e3ef6"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/bilim-toplum/ulusal-destek-programlari/4003-bilim-merkezi-ve-atolye-destek-programi",
+   "baslik": "4003 - Bilim Merkezi ve Atölye Destek Programı",
+   "slug": "bilim-toplum__ulusal-destek-programlari__4003-bilim-merkezi-ve-atolye-destek-programi",
+   "html_boyut": 3542,
+   "html_dosya": "html/bilim-toplum__ulusal-destek-programlari__4003-bilim-merkezi-ve-atolye-destek-programi.html",
+   "sha256": "061da982dd7333b23ac4166e075acc327839a8a216d092dccb243b6591534749"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/bilim-toplum/ulusal-destek-programlari/4004-doga-egitimi-ve-bilim-okullari-destekleme-programi",
+   "baslik": "4004 - Doğa Eğitimi ve Bilim Okulları Destekleme Programı",
+   "slug": "bilim-toplum__ulusal-destek-programlari__4004-doga-egitimi-ve-bilim-okullari-destekleme-programi",
+   "html_boyut": 53644,
+   "html_dosya": "html/bilim-toplum__ulusal-destek-programlari__4004-doga-egitimi-ve-bilim-okullari-destekleme-programi.html",
+   "sha256": "130aa7256f1ee68a97e402267322b7b07ff14a4376c609f052d66881d4957fa9"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/bilim-toplum/ulusal-destek-programlari/4005-yenilikci-egitim-uygulamalari-destekleme-programi",
+   "baslik": "4005 - Yenilikçi Eğitim Uygulamaları Destekleme Programı",
+   "slug": "bilim-toplum__ulusal-destek-programlari__4005-yenilikci-egitim-uygulamalari-destekleme-programi",
+   "html_boyut": 56078,
+   "html_dosya": "html/bilim-toplum__ulusal-destek-programlari__4005-yenilikci-egitim-uygulamalari-destekleme-programi.html",
+   "sha256": "1639fb345e37409d17297b5b2f5503d93529e4918e2788912c3fbecc44350d88"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/bilim-toplum/ulusal-destek-programlari/4006-tubitak-bilim-fuarlari-destekleme-programi",
+   "baslik": "4006 - TÜBİTAK Bilim Fuarları Destekleme Programı",
+   "slug": "bilim-toplum__ulusal-destek-programlari__4006-tubitak-bilim-fuarlari-destekleme-programi",
+   "html_boyut": 88808,
+   "html_dosya": "html/bilim-toplum__ulusal-destek-programlari__4006-tubitak-bilim-fuarlari-destekleme-programi.html",
+   "sha256": "4d4e6be3ee86828ae36329bc88212736d2ba607f992ef8a6c1c918048c0d2381"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/bilim-toplum/ulusal-destek-programlari/4007-bilim-senlikleri-destekleme-programi",
+   "baslik": "4007 - Bilim Şenlikleri Destekleme Programı",
+   "slug": "bilim-toplum__ulusal-destek-programlari__4007-bilim-senlikleri-destekleme-programi",
+   "html_boyut": 73977,
+   "html_dosya": "html/bilim-toplum__ulusal-destek-programlari__4007-bilim-senlikleri-destekleme-programi.html",
+   "sha256": "eef66fecafeee461362b7b4df6f0f3b87b1746276a7a718c5555119b4e4788bc"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/bilim-toplum/ulusal-destek-programlari/4008-ozel-gereksinimli-bireylere-yonelik-kapsayici-toplum-uygulamalari-destekleme-programi",
+   "baslik": "4008 - Özel Gereksinimli Bireylere Yönelik Kapsayıcı Toplum Uygulamaları Destekleme Programı",
+   "slug": "bilim-toplum__ulusal-destek-programlari__4008-ozel-gereksinimli-bireylere-yonelik-kapsayici-toplum-uygulamalari-destekleme-programi",
+   "html_boyut": 80377,
+   "html_dosya": "html/bilim-toplum__ulusal-destek-programlari__4008-ozel-gereksinimli-bireylere-yonelik-kapsayici-toplum-uygulamalari-destekleme-programi.html",
+   "sha256": "49da531da7afe4829e75428f5aa417b9f211aafa3ee747806e5e845a2450b442"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/bilim-toplum/ulusal-destek-programlari/milli-teknoloji-atolyeleri-proje-destegi",
+   "baslik": "Milli Teknoloji Atölyeleri Proje Desteği",
+   "slug": "bilim-toplum__ulusal-destek-programlari__milli-teknoloji-atolyeleri-proje-destegi",
+   "html_boyut": 36358,
+   "html_dosya": "html/bilim-toplum__ulusal-destek-programlari__milli-teknoloji-atolyeleri-proje-destegi.html",
+   "sha256": "5cfd872daf8d61abf800d46f69e1e9b8622f0d4285a136e6cbed89e0c8d8bd74"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/bilim-toplum/ulusal-destek-programlari/milli-teknoloji-kulupler-birligi",
+   "baslik": "Milli Teknoloji Kulüpler Birliği",
+   "slug": "bilim-toplum__ulusal-destek-programlari__milli-teknoloji-kulupler-birligi",
+   "html_boyut": 59724,
+   "html_dosya": "html/bilim-toplum__ulusal-destek-programlari__milli-teknoloji-kulupler-birligi.html",
+   "sha256": "565e518f0902ad16317bfe9f53dfb0844b81b99fe76a6a44fc6002c1cafd7eea"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/bilim-toplum/ulusal-programlar",
+   "baslik": "Ulusal Programlar",
+   "slug": "bilim-toplum__ulusal-programlar",
+   "html_boyut": 6494,
+   "html_dosya": "html/bilim-toplum__ulusal-programlar.html",
+   "sha256": "b8088d7ded3bca319dda3787eb37f2b86f5b283f4bbfca9be2a1c160ba9e9854"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/bilim-toplum/uluslararasi-destek-programlari/ufuk-avrupa-programi",
+   "baslik": "Ufuk Avrupa Programı",
+   "slug": "bilim-toplum__uluslararasi-destek-programlari__ufuk-avrupa-programi",
+   "html_boyut": 3089,
+   "html_dosya": "html/bilim-toplum__uluslararasi-destek-programlari__ufuk-avrupa-programi.html",
+   "sha256": "d0b9b8261faa9d3008659c52186e4bf56a175c5f3f645191b06e3a4ef62200d8"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/bilim-toplum/uluslararasi-programlar",
+   "baslik": "Uluslararası Programlar",
+   "slug": "bilim-toplum__uluslararasi-programlar",
+   "html_boyut": 2838,
+   "html_dosya": "html/bilim-toplum__uluslararasi-programlar.html",
+   "sha256": "34af775a69d5ec96f2ee0c0df4b25085d3e81886f8ba8e032e62cf3372ba7651"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/bilimsel-etkinlik",
+   "baslik": "Bilimsel Etkinlik",
+   "slug": "bilimsel-etkinlik",
+   "html_boyut": 6327,
+   "html_dosya": "html/bilimsel-etkinlik.html",
+   "sha256": "114a6cb75edd0ee7bfcb9bd917b844b96986d093a7a474e212d711fdc716216b"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/bilimsel-etkinlik/etkinlik-duzenleme",
+   "baslik": "Etkinlik düzenleme",
+   "slug": "bilimsel-etkinlik__etkinlik-duzenleme",
+   "html_boyut": 4453,
+   "html_dosya": "html/bilimsel-etkinlik__etkinlik-duzenleme.html",
+   "sha256": "542e3977cb804db68e7a653b42917efda5f0f6a92be170aef1944d7d328f6538"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/bilimsel-etkinlik/etkinlik-duzenleme-destekleri/2223-b-yurt-ici-bilimsel-etkinlik-duzenleme-destegi",
+   "baslik": "2223-B Yurt İçi Bilimsel Etkinlik Düzenleme Desteği",
+   "slug": "bilimsel-etkinlik__etkinlik-duzenleme-destekleri__2223-b-yurt-ici-bilimsel-etkinlik-duzenleme-destegi",
+   "html_boyut": 53662,
+   "html_dosya": "html/bilimsel-etkinlik__etkinlik-duzenleme-destekleri__2223-b-yurt-ici-bilimsel-etkinlik-duzenleme-destegi.html",
+   "sha256": "c1bf384a6a85674b5517ae473727d042365a69c4cb3655cef134e91143bf736e"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/bilimsel-etkinlik/etkinlik-duzenleme-destekleri/2223-c-cok-katilimli-uluslararasi-etkinlik-duzenleme-destegi",
+   "baslik": "2223-C Çok Katılımlı Uluslararası Etkinlik Düzenleme Desteği",
+   "slug": "bilimsel-etkinlik__etkinlik-duzenleme-destekleri__2223-c-cok-katilimli-uluslararasi-etkinlik-duzenleme-destegi",
+   "html_boyut": 58200,
+   "html_dosya": "html/bilimsel-etkinlik__etkinlik-duzenleme-destekleri__2223-c-cok-katilimli-uluslararasi-etkinlik-duzenleme-destegi.html",
+   "sha256": "310a20dbfa0272f146979d2fd79f39d7d2d3437bd64e392439d90a851e57a9c6"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/bilimsel-etkinlik/etkinlik-duzenleme-destekleri/2223-d-ikili-isbirligi-anlasmalari-cercevesinde-etkinlik-duzenleme-destegi",
+   "baslik": "2223-D İkili İşbirliği Anlaşmaları Çerçevesinde Etkinlik Düzenleme Desteği",
+   "slug": "bilimsel-etkinlik__etkinlik-duzenleme-destekleri__2223-d-ikili-isbirligi-anlasmalari-cercevesinde-etkinlik-duzenleme-destegi",
+   "html_boyut": 48350,
+   "html_dosya": "html/bilimsel-etkinlik__etkinlik-duzenleme-destekleri__2223-d-ikili-isbirligi-anlasmalari-cercevesinde-etkinlik-duzenleme-destegi.html",
+   "sha256": "1cf5ea9bc26b3969621dc65995719d181d4173bec5fade048711e938dd2e8317"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/bilimsel-etkinlik/etkinlik-duzenleme-destekleri/2237-b-proje-egitimi-etkinliklerini-destekleme-programi",
+   "baslik": "2237-B Proje Eğitimi Etkinliklerini Destekleme Programı",
+   "slug": "bilimsel-etkinlik__etkinlik-duzenleme-destekleri__2237-b-proje-egitimi-etkinliklerini-destekleme-programi",
+   "html_boyut": 31421,
+   "html_dosya": "html/bilimsel-etkinlik__etkinlik-duzenleme-destekleri__2237-b-proje-egitimi-etkinliklerini-destekleme-programi.html",
+   "sha256": "2f4508cc7a09ff25002d44d4dc33613f034673024565ac3914c6c899e4881db2"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/bilimsel-etkinlik/etkinlik-duzenleme-destekleri/2237-bilimsel-egitim-etkinlikleri-destegi",
+   "baslik": "2237-A Bilimsel Eğitim Etkinlikleri Desteği",
+   "slug": "bilimsel-etkinlik__etkinlik-duzenleme-destekleri__2237-bilimsel-egitim-etkinlikleri-destegi",
+   "html_boyut": 45880,
+   "html_dosya": "html/bilimsel-etkinlik__etkinlik-duzenleme-destekleri__2237-bilimsel-egitim-etkinlikleri-destegi.html",
+   "sha256": "010142b8258c25864361874b2e3464dcc0ea5e4b9190683ee2b5e132c6850523"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/bilimsel-etkinlik/etkinlik-duzenleme-destekleri/prof-dr-fuat-sezgin-burslari",
+   "baslik": "Prof. Dr. Fuat SEZGİN Bursları",
+   "slug": "bilimsel-etkinlik__etkinlik-duzenleme-destekleri__prof-dr-fuat-sezgin-burslari",
+   "html_boyut": 34940,
+   "html_dosya": "html/bilimsel-etkinlik__etkinlik-duzenleme-destekleri__prof-dr-fuat-sezgin-burslari.html",
+   "sha256": "a9d28e00fc0f78e504ae0c6c1e526e95adcab1cde3d9e7e404043563a8346fa1"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/bilimsel-etkinlik/etkinliklere-katilim-destekleri",
+   "baslik": "Etkinliklere katılım destekleri",
+   "slug": "bilimsel-etkinlik__etkinliklere-katilim-destekleri",
+   "html_boyut": 4156,
+   "html_dosya": "html/bilimsel-etkinlik__etkinliklere-katilim-destekleri.html",
+   "sha256": "4659c9a397550333d98e9fe6f46717f55d9ccf12f9ca764e13881babb90b8281"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/bilimsel-etkinlik/etkinliklere-katilma-destekleri/2224-b-yurt-ici-bilimsel-etkinliklere-katilimi-destekleme-programi",
+   "baslik": "2224-B Yurt İçi Bilimsel Etkinliklere Katılımı Destekleme Programı",
+   "slug": "bilimsel-etkinlik__etkinliklere-katilma-destekleri__2224-b-yurt-ici-bilimsel-etkinliklere-katilimi-destekleme-programi",
+   "html_boyut": 68367,
+   "html_dosya": "html/bilimsel-etkinlik__etkinliklere-katilma-destekleri__2224-b-yurt-ici-bilimsel-etkinliklere-katilimi-destekleme-programi.html",
+   "sha256": "9bb9f64b841eb2b26eaafbac404264ce56e80a2dc5ffcedeb43b2e0de659bf5a"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/bilimsel-etkinlik/etkinliklere-katilma-destekleri/2224-c-uluslararasi-anlasmalar-cercevesinde-yurt-disindaki-bilimsel-etkinliklere-katilimi-destekleme-programi",
+   "baslik": "2224-C Uluslararası Anlaşmalar Çerçevesinde Yurt Dışındaki Bilimsel Etkinliklere Katılımı Destekleme Programı",
+   "slug": "bilimsel-etkinlik__etkinliklere-katilma-destekleri__2224-c-uluslararasi-anlasmalar-cercevesinde-yurt-disindaki-bilimsel-etkinliklere-katilimi-destekleme-programi",
+   "html_boyut": 31932,
+   "html_dosya": "html/bilimsel-etkinlik__etkinliklere-katilma-destekleri__2224-c-uluslararasi-anlasmalar-cercevesinde-yurt-disindaki-bilimsel-etkinliklere-katilimi-destekleme-programi.html",
+   "sha256": "20771bf8d89e86f4e9c4af6cd9da20d649b5686c4e3cb67b946e37c35fd26308"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/bilimsel-etkinlik/etkinliklere-katilma-destekleri/2224-d-yurt-disindaki-bilimsel-egitim-etkinliklerine-katilimi-destekleme-programi",
+   "baslik": "2224-D Yurt Dışındaki Bilimsel Eğitim Etkinliklerine Katılımı Destekleme Programı",
+   "slug": "bilimsel-etkinlik__etkinliklere-katilma-destekleri__2224-d-yurt-disindaki-bilimsel-egitim-etkinliklerine-katilimi-destekleme-programi",
+   "html_boyut": 27826,
+   "html_dosya": "html/bilimsel-etkinlik__etkinliklere-katilma-destekleri__2224-d-yurt-disindaki-bilimsel-egitim-etkinliklerine-katilimi-destekleme-programi.html",
+   "sha256": "dc2192e7f0b9e9d49af89ac15d4a8d576db661491de3c5ff3a6ad89b9f381054"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/bilimsel-etkinlik/etkinliklere-katilma-destekleri/2224-yurt-disi-bilimsel-etkinliklere-katilimi-destekleme-programi",
+   "baslik": "2224-A Yurt Dışı Bilimsel Etkinliklere Katılımı Destekleme Programı",
+   "slug": "bilimsel-etkinlik__etkinliklere-katilma-destekleri__2224-yurt-disi-bilimsel-etkinliklere-katilimi-destekleme-programi",
+   "html_boyut": 62905,
+   "html_dosya": "html/bilimsel-etkinlik__etkinliklere-katilma-destekleri__2224-yurt-disi-bilimsel-etkinliklere-katilimi-destekleme-programi.html",
+   "sha256": "808634bb6fd1636fdaff1beeaf79ec8560b6f83062366a1c54d18d001e610759"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/bilimsel-etkinlik/hakem-panelistler",
+   "baslik": "Hakem & Panelistler",
+   "slug": "bilimsel-etkinlik__hakem-panelistler",
+   "html_boyut": 2160,
+   "html_dosya": "html/bilimsel-etkinlik__hakem-panelistler.html",
+   "sha256": "32c57969e1e996b09a851e774810f22f89885c748e7934943004283600e0900a"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/bilimsel-etkinlik/uluslararasi-destekler",
+   "baslik": "Uluslararası destekler",
+   "slug": "bilimsel-etkinlik__uluslararasi-destekler",
+   "html_boyut": 2953,
+   "html_dosya": "html/bilimsel-etkinlik__uluslararasi-destekler.html",
+   "sha256": "489dccdfefd75d2acf359a54f4d6a7699aa6e8190eebbdb5a62c59a77fba44bb"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/bilimsel-etkinlik/uluslararasi-destekler/icgeb-uluslararasi-gen-muhendisligi-ve-biyoteknoloji-ars-mer-destekleri",
+   "baslik": "ICGEB (Uluslararası Gen Mühendisliği ve Biyoteknoloji Arş. Mer.) Destekleri",
+   "slug": "bilimsel-etkinlik__uluslararasi-destekler__icgeb-uluslararasi-gen-muhendisligi-ve-biyoteknoloji-ars-mer-destekleri",
+   "html_boyut": 2858,
+   "html_dosya": "html/bilimsel-etkinlik__uluslararasi-destekler__icgeb-uluslararasi-gen-muhendisligi-ve-biyoteknoloji-ars-mer-destekleri.html",
+   "sha256": "8a9d2f08b2f2581e59f2c5dd23bd7479986d2e047b14436ee33297d63f23c192"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/kamu",
+   "baslik": "Kamu",
+   "slug": "kamu",
+   "html_boyut": 3036,
+   "html_dosya": "html/kamu.html",
+   "sha256": "2450c5dfadf743f8ab1909ecf74c16b6b1f879996303d20c4abd6aa8cdd7d69a"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/kamu/hakem-panelistler",
+   "baslik": "Hakem & Panelistler",
+   "slug": "kamu__hakem-panelistler",
+   "html_boyut": 2108,
+   "html_dosya": "html/kamu__hakem-panelistler.html",
+   "sha256": "fb3f34602394de3b3a2787b41e69cd2f0e2ecdaaabae1aa787de3fbab32cda72"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/kamu/ulusal-destek-programlari/1007-kamu-kurumlari-arastirma-ve-gelistirme-projelerini-dp",
+   "baslik": "1007 - Kamu Kurumları Araştırma ve Geliştirme Projelerini D.P.",
+   "slug": "kamu__ulusal-destek-programlari__1007-kamu-kurumlari-arastirma-ve-gelistirme-projelerini-dp",
+   "html_boyut": 96524,
+   "html_dosya": "html/kamu__ulusal-destek-programlari__1007-kamu-kurumlari-arastirma-ve-gelistirme-projelerini-dp.html",
+   "sha256": "4ae9eac1f72b4c49767a571526284137a7c71a4dc7335ac612a822794a8384c7"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/kamu/ulusal-destekler",
+   "baslik": "Ulusal Programlar",
+   "slug": "kamu__ulusal-destekler",
+   "html_boyut": 2826,
+   "html_dosya": "html/kamu__ulusal-destekler.html",
+   "sha256": "773f117490bb1064e590ead316dce11649e7b135f0376bfa214b43d714941e8f"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/kamu/uluslararasi-destek-programlari/ufuk-avrupa-programi",
+   "baslik": "Ufuk Avrupa Programı",
+   "slug": "kamu__uluslararasi-destek-programlari__ufuk-avrupa-programi",
+   "html_boyut": 3082,
+   "html_dosya": "html/kamu__uluslararasi-destek-programlari__ufuk-avrupa-programi.html",
+   "sha256": "764c3c41475a922dada643686d260b21d29b8ae6ecfaa311ebe7fb04f2583341"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/kamu/uluslararasi-programlar",
+   "baslik": "Uluslararası Programlar",
+   "slug": "kamu__uluslararasi-programlar",
+   "html_boyut": 2798,
+   "html_dosya": "html/kamu__uluslararasi-programlar.html",
+   "sha256": "845c3c89a2def5b7b01ee92102d4c59ef45a8e849c4365f3e78e6d0689268868"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/mali-hususlar-ve-odeme",
+   "baslik": "Mali Hususlar ve Ödeme",
+   "slug": "mali-hususlar-ve-odeme",
+   "html_boyut": 89659,
+   "html_dosya": "html/mali-hususlar-ve-odeme.html",
+   "sha256": "acab16cef539c0f251b2a9a6d9e4345add31a5084062dbdfd5764f766bacd378"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/sanayi",
+   "baslik": "Sanayi",
+   "slug": "sanayi",
+   "html_boyut": 10186,
+   "html_dosya": "html/sanayi.html",
+   "sha256": "35187ea3b61edf3d0fee8cefad64013ae99ce2bd246ff1945017fac4b8d1fee5"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/sanayi/hakem-panelistler",
+   "baslik": "Hakem & Panelistler",
+   "slug": "sanayi__hakem-panelistler",
+   "html_boyut": 2116,
+   "html_dosya": "html/sanayi__hakem-panelistler.html",
+   "sha256": "161e268fa96723de0ddf030b90311a7806066c8f3a249221930c4435a260c301"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/sanayi/istatistik",
+   "baslik": "İstatistik",
+   "slug": "sanayi__istatistik",
+   "html_boyut": 2442,
+   "html_dosya": "html/sanayi__istatistik.html",
+   "sha256": "3925bd0132f28e7eb6f12e1eef5b12dbe74c9f2985a2652d5e17cc84cc057d9a"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/sanayi/teydeb-basari-hikayeleri",
+   "baslik": "Teydeb Başarı Hikayeleri",
+   "slug": "sanayi__teydeb-basari-hikayeleri",
+   "html_boyut": 67139,
+   "html_dosya": "html/sanayi__teydeb-basari-hikayeleri.html",
+   "sha256": "96b6159c31b25b25effae53722b4c641f9f9744d06886b929ad48bae0357a547"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari",
+   "baslik": "Ulusal Destek Programları",
+   "slug": "sanayi__ulusal-destek-programlari",
+   "html_boyut": 8604,
+   "html_dosya": "html/sanayi__ulusal-destek-programlari.html",
+   "sha256": "e5959bbb81af74f49d0c320172852ec96b2ef5139623b7ac87cc7832289b7de9"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1501-tubitak-sanayi-ar-ge-projeleri-destekleme-programi",
+   "baslik": "1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı",
+   "slug": "sanayi__ulusal-destek-programlari__1501-tubitak-sanayi-ar-ge-projeleri-destekleme-programi",
+   "html_boyut": 50938,
+   "html_dosya": "html/sanayi__ulusal-destek-programlari__1501-tubitak-sanayi-ar-ge-projeleri-destekleme-programi.html",
+   "sha256": "c9b82fb32b8f60c4be52068dd30850b6806068f00b483a7b42d082ff4cd3eb30"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1503-proje-pazarlari-destekleme-programi",
+   "baslik": "1503 - Proje Pazarları Destekleme Programı",
+   "slug": "sanayi__ulusal-destek-programlari__1503-proje-pazarlari-destekleme-programi",
+   "html_boyut": 29264,
+   "html_dosya": "html/sanayi__ulusal-destek-programlari__1503-proje-pazarlari-destekleme-programi.html",
+   "sha256": "64469bd47ea7dc015e3c97dbe8cd98cdbcbaf26ea41697e7a1737fbda759845a"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1505-universite-sanayi-isbirligi-destek-programi",
+   "baslik": "1505 - Üniversite-Sanayi İşbirliği Destek Programı",
+   "slug": "sanayi__ulusal-destek-programlari__1505-universite-sanayi-isbirligi-destek-programi",
+   "html_boyut": 47395,
+   "html_dosya": "html/sanayi__ulusal-destek-programlari__1505-universite-sanayi-isbirligi-destek-programi.html",
+   "sha256": "9f8f58132fafb5d1458207f205c7867344a81c7ef6f906084e8d81d758a77729"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1507-tubitak-kobi-ar-ge-baslangic-destek-programi",
+   "baslik": "1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı",
+   "slug": "sanayi__ulusal-destek-programlari__1507-tubitak-kobi-ar-ge-baslangic-destek-programi",
+   "html_boyut": 48957,
+   "html_dosya": "html/sanayi__ulusal-destek-programlari__1507-tubitak-kobi-ar-ge-baslangic-destek-programi.html",
+   "sha256": "23cf423fb402dd915281012fd4ad020b4499d1cfbeda6150f41f58cca7620d75"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1511-tubitak-oncelikli-alanlar-arastirma-teknoloji-gelistirme-ve-yenilik-p-d-pteknoloji-odakli-sanayi-hamlesi-programi",
+   "baslik": "1511 - TÜBİTAK Öncelikli Alanlar Araştırma Teknoloji Geliştirme ve Yenilik P. D. P.(Teknoloji Odaklı Sanayi Hamlesi Programı)",
+   "slug": "sanayi__ulusal-destek-programlari__1511-tubitak-oncelikli-alanlar-arastirma-teknoloji-gelistirme-ve-yenilik-p-d-pteknoloji-odakli-sanayi-hamlesi-programi",
+   "html_boyut": 71898,
+   "html_dosya": "html/sanayi__ulusal-destek-programlari__1511-tubitak-oncelikli-alanlar-arastirma-teknoloji-gelistirme-ve-yenilik-p-d-pteknoloji-odakli-sanayi-hamlesi-programi.html",
+   "sha256": "208027a5937271c93a075d17ad1fdc5321a848aa4fba5d54569a53f01e43799e"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1513-teknoloji-transfer-ofisleri-destekleme-programi",
+   "baslik": "1513 - Teknoloji Transfer Ofisleri Destekleme Programı",
+   "slug": "sanayi__ulusal-destek-programlari__1513-teknoloji-transfer-ofisleri-destekleme-programi",
+   "html_boyut": 91492,
+   "html_dosya": "html/sanayi__ulusal-destek-programlari__1513-teknoloji-transfer-ofisleri-destekleme-programi.html",
+   "sha256": "f803c4edbf407f2e711c09d7c164508e0c23e47ba14312cf8ebf712e6dac8158"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1514-girisim-sermayesi-destekleme-programi-tech-investr",
+   "baslik": "1514 - Girişim Sermayesi Destekleme Programı (Tech-InvesTR)",
+   "slug": "sanayi__ulusal-destek-programlari__1514-girisim-sermayesi-destekleme-programi-tech-investr",
+   "html_boyut": 43971,
+   "html_dosya": "html/sanayi__ulusal-destek-programlari__1514-girisim-sermayesi-destekleme-programi-tech-investr.html",
+   "sha256": "d9704b8c48a041cf9d5d58b1d44721f6024ef91c7280d665d3804efa1b445051"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1515-oncul-ar-ge-laboratuvarlari-destekleme-programi",
+   "baslik": "1515 - Öncül Ar-Ge Laboratuvarları Destekleme Programı",
+   "slug": "sanayi__ulusal-destek-programlari__1515-oncul-ar-ge-laboratuvarlari-destekleme-programi",
+   "html_boyut": 64432,
+   "html_dosya": "html/sanayi__ulusal-destek-programlari__1515-oncul-ar-ge-laboratuvarlari-destekleme-programi.html",
+   "sha256": "ea0b69479bc7076e54d92bf905d5a4f9b68a32189ae1efb4a49ebbd511225fd0"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1601-yenilik-girisimcilik-alanlarinda-kapasite-artirilmasina-yonelik-dp",
+   "baslik": "1601 - Yenilik Girişimcilik Alanlarında Kapasite Artırılmasına Yönelik D.P.",
+   "slug": "sanayi__ulusal-destek-programlari__1601-yenilik-girisimcilik-alanlarinda-kapasite-artirilmasina-yonelik-dp",
+   "html_boyut": 33190,
+   "html_dosya": "html/sanayi__ulusal-destek-programlari__1601-yenilik-girisimcilik-alanlarinda-kapasite-artirilmasina-yonelik-dp.html",
+   "sha256": "b0b335fb6eb3c3cdf4ea42bd474bc1ecfcc5d964a80c83c3c751fe1a636b16d9"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1602-tubitak-patent-destek-programi",
+   "baslik": "1602 - TÜBİTAK Patent Destek Programı",
+   "slug": "sanayi__ulusal-destek-programlari__1602-tubitak-patent-destek-programi",
+   "html_boyut": 23956,
+   "html_dosya": "html/sanayi__ulusal-destek-programlari__1602-tubitak-patent-destek-programi.html",
+   "sha256": "52993f831a4a2bab1df32a85e6809a947312fe946f808067eff3a320cdb94e56"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1612-bigg-1asama-uygulayici-kurulus-cagrisi",
+   "baslik": "1612 - BiGG - 1.Aşama Uygulayıcı Kuruluş Çağrısı",
+   "slug": "sanayi__ulusal-destek-programlari__1612-bigg-1asama-uygulayici-kurulus-cagrisi",
+   "html_boyut": 26076,
+   "html_dosya": "html/sanayi__ulusal-destek-programlari__1612-bigg-1asama-uygulayici-kurulus-cagrisi.html",
+   "sha256": "1e89d7ffbbe8745ba45d7de77dd5befbb0a573b864c6df99956c57ccd95ed014"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1613-teknoloji-transferi-profesyoneli-cagrisi",
+   "baslik": "1613 - Teknoloji Transferi Profesyoneli Çağrısı",
+   "slug": "sanayi__ulusal-destek-programlari__1613-teknoloji-transferi-profesyoneli-cagrisi",
+   "html_boyut": 36229,
+   "html_dosya": "html/sanayi__ulusal-destek-programlari__1613-teknoloji-transferi-profesyoneli-cagrisi.html",
+   "sha256": "39aff7781620ea12b2bd36df49c4c076795af5b5d02f6a9299821a3cdcfe5322"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1701-ar-ge-proje-degerlendirme-ve-izleme-cagrisi",
+   "baslik": "1701 - Ar-Ge Proje Değerlendirme ve İzleme Çağrısı",
+   "slug": "sanayi__ulusal-destek-programlari__1701-ar-ge-proje-degerlendirme-ve-izleme-cagrisi",
+   "html_boyut": 31838,
+   "html_dosya": "html/sanayi__ulusal-destek-programlari__1701-ar-ge-proje-degerlendirme-ve-izleme-cagrisi.html",
+   "sha256": "2eae8ff5e6667a12a981b02f7e9d8bedd778f4f655ebf175d9327e1ffaacdd5e"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1702-patent-tabanli-teknoloji-transferi-destekleme-cagrisi",
+   "baslik": "1702 - Patent Tabanlı Teknoloji Transferi Destekleme Çağrısı",
+   "slug": "sanayi__ulusal-destek-programlari__1702-patent-tabanli-teknoloji-transferi-destekleme-cagrisi",
+   "html_boyut": 55570,
+   "html_dosya": "html/sanayi__ulusal-destek-programlari__1702-patent-tabanli-teknoloji-transferi-destekleme-cagrisi.html",
+   "sha256": "b0a7f0ebef613f20f424ebdf97f49d105041e43a7c7d614182bf3ea6692f3f80"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1707-siparise-dayali-ar-ge-projeleri-icin-kobi-destekleme-cagrisi",
+   "baslik": "1707 - Siparişe Dayalı Ar-Ge Projeleri için KOBİ Destekleme Çağrısı",
+   "slug": "sanayi__ulusal-destek-programlari__1707-siparise-dayali-ar-ge-projeleri-icin-kobi-destekleme-cagrisi",
+   "html_boyut": 30275,
+   "html_dosya": "html/sanayi__ulusal-destek-programlari__1707-siparise-dayali-ar-ge-projeleri-icin-kobi-destekleme-cagrisi.html",
+   "sha256": "bf563ae75df8234aa88143cb80ee127245fa7cf70286aef93eafdda98100291d"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1711-yapay-zeka-ekosistem-cagrisi",
+   "baslik": "1711 - Yapay Zekâ Ekosistem Çağrısı",
+   "slug": "sanayi__ulusal-destek-programlari__1711-yapay-zeka-ekosistem-cagrisi",
+   "html_boyut": 30801,
+   "html_dosya": "html/sanayi__ulusal-destek-programlari__1711-yapay-zeka-ekosistem-cagrisi.html",
+   "sha256": "53833cb71f3fb21819418156a1d21708b8e3064e61146fcac2ae6d28f8e10b9b"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1812-yatirim-tabanli-girisimcilik-destek-programi-bigg-yatirim",
+   "baslik": "1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)",
+   "slug": "sanayi__ulusal-destek-programlari__1812-yatirim-tabanli-girisimcilik-destek-programi-bigg-yatirim",
+   "html_boyut": 53497,
+   "html_dosya": "html/sanayi__ulusal-destek-programlari__1812-yatirim-tabanli-girisimcilik-destek-programi-bigg-yatirim.html",
+   "sha256": "57dd6b8d778e3f5cd62b76f16c6697ded279ef2fb6d68cb56ba501b3c611b2e3"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1831-yesil-inovasyon-teknoloji-mentorluk-cagrisi",
+   "baslik": "1831 - Yeşil İnovasyon Teknoloji Mentörlük Çağrısı",
+   "slug": "sanayi__ulusal-destek-programlari__1831-yesil-inovasyon-teknoloji-mentorluk-cagrisi",
+   "html_boyut": 15654,
+   "html_dosya": "html/sanayi__ulusal-destek-programlari__1831-yesil-inovasyon-teknoloji-mentorluk-cagrisi.html",
+   "sha256": "099ca1be690b850953852c1530cd294d6d7c5d8aca458e84e70cab7a9d35f6a3"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1832-sanayide-yesil-donusum-cagrisi",
+   "baslik": "1832 - Sanayide Yeşil Dönüşüm Çağrısı",
+   "slug": "sanayi__ulusal-destek-programlari__1832-sanayide-yesil-donusum-cagrisi",
+   "html_boyut": 40443,
+   "html_dosya": "html/sanayi__ulusal-destek-programlari__1832-sanayide-yesil-donusum-cagrisi.html",
+   "sha256": "902371624f5386c0d35550c24c6d48ebeb3a433675a01c20c2f8697901cc4022"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1833-sayem-yesil-donusum-cagrisi",
+   "baslik": "1833 - SAYEM Yeşil Dönüşüm Çağrısı",
+   "slug": "sanayi__ulusal-destek-programlari__1833-sayem-yesil-donusum-cagrisi",
+   "html_boyut": 34830,
+   "html_dosya": "html/sanayi__ulusal-destek-programlari__1833-sayem-yesil-donusum-cagrisi.html",
+   "sha256": "ac634dc4c67f4ad74836b18466deaa4499803cd30b7a96d65d29c5792589d658"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/sanayi/uluslararasi-ortakli-destek-programlari/1509-tubitak-uluslararasi-sanayi-ar-ge-projeleri-destekleme-programi",
+   "baslik": "1509 - TÜBİTAK Uluslararası Sanayi Ar-Ge Projeleri Destekleme Programı",
+   "slug": "sanayi__uluslararasi-ortakli-destek-programlari__1509-tubitak-uluslararasi-sanayi-ar-ge-projeleri-destekleme-programi",
+   "html_boyut": 46077,
+   "html_dosya": "html/sanayi__uluslararasi-ortakli-destek-programlari__1509-tubitak-uluslararasi-sanayi-ar-ge-projeleri-destekleme-programi.html",
+   "sha256": "23f671890ca62a23c2032ec69c4961936f1a6d59e30c615baa4d4766162730a7"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/sanayi/uluslararasi-ortakli-destek-programlari/1709-eureka-eurostars",
+   "baslik": "1709 – EUREKA-EUROSTARS",
+   "slug": "sanayi__uluslararasi-ortakli-destek-programlari__1709-eureka-eurostars",
+   "html_boyut": 32683,
+   "html_dosya": "html/sanayi__uluslararasi-ortakli-destek-programlari__1709-eureka-eurostars.html",
+   "sha256": "4a5a7409f33ef438e7d94e74a68890171743c1f7db6540439709df7ba29df695"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/sanayi/uluslararasi-ortakli-destek-programlari/1719-eureka-network-cagrilari",
+   "baslik": "1719 Eureka Network Çağrıları",
+   "slug": "sanayi__uluslararasi-ortakli-destek-programlari__1719-eureka-network-cagrilari",
+   "html_boyut": 19598,
+   "html_dosya": "html/sanayi__uluslararasi-ortakli-destek-programlari__1719-eureka-network-cagrilari.html",
+   "sha256": "7a0f953017e8856e93afd29f610dc3679377da810d32fe920b9e97f246157684"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/sanayi/uluslararasi-ortakli-destek-programlari/eureka-seyahat-destegi",
+   "baslik": "Eureka Seyahat Desteği",
+   "slug": "sanayi__uluslararasi-ortakli-destek-programlari__eureka-seyahat-destegi",
+   "html_boyut": 8630,
+   "html_dosya": "html/sanayi__uluslararasi-ortakli-destek-programlari__eureka-seyahat-destegi.html",
+   "sha256": "ac782b64d37d20e0b6dfec10cfc006a148058f6e7bd376b28d2e4a3cf07d2421"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/sanayi/uluslararasi-ortakli-destek-programlari/eurostars-koordinatorluk-destegi-programi",
+   "baslik": "Eurostars Koordinatörlük Desteği Programı",
+   "slug": "sanayi__uluslararasi-ortakli-destek-programlari__eurostars-koordinatorluk-destegi-programi",
+   "html_boyut": 9014,
+   "html_dosya": "html/sanayi__uluslararasi-ortakli-destek-programlari__eurostars-koordinatorluk-destegi-programi.html",
+   "sha256": "e26f93b7db83172135f2c713fd77c1dec0cec987b310911ae45a7660533aa5df"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/sanayi/uluslararasi-ortakli-destek-programlari/ufuk-avrupa-programi",
+   "baslik": "Ufuk Avrupa Programı",
+   "slug": "sanayi__uluslararasi-ortakli-destek-programlari__ufuk-avrupa-programi",
+   "html_boyut": 3095,
+   "html_dosya": "html/sanayi__uluslararasi-ortakli-destek-programlari__ufuk-avrupa-programi.html",
+   "sha256": "2e8d5ef75e6dd340abc3362e816d4550eeca410c3478f1cc7924731853ea4224"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/sanayi/uluslararasi-programlar",
+   "baslik": "Uluslararası Programlar",
+   "slug": "sanayi__uluslararasi-programlar",
+   "html_boyut": 4223,
+   "html_dosya": "html/sanayi__uluslararasi-programlar.html",
+   "sha256": "2dfc1de542cac209c38f32ebbe484158bc2811d6c44be8b5c53c716c15b451e3"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/uluslararasi-birlikleri/coklu-birligi-programlari/2515-cost-aksiyon-uyeleri-ar-ge-destek-programi",
+   "baslik": "2515 - COST Aksiyon Üyeleri Ar-Ge Destek Programı",
+   "slug": "uluslararasi-birlikleri__coklu-birligi-programlari__2515-cost-aksiyon-uyeleri-ar-ge-destek-programi",
+   "html_boyut": 19515,
+   "html_dosya": "html/uluslararasi-birlikleri__coklu-birligi-programlari__2515-cost-aksiyon-uyeleri-ar-ge-destek-programi.html",
+   "sha256": "c3fbb284343f15ff422917ae812cf5a62e6f8df5f443e9e213e00fd2c64d479e"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/uluslararasi-birlikleri/coklu-birligi-programlari/cost-bilim-ve-teknolojide-avrupa-isbirligi",
+   "baslik": "COST (Bilim ve Teknolojide Avrupa İşbirliği)",
+   "slug": "uluslararasi-birlikleri__coklu-birligi-programlari__cost-bilim-ve-teknolojide-avrupa-isbirligi",
+   "html_boyut": 67205,
+   "html_dosya": "html/uluslararasi-birlikleri__coklu-birligi-programlari__cost-bilim-ve-teknolojide-avrupa-isbirligi.html",
+   "sha256": "de5594c9f2f3ffd03ced46e766ebb4b0ca08d7281b78694d0b68b3ac04d784c7"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/uluslararasi-birlikleri/ikili-birligi-programlari/2223-d-abd-ulusal-saglik-enstituleri-nih-calistay-cagri-programi",
+   "baslik": "2223 - D ABD Ulusal Sağlık Enstitüleri (NIH) Çalıştay Çağrı Programı",
+   "slug": "uluslararasi-birlikleri__ikili-birligi-programlari__2223-d-abd-ulusal-saglik-enstituleri-nih-calistay-cagri-programi",
+   "html_boyut": 13498,
+   "html_dosya": "html/uluslararasi-birlikleri__ikili-birligi-programlari__2223-d-abd-ulusal-saglik-enstituleri-nih-calistay-cagri-programi.html",
+   "sha256": "f670b2723a2855c85ff35c2f968907481fd71d239e0681881c83c7086d963cab"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/uluslararasi-birlikleri/ikili-birligi-programlari/2223-d-katip-celebi-newton-fonu-kapsam-calistay-cagri-programi",
+   "baslik": "2223 - D - Katip Çelebi-Newton Fonu Kapsam Çalıştay Çağrı Programı",
+   "slug": "uluslararasi-birlikleri__ikili-birligi-programlari__2223-d-katip-celebi-newton-fonu-kapsam-calistay-cagri-programi",
+   "html_boyut": 15465,
+   "html_dosya": "html/uluslararasi-birlikleri__ikili-birligi-programlari__2223-d-katip-celebi-newton-fonu-kapsam-calistay-cagri-programi.html",
+   "sha256": "20ad46e7077b2af84835679ef6b84b1b4f22d6bb962e3a82ddcad718c6d87da2"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/uluslararasi-birlikleri/ikili-birligi-programlari/2223-d-turkiye-birlesik-krallik-calistay-cagri-programi",
+   "baslik": "2223 - D Türkiye-Birleşik Krallık Çalıştay Çağrı Programı",
+   "slug": "uluslararasi-birlikleri__ikili-birligi-programlari__2223-d-turkiye-birlesik-krallik-calistay-cagri-programi",
+   "html_boyut": 9752,
+   "html_dosya": "html/uluslararasi-birlikleri__ikili-birligi-programlari__2223-d-turkiye-birlesik-krallik-calistay-cagri-programi.html",
+   "sha256": "45f272d75b0881d48972bb6f7791b810d127d9c52af6f5f48ed0b431840e1e57"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/uluslararasi-birlikleri/ikili-birligi-programlari/2501-abd-ulusal-bilim-vakfi-nsf-ile-ikili-isbirligi-programi",
+   "baslik": "2501 - ABD Ulusal Bilim Vakfı (NSF) ile İkili İşbirliği Programı",
+   "slug": "uluslararasi-birlikleri__ikili-birligi-programlari__2501-abd-ulusal-bilim-vakfi-nsf-ile-ikili-isbirligi-programi",
+   "html_boyut": 14356,
+   "html_dosya": "html/uluslararasi-birlikleri__ikili-birligi-programlari__2501-abd-ulusal-bilim-vakfi-nsf-ile-ikili-isbirligi-programi.html",
+   "sha256": "162fdf24a4ad625712e2520be9bbd7666b0f21948ddecb9bd35609f84c1fc6c0"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/uluslararasi-birlikleri/ikili-birligi-programlari/2502-bulgaristan-bilimler-akademisi-bas-ile-ikili-isbirligi-programi",
+   "baslik": "2502 - Bulgaristan Bilimler Akademisi (BAS) ile İkili İşbirliği Programı",
+   "slug": "uluslararasi-birlikleri__ikili-birligi-programlari__2502-bulgaristan-bilimler-akademisi-bas-ile-ikili-isbirligi-programi",
+   "html_boyut": 11221,
+   "html_dosya": "html/uluslararasi-birlikleri__ikili-birligi-programlari__2502-bulgaristan-bilimler-akademisi-bas-ile-ikili-isbirligi-programi.html",
+   "sha256": "f609808b6efd7f741afee7bdf920f1d5d56a52b1e9e4051c8a965a678c1c2105"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/uluslararasi-birlikleri/ikili-birligi-programlari/2507-almanya-arastirmalar-konseyi-dfg-ile-ikili-isbirligi-programi",
+   "baslik": "2507 - Almanya Araştırmalar Konseyi (DFG) ile İkili İşbirliği Programı",
+   "slug": "uluslararasi-birlikleri__ikili-birligi-programlari__2507-almanya-arastirmalar-konseyi-dfg-ile-ikili-isbirligi-programi",
+   "html_boyut": 16960,
+   "html_dosya": "html/uluslararasi-birlikleri__ikili-birligi-programlari__2507-almanya-arastirmalar-konseyi-dfg-ile-ikili-isbirligi-programi.html",
+   "sha256": "85142ad312ca6bcbdf7c031a2c31c49910ef518962be73151769447f1de6e9c8"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/uluslararasi-birlikleri/ikili-birligi-programlari/2516-bilim-bilgi-ve-iletisim-teknolojileri-bakanligi-msit-ve-kore-ulusal-arastirma-vakfi-nrf-ile-ikili-isbirligi-programi",
+   "baslik": "2516 - Bilim, Bilgi ve İletişim Teknolojileri Bakanlığı (MSIT) ve Kore Ulusal Araştırma Vakfı (NRF) ile İkili İşbirliği Programı",
+   "slug": "uluslararasi-birlikleri__ikili-birligi-programlari__2516-bilim-bilgi-ve-iletisim-teknolojileri-bakanligi-msit-ve-kore-ulusal-arastirma-vakfi-nrf-ile-ikili-isbirligi-programi",
+   "html_boyut": 13202,
+   "html_dosya": "html/uluslararasi-birlikleri__ikili-birligi-programlari__2516-bilim-bilgi-ve-iletisim-teknolojileri-bakanligi-msit-ve-kore-ulusal-arastirma-vakfi-nrf-ile-ikili-isbirligi-programi.html",
+   "sha256": "560cd6f3f1e604ad6176b8890537fe182a1ce1c5d9b8a40188e2f9ac1b78be50"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/uluslararasi-birlikleri/ikili-birligi-programlari/2517-azerbaycan-cumhuriyeti-bilimi-gelistirme-kurumu-sdf-ile-ikili-isbirligi-programi",
+   "baslik": "2517 - Azerbaycan Cumhuriyeti Bilimi Geliştirme Kurumu (SDF) ile İkili İşbirliği Programı",
+   "slug": "uluslararasi-birlikleri__ikili-birligi-programlari__2517-azerbaycan-cumhuriyeti-bilimi-gelistirme-kurumu-sdf-ile-ikili-isbirligi-programi",
+   "html_boyut": 6723,
+   "html_dosya": "html/uluslararasi-birlikleri__ikili-birligi-programlari__2517-azerbaycan-cumhuriyeti-bilimi-gelistirme-kurumu-sdf-ile-ikili-isbirligi-programi.html",
+   "sha256": "dbd9f445e92cab4f40005f5d62c332aef295066e85758df24e7115a24a16f5aa"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/uluslararasi-birlikleri/ikili-birligi-programlari/2542-azerbaycan-ulusal-bilimler-akademisi-anas-ile-ikili-isbirligi-programi",
+   "baslik": "2542 - Azerbaycan Ulusal Bilimler Akademisi (ANAS) ile İkili İşbirliği Programı",
+   "slug": "uluslararasi-birlikleri__ikili-birligi-programlari__2542-azerbaycan-ulusal-bilimler-akademisi-anas-ile-ikili-isbirligi-programi",
+   "html_boyut": 6336,
+   "html_dosya": "html/uluslararasi-birlikleri__ikili-birligi-programlari__2542-azerbaycan-ulusal-bilimler-akademisi-anas-ile-ikili-isbirligi-programi.html",
+   "sha256": "cfad3b232ae3c0110e1b6bb3964141ab77412bd58c486d63732f5bb3f560ea8d"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/uluslararasi-birlikleri/ikili-birligi-programlari/2544-japon-bilimi-destekleme-kurumu-jsps-ile-ikili-isbirligi-programi",
+   "baslik": "2544 - Japon Bilimi Destekleme Kurumu (JSPS) ile İkili İşbirliği Programı",
+   "slug": "uluslararasi-birlikleri__ikili-birligi-programlari__2544-japon-bilimi-destekleme-kurumu-jsps-ile-ikili-isbirligi-programi",
+   "html_boyut": 22570,
+   "html_dosya": "html/uluslararasi-birlikleri__ikili-birligi-programlari__2544-japon-bilimi-destekleme-kurumu-jsps-ile-ikili-isbirligi-programi.html",
+   "sha256": "321cdf5e744acedcad5e0f60c5515a9bf406674ab0d636f9144eb07ce83923dd"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/uluslararasi-birlikleri/ikili-birligi-programlari/2566-tubitak-nsfc-cin-ikili-isbirligi-programi",
+   "baslik": "2566 - Çin Ulusal Doğa Bilimleri Vakfı (NSFC) ile İkili İşbirliği Çağrısı",
+   "slug": "uluslararasi-birlikleri__ikili-birligi-programlari__2566-tubitak-nsfc-cin-ikili-isbirligi-programi",
+   "html_boyut": 17125,
+   "html_dosya": "html/uluslararasi-birlikleri__ikili-birligi-programlari__2566-tubitak-nsfc-cin-ikili-isbirligi-programi.html",
+   "sha256": "24320fd54d9cac2a4d235269626a84826c9b66fa88d6a7d1cb08315a439a4691"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/uluslararasi-birlikleri/ikili-birligi-programlari/2568-cin-bilimler-akademisi-cas-ile-ikili-isbirligi-programi",
+   "baslik": "2568 - Çin Bilimler Akademisi (CAS) ile İkili İşbirliği Programı",
+   "slug": "uluslararasi-birlikleri__ikili-birligi-programlari__2568-cin-bilimler-akademisi-cas-ile-ikili-isbirligi-programi",
+   "html_boyut": 16923,
+   "html_dosya": "html/uluslararasi-birlikleri__ikili-birligi-programlari__2568-cin-bilimler-akademisi-cas-ile-ikili-isbirligi-programi.html",
+   "sha256": "bad42bc3265d1bd001a7606bd53c5947d7a1a4aacb708f491e66cb93efcff406"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/uluslararasi-is-birlikleri",
+   "baslik": "Uluslararası İş Birlikleri",
+   "slug": "uluslararasi-is-birlikleri",
+   "html_boyut": 11956,
+   "html_dosya": "html/uluslararasi-is-birlikleri.html",
+   "sha256": "7d2984b32cea94d3204ef540c8f7e657c3b771139760f78898834bc67a93cc02"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/uluslararasi-is-birlikleri/coklu-is-birligi-programlari",
+   "baslik": "Çok Taraflı Programlar",
+   "slug": "uluslararasi-is-birlikleri__coklu-is-birligi-programlari",
+   "html_boyut": 6784,
+   "html_dosya": "html/uluslararasi-is-birlikleri__coklu-is-birligi-programlari.html",
+   "sha256": "d4086b5f21616cc208436912197092d4deb6562cee22499c42fe876e28758dfa"
+  },
+  {
+   "url": "https://tubitak.gov.tr/tr/destekler/uluslararasi-is-birlikleri/ikili-is-birligi-programlari",
+   "baslik": "İkili İş Birliği Programları",
+   "slug": "uluslararasi-is-birlikleri__ikili-is-birligi-programlari",
+   "html_boyut": 3486,
+   "html_dosya": "html/uluslararasi-is-birlikleri__ikili-is-birligi-programlari.html",
+   "sha256": "9593259c2f4aaa78798c3d50bec50f295ae1232a4bd42a4fec23123ce85a07c9"
+  }
+ ],
+ "dosyalar": [
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2024-04/ardeb_1001_basvuru_rehberi.pdf",
+   "baslik": "1001 Programı Başvuru Kılavuzu",
+   "ext": ".pdf",
+   "dosya_adi": "ardeb_1001_basvuru_rehberi.pdf",
+   "sayfalar": [
+    "akademik",
+    "akademik__ulusal-destek-programlari__1001-bilimsel-ve-teknolojik-arastirma-projelerini-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 3861082,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2024-04__ardeb_1001_basvuru_rehberi.pdf",
+   "sha256": "88eb01895fb23c7d7a26888d99126a7bd1c45aa1201255371bbd7521d8c8552b",
+   "sayfa_sayisi": 53,
+   "metin_karakter": 59592,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2024-04/1002_a_programi_basvuru_rehberi.pdf",
+   "baslik": "1002-A Başvuru Kılavuzu",
+   "ext": ".pdf",
+   "dosya_adi": "1002_a_programi_basvuru_rehberi.pdf",
+   "sayfalar": [
+    "akademik",
+    "akademik__ulusal-destek-programlari__1002-hizli-destek-modulu"
+   ],
+   "haric": null,
+   "boyut": 4479407,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2024-04__1002_a_programi_basvuru_rehberi.pdf",
+   "sha256": "72a01506dd34774bb7b32ec971ef8d07aa51ffb846aff5530d62f1ad7bf88907",
+   "sayfa_sayisi": 49,
+   "metin_karakter": 55698,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2024-04/1002_b_programi_basvuru_rehberi.pdf",
+   "baslik": "1002-B Başvuru Kılavuzu",
+   "ext": ".pdf",
+   "dosya_adi": "1002_b_programi_basvuru_rehberi.pdf",
+   "sayfalar": [
+    "akademik",
+    "akademik__ulusal-destek-programlari__1002-b-acil-destek-modulu"
+   ],
+   "haric": null,
+   "boyut": 4221227,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2024-04__1002_b_programi_basvuru_rehberi.pdf",
+   "sha256": "8ca79513f1b92b0646a0b978aa3cd30eb9648d1551e78e0783a32cec4e69d4c3",
+   "sayfa_sayisi": 50,
+   "metin_karakter": 55214,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2024-04/ardeb_1005_programi_basvuru_rehberi.pdf",
+   "baslik": "1005 Programı Başvuru Kılavuzu",
+   "ext": ".pdf",
+   "dosya_adi": "ardeb_1005_programi_basvuru_rehberi.pdf",
+   "sayfalar": [
+    "akademik",
+    "akademik__ulusal-destek-programlari__1005-ulusal-yeni-fikirler-ve-urunler-arastirma-destek-programi"
+   ],
+   "haric": null,
+   "boyut": 3636837,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2024-04__ardeb_1005_programi_basvuru_rehberi.pdf",
+   "sha256": "6cff0b8e35869c21cfabe6eeb4067855de10b12d6b20b47be896813f5310e6a7",
+   "sayfa_sayisi": 43,
+   "metin_karakter": 46221,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2024-04/ardeb_3501_programi_basvuru_rehberi.pdf",
+   "baslik": "3501 Programı Başvuru Kılavuzu",
+   "ext": ".pdf",
+   "dosya_adi": "ardeb_3501_programi_basvuru_rehberi.pdf",
+   "sayfalar": [
+    "akademik",
+    "akademik__ulusal-destek-programlari__3501-kariyer-gelistirme-programi"
+   ],
+   "haric": null,
+   "boyut": 3734293,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2024-04__ardeb_3501_programi_basvuru_rehberi.pdf",
+   "sha256": "f588999ce2edfe1d9a979b521bda297596946fbf33ffe6d8db5c4e8da447f164",
+   "sayfa_sayisi": 44,
+   "metin_karakter": 47612,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2024-04/ardeb_3005_programi_basvuru_rehberi.pdf",
+   "baslik": "3005 Programı Başvuru Kılavuzu",
+   "ext": ".pdf",
+   "dosya_adi": "ardeb_3005_programi_basvuru_rehberi.pdf",
+   "sayfalar": [
+    "akademik"
+   ],
+   "haric": null,
+   "boyut": 3694674,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2024-04__ardeb_3005_programi_basvuru_rehberi.pdf",
+   "sha256": "afcf8f7f4888f71320f64ff855885881d250e210e6ed2e00037204e67943dcdd",
+   "sayfa_sayisi": 42,
+   "metin_karakter": 46495,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-07/2026_afad_udap_cagri_metni.pdf",
+   "baslik": "tıklayınız.",
+   "ext": ".pdf",
+   "dosya_adi": "2026_afad_udap_cagri_metni.pdf",
+   "sayfalar": [
+    "akademik__ulusal-destek-programlari__1001-bilimsel-ve-teknolojik-arastirma-projelerini-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 2426360,
+   "kat": "cagri",
+   "dosya": "dosyalar/2026-07__2026_afad_udap_cagri_metni.pdf",
+   "sha256": "22b065fdacfb59aa185dbbea5028ec002542b5c0d3166d336a685c63e723a1c0",
+   "baslik_belirsiz": true,
+   "sayfa_sayisi": 9,
+   "metin_karakter": 0,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/20689/1001_spor_arastirmalari_2024_ozel_cagri_metni.pdf",
+   "baslik": "tıklayınız.",
+   "ext": ".pdf",
+   "dosya_adi": "1001_spor_arastirmalari_2024_ozel_cagri_metni.pdf",
+   "sayfalar": [
+    "akademik__ulusal-destek-programlari__1001-bilimsel-ve-teknolojik-arastirma-projelerini-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 426755,
+   "kat": "cagri",
+   "dosya": "dosyalar/20689__1001_spor_arastirmalari_2024_ozel_cagri_metni.pdf",
+   "sha256": "7e516cd2f3c525a182310bf86ecb934ef1f8c6e1b5a3323a47f573fed4f40041",
+   "baslik_belirsiz": true,
+   "sayfa_sayisi": 4,
+   "metin_karakter": 8968,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/20689/geleneksel_ve_tamamlayici_tip_getat_cagri_metni.pdf",
+   "baslik": "tıklayınız.",
+   "ext": ".pdf",
+   "dosya_adi": "geleneksel_ve_tamamlayici_tip_getat_cagri_metni.pdf",
+   "sayfalar": [
+    "akademik__ulusal-destek-programlari__1001-bilimsel-ve-teknolojik-arastirma-projelerini-destekleme-programi",
+    "akademik__ulusal-destek-programlari__1003-oncelikli-alanlar-ar-ge-projeleri-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 555738,
+   "kat": "cagri",
+   "dosya": "dosyalar/20689__geleneksel_ve_tamamlayici_tip_getat_cagri_metni.pdf",
+   "sha256": "27e7434cbd4f648b3ea667e9b0f65158f220b4236dcae54e87bdccd5d722aec9",
+   "baslik_belirsiz": true,
+   "sayfa_sayisi": 5,
+   "metin_karakter": 12427,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/20689/udap_afet_risk_azaltma_cagrisi.pdf",
+   "baslik": "tıklayınız",
+   "ext": ".pdf",
+   "dosya_adi": "udap_afet_risk_azaltma_cagrisi.pdf",
+   "sayfalar": [
+    "akademik__ulusal-destek-programlari__1001-bilimsel-ve-teknolojik-arastirma-projelerini-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 498600,
+   "kat": "cagri",
+   "dosya": "dosyalar/20689__udap_afet_risk_azaltma_cagrisi.pdf",
+   "sha256": "f6131fe94df4950da008b9ec565f6ae09b62d9955dd6e7548a199643c58cf16f",
+   "baslik_belirsiz": true,
+   "sayfa_sayisi": 11,
+   "metin_karakter": 32641,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-01/cumhuriyet_100_cagri_metni.pdf",
+   "baslik": "tıklayınız.",
+   "ext": ".pdf",
+   "dosya_adi": "cumhuriyet_100_cagri_metni.pdf",
+   "sayfalar": [
+    "akademik__ulusal-destek-programlari__1001-bilimsel-ve-teknolojik-arastirma-projelerini-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 401477,
+   "kat": "cagri",
+   "dosya": "dosyalar/2026-01__cumhuriyet_100_cagri_metni.pdf",
+   "sha256": "04a09597cd6a58c9221407021443fa15fcace97e0042c5002ba36b1663141e87",
+   "baslik_belirsiz": true,
+   "sayfa_sayisi": 3,
+   "metin_karakter": 4620,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2023-08/1004_cagri_metni_2021_0.pdf",
+   "baslik": "Çağrı Dokümanı",
+   "ext": ".pdf",
+   "dosya_adi": "1004_cagri_metni_2021_0.pdf",
+   "sayfalar": [
+    "akademik__ulusal-destek-programlari__1004-mukemmeliyet-merkezi-destek-programi"
+   ],
+   "haric": null,
+   "boyut": 433978,
+   "kat": "cagri",
+   "dosya": "dosyalar/2023-08__1004_cagri_metni_2021_0.pdf",
+   "sha256": "70eaff9978a045a458410f5bb05b3f5e0c91fd227362841704eac1ada4c09c50",
+   "sayfa_sayisi": 3,
+   "metin_karakter": 3366,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2023-08/1004-sss-02.07.2020.pdf",
+   "baslik": "Sıkça Sorulan Sorular",
+   "ext": ".pdf",
+   "dosya_adi": "1004-sss-02.07.2020.pdf",
+   "sayfalar": [
+    "akademik__ulusal-destek-programlari__1004-mukemmeliyet-merkezi-destek-programi"
+   ],
+   "haric": null,
+   "boyut": 515779,
+   "kat": "cagri",
+   "dosya": "dosyalar/2023-08__1004-sss-02.07.2020.pdf",
+   "sha256": "85606ec94546ad784b5f62708f724b890cfb4f9d2694a91af5008633420bd14b",
+   "sayfa_sayisi": 11,
+   "metin_karakter": 23578,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2023-08/moderator_rehberi_23012013.pdf",
+   "baslik": "Moderatör Rehberi",
+   "ext": ".pdf",
+   "dosya_adi": "moderator_rehberi_23012013.pdf",
+   "sayfalar": [
+    "akademik__ulusal-destek-programlari__1007-kamu-kurumlari-arastirma-ve-gelistirme-projelerini-destekleme-programi",
+    "kamu__ulusal-destek-programlari__1007-kamu-kurumlari-arastirma-ve-gelistirme-projelerini-dp"
+   ],
+   "haric": null,
+   "boyut": 1380813,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2023-08__moderator_rehberi_23012013.pdf",
+   "sha256": "e270c0d629f596f8ff3c7d37c12f09eade5cf1f6f93fc888379aa109b67137a5",
+   "sayfa_sayisi": 20,
+   "metin_karakter": 15479,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2023-08/panelist_rehberi_23012013.pdf",
+   "baslik": "Panelist Rehberi",
+   "ext": ".pdf",
+   "dosya_adi": "panelist_rehberi_23012013.pdf",
+   "sayfalar": [
+    "akademik__ulusal-destek-programlari__1007-kamu-kurumlari-arastirma-ve-gelistirme-projelerini-destekleme-programi",
+    "kamu__ulusal-destek-programlari__1007-kamu-kurumlari-arastirma-ve-gelistirme-projelerini-dp"
+   ],
+   "haric": null,
+   "boyut": 1461360,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2023-08__panelist_rehberi_23012013.pdf",
+   "sha256": "fc3f8202c129854696df39876df1a76347135f253aee9d40cf93276451d3db38",
+   "sayfa_sayisi": 23,
+   "metin_karakter": 19534,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2024-05/proje_ozel_hesaplari.pdf",
+   "baslik": "Proje hesapları açılırken, izne gerek olmadığına dair Muhasebat Genel Müdürlüğü tarafından yayınlanan duyuru için tıklayınız.",
+   "ext": ".pdf",
+   "dosya_adi": "proje_ozel_hesaplari.pdf",
+   "sayfalar": [
+    "akademik__uygulamalar-ve-yonergeler__guncel-tts-duyurulari"
+   ],
+   "haric": null,
+   "boyut": 215611,
+   "kat": "cagri",
+   "dosya": "dosyalar/2024-05__proje_ozel_hesaplari.pdf",
+   "sha256": "459405fb6c3b51fe8f745157d92e4e58e6ada7fb5e0139d2a6b31bd97fe9691c",
+   "sayfa_sayisi": 2,
+   "metin_karakter": 40,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2024-05/bursiyer_odemeleri_duyuru.pdf",
+   "baslik": "Burs ödemelerinin Gelir Vergisinden istisna edilmesi hususundaki görüş için tıklayınız.",
+   "ext": ".pdf",
+   "dosya_adi": "bursiyer_odemeleri_duyuru.pdf",
+   "sayfalar": [
+    "akademik__uygulamalar-ve-yonergeler__guncel-tts-duyurulari"
+   ],
+   "haric": null,
+   "boyut": 157900,
+   "kat": "cagri",
+   "dosya": "dosyalar/2024-05__bursiyer_odemeleri_duyuru.pdf",
+   "sha256": "293ac4a6adc4e8164edda4a79522f696d71eb63658b3edf418cfecbfa34deedc",
+   "sayfa_sayisi": 2,
+   "metin_karakter": 2822,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2024-05/bursiyerlere_sgk_primi_hk.pdf",
+   "baslik": "Kişilere yapılan ödemeler için ortak banka hesabı kullanılmaması hakkında duyuru için tıklayınız.",
+   "ext": ".pdf",
+   "dosya_adi": "bursiyerlere_sgk_primi_hk.pdf",
+   "sayfalar": [
+    "akademik__uygulamalar-ve-yonergeler__guncel-tts-duyurulari"
+   ],
+   "haric": null,
+   "boyut": 2753797,
+   "kat": "cagri",
+   "dosya": "dosyalar/2024-05__bursiyerlere_sgk_primi_hk.pdf",
+   "sha256": "94fb9f07be7d6ca9a479975f55b65c15fbe4b47d82447424d3cadd369f7282d1",
+   "sayfa_sayisi": 1,
+   "metin_karakter": 0,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-06/4001-A_Kurallar_Kitapcigi_3_Cagri.pdf",
+   "baslik": "4001-A Kurallar Kitapçığı (30 Haziran 2026 tarihinde güncellenmiştir.)",
+   "ext": ".pdf",
+   "dosya_adi": "4001-A_Kurallar_Kitapcigi_3_Cagri.pdf",
+   "sayfalar": [
+    "bilim-toplum__ulusal-destek-programlari__4001-ulusal-ve-uluslararasi-yarismaetkinlik-katilim-destegi"
+   ],
+   "haric": null,
+   "boyut": 1064675,
+   "kat": "cagri",
+   "dosya": "dosyalar/2026-06__4001-A_Kurallar_Kitapcigi_3_Cagri.pdf",
+   "sha256": "d14467cd4a0515b9ec37ca24680039b020828e663e8950e2c6e0a000b6417043",
+   "sayfa_sayisi": 15,
+   "metin_karakter": 34791,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-08/4001-B_Kurallar_Kitapcigi_3_Cagri_V3.pdf",
+   "baslik": "4001-B Kurallar Kitapçığı (14 Ağustos 2026 tarihinde güncellenmiştir.)",
+   "ext": ".pdf",
+   "dosya_adi": "4001-B_Kurallar_Kitapcigi_3_Cagri_V3.pdf",
+   "sayfalar": [
+    "bilim-toplum__ulusal-destek-programlari__4001-ulusal-ve-uluslararasi-yarismaetkinlik-katilim-destegi"
+   ],
+   "haric": null,
+   "boyut": 910164,
+   "kat": "cagri",
+   "dosya": "dosyalar/2026-08__4001-B_Kurallar_Kitapcigi_3_Cagri_V3.pdf",
+   "sha256": "34a56ad335e9009f8673a7d4da83310416d1f02df88bd87f447bb429c87abcb4",
+   "sayfa_sayisi": 18,
+   "metin_karakter": 40256,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2024-10/4001_PBS_Yardim_Dokumani_2_cagri.pdf",
+   "baslik": "4001 - Proje Başvuru Sistemi (PBS) Yardım Dokümanı",
+   "ext": ".pdf",
+   "dosya_adi": "4001_PBS_Yardim_Dokumani_2_cagri.pdf",
+   "sayfalar": [
+    "bilim-toplum__ulusal-destek-programlari__4001-ulusal-ve-uluslararasi-yarismaetkinlik-katilim-destegi"
+   ],
+   "haric": null,
+   "boyut": 1592637,
+   "kat": "cagri",
+   "dosya": "dosyalar/2024-10__4001_PBS_Yardim_Dokumani_2_cagri.pdf",
+   "sha256": "55208947f151c23836af2c368770685eefe1aa9909f05e007d19883f27c7f071",
+   "sayfa_sayisi": 20,
+   "metin_karakter": 5972,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2024-10/4001-A_Degerlendirme_Kriterleri_2_cagri.pdf",
+   "baslik": "4001-A Değerlendirme Kriterleri",
+   "ext": ".pdf",
+   "dosya_adi": "4001-A_Degerlendirme_Kriterleri_2_cagri.pdf",
+   "sayfalar": [
+    "bilim-toplum__ulusal-destek-programlari__4001-ulusal-ve-uluslararasi-yarismaetkinlik-katilim-destegi"
+   ],
+   "haric": null,
+   "boyut": 356892,
+   "kat": "cagri",
+   "dosya": "dosyalar/2024-10__4001-A_Degerlendirme_Kriterleri_2_cagri.pdf",
+   "sha256": "a21cd700f5f65802c302694c7e76440ecac99d34b8bdda7bc6cff6eb698b6051",
+   "sayfa_sayisi": 1,
+   "metin_karakter": 1738,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2024-10/4001-B_Degerlendirme_Kriterleri_2_cagri.pdf",
+   "baslik": "4001-B Değerlendirme Kriterleri",
+   "ext": ".pdf",
+   "dosya_adi": "4001-B_Degerlendirme_Kriterleri_2_cagri.pdf",
+   "sayfalar": [
+    "bilim-toplum__ulusal-destek-programlari__4001-ulusal-ve-uluslararasi-yarismaetkinlik-katilim-destegi"
+   ],
+   "haric": null,
+   "boyut": 358947,
+   "kat": "cagri",
+   "dosya": "dosyalar/2024-10__4001-B_Degerlendirme_Kriterleri_2_cagri.pdf",
+   "sha256": "6983878e90f3536fe2d08fbccdd710f37b118a44207fe8717c330e6e1330c6dc",
+   "sayfa_sayisi": 1,
+   "metin_karakter": 1865,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2025-11/2025_4004_cagri_metni.pdf",
+   "baslik": "4004 Çağrı Metni (19. Çağrı)",
+   "ext": ".pdf",
+   "dosya_adi": "2025_4004_cagri_metni.pdf",
+   "sayfalar": [
+    "bilim-toplum__ulusal-destek-programlari__4004-doga-egitimi-ve-bilim-okullari-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 1104741,
+   "kat": "cagri",
+   "dosya": "dosyalar/2025-11__2025_4004_cagri_metni.pdf",
+   "sha256": "6e23ae041c05322561a56216badb4643556c8c97d89061272cc142e51fbc75a1",
+   "sayfa_sayisi": 15,
+   "metin_karakter": 34031,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2025-11/4004_Proje_Hazirlama_Kilavuzu_2025.pdf",
+   "baslik": "Proje Hazırlama Kılavuzu",
+   "ext": ".pdf",
+   "dosya_adi": "4004_Proje_Hazirlama_Kilavuzu_2025.pdf",
+   "sayfalar": [
+    "bilim-toplum__ulusal-destek-programlari__4004-doga-egitimi-ve-bilim-okullari-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 2276542,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2025-11__4004_Proje_Hazirlama_Kilavuzu_2025.pdf",
+   "sha256": "dab34cd2c2daa33f223224daded2f1c77b6706236371d06311b9e76fed265f99",
+   "sayfa_sayisi": 25,
+   "metin_karakter": 11466,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-02/SSS_4004_1.pdf",
+   "baslik": "Sıkça Sorulan Sorular",
+   "ext": ".pdf",
+   "dosya_adi": "SSS_4004_1.pdf",
+   "sayfalar": [
+    "bilim-toplum__ulusal-destek-programlari__4004-doga-egitimi-ve-bilim-okullari-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 544666,
+   "kat": "cagri",
+   "dosya": "dosyalar/2026-02__SSS_4004_1.pdf",
+   "sha256": "95fbb00d82c3566568776d9d039be8a89eb11ccf33be32173be24cfd63be6de9",
+   "sayfa_sayisi": 5,
+   "metin_karakter": 5691,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2025-11/4005_Cagri_Metni_2025_v2.pdf",
+   "baslik": "Çağrı Metni 2025 Yılı (13. Çağrı)",
+   "ext": ".pdf",
+   "dosya_adi": "4005_Cagri_Metni_2025_v2.pdf",
+   "sayfalar": [
+    "bilim-toplum__ulusal-destek-programlari__4005-yenilikci-egitim-uygulamalari-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 1264258,
+   "kat": "cagri",
+   "dosya": "dosyalar/2025-11__4005_Cagri_Metni_2025_v2.pdf",
+   "sha256": "3b45799098147373783f72413dbf48a341507fc43045cf5c25aa14339a1a0d7f",
+   "sayfa_sayisi": 14,
+   "metin_karakter": 35052,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2025-11/4005_Proje_Hazirlama_Kilavuzu_2025.pdf",
+   "baslik": "Proje Hazırlama Kılavuzu",
+   "ext": ".pdf",
+   "dosya_adi": "4005_Proje_Hazirlama_Kilavuzu_2025.pdf",
+   "sayfalar": [
+    "bilim-toplum__ulusal-destek-programlari__4005-yenilikci-egitim-uygulamalari-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 2142941,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2025-11__4005_Proje_Hazirlama_Kilavuzu_2025.pdf",
+   "sha256": "688c8b5f6d3a8fedf1539c93a306f2c20d73ec47d4bf6f015ee99b162b22c531",
+   "sayfa_sayisi": 23,
+   "metin_karakter": 11242,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-02/SSS_4005_4.pdf",
+   "baslik": "Sıkça Sorulan Sorular",
+   "ext": ".pdf",
+   "dosya_adi": "SSS_4005_4.pdf",
+   "sayfalar": [
+    "bilim-toplum__ulusal-destek-programlari__4005-yenilikci-egitim-uygulamalari-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 626384,
+   "kat": "cagri",
+   "dosya": "dosyalar/2026-02__SSS_4005_4.pdf",
+   "sha256": "e8279a5038597d68c2562549459aef8e2f9770beba675945a258d8f2b7cf1c8d",
+   "sayfa_sayisi": 5,
+   "metin_karakter": 5691,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-09/13_BF_4006-A_Cagri_Metni_Yeni.pdf",
+   "baslik": "4006-A Çağrı Metni (13. Dönem)",
+   "ext": ".pdf",
+   "dosya_adi": "13_BF_4006-A_Cagri_Metni_Yeni.pdf",
+   "sayfalar": [
+    "bilim-toplum__ulusal-destek-programlari__4006-tubitak-bilim-fuarlari-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 1041074,
+   "kat": "cagri",
+   "dosya": "dosyalar/2026-09__13_BF_4006-A_Cagri_Metni_Yeni.pdf",
+   "sha256": "0f15ecfa44a1fe8fa187426dd8bfbfaf423f5e9a092d30489789be700f0d78c4",
+   "sayfa_sayisi": 15,
+   "metin_karakter": 30606,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-09/13_BF_4006-B_Cagri_Metni_Yeni.pdf",
+   "baslik": "4006-B Çağrı Metni (13. Dönem)",
+   "ext": ".pdf",
+   "dosya_adi": "13_BF_4006-B_Cagri_Metni_Yeni.pdf",
+   "sayfalar": [
+    "bilim-toplum__ulusal-destek-programlari__4006-tubitak-bilim-fuarlari-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 694224,
+   "kat": "cagri",
+   "dosya": "dosyalar/2026-09__13_BF_4006-B_Cagri_Metni_Yeni.pdf",
+   "sha256": "262a8f4d548cd9cd288803a272a30cacb378c1f631067c2965d14e6d647e2c31",
+   "sayfa_sayisi": 15,
+   "metin_karakter": 31160,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-09/13_BF_4006-A_kilavuz_YENI-_0.pdf",
+   "baslik": "4006-A Kılavuz (13. Dönem)",
+   "ext": ".pdf",
+   "dosya_adi": "13_BF_4006-A_kilavuz_YENI-_0.pdf",
+   "sayfalar": [
+    "bilim-toplum__ulusal-destek-programlari__4006-tubitak-bilim-fuarlari-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 2778780,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2026-09__13_BF_4006-A_kilavuz_YENI-_0.pdf",
+   "sha256": "3302d285142860f029e973a47cbeb048c56dc2fa896cfaf260fdfbe2fd1bb54a",
+   "sayfa_sayisi": 129,
+   "metin_karakter": 235032,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-09/13_BF_4006-B_kilavuz_YENI_0.pdf",
+   "baslik": "4006-B Kılavuz (13. Dönem)",
+   "ext": ".pdf",
+   "dosya_adi": "13_BF_4006-B_kilavuz_YENI_0.pdf",
+   "sayfalar": [
+    "bilim-toplum__ulusal-destek-programlari__4006-tubitak-bilim-fuarlari-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 2705474,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2026-09__13_BF_4006-B_kilavuz_YENI_0.pdf",
+   "sha256": "c6fd9c3373bd4419b29b7abe1406f0ea3fb08e7e0d3ed9a52c0d3786d1e0ef80",
+   "sayfa_sayisi": 121,
+   "metin_karakter": 225318,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-09/ARBIS_Basvuru_Kilavuzu_2026.pdf",
+   "baslik": "ARBİS Kullanım Kılavuzu",
+   "ext": ".pdf",
+   "dosya_adi": "ARBIS_Basvuru_Kilavuzu_2026.pdf",
+   "sayfalar": [
+    "bilim-toplum__ulusal-destek-programlari__4006-tubitak-bilim-fuarlari-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 938391,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2026-09__ARBIS_Basvuru_Kilavuzu_2026.pdf",
+   "sha256": "be4ce2ed4cbd8b76ad954e2207ea1bf1de55ec0bb8ff32c9f7e6b4aafb3832d3",
+   "sayfa_sayisi": 18,
+   "metin_karakter": 14228,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-09/4006_SSS_0.pdf",
+   "baslik": "Sıkça Sorulan Sorular",
+   "ext": ".pdf",
+   "dosya_adi": "4006_SSS_0.pdf",
+   "sayfalar": [
+    "bilim-toplum__ulusal-destek-programlari__4006-tubitak-bilim-fuarlari-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 896704,
+   "kat": "cagri",
+   "dosya": "dosyalar/2026-09__4006_SSS_0.pdf",
+   "sha256": "9566c03af6d10aa91ac23b4596196def7bcd1f6483e474fdef318e8dffabb48b",
+   "sayfa_sayisi": 10,
+   "metin_karakter": 20736,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-10/4006_MEB_Arastirma_Uygulama_Izinleri_Sistemi_Basvuru_Yardim_Dokumani.pdf",
+   "baslik": "MEB Araştırma Uygulama İzinleri Başvuru Sistemi Yardım Dokümanı",
+   "ext": ".pdf",
+   "dosya_adi": "4006_MEB_Arastirma_Uygulama_Izinleri_Sistemi_Basvuru_Yardim_Dokumani.pdf",
+   "sayfalar": [
+    "bilim-toplum__ulusal-destek-programlari__4006-tubitak-bilim-fuarlari-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 2443437,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2026-10__4006_MEB_Arastirma_Uygulama_Izinleri_Sistemi_Basvuru_Yardim_Dokumani.pdf",
+   "sha256": "889a7bf6c7d8c90dbe6bf133bec3bda5572d37b102b45024fc5984d2a8275112",
+   "sayfa_sayisi": 15,
+   "metin_karakter": 5162,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-01/4007_Cagri_Metni_2026_27012026.pdf",
+   "baslik": "4007 Çağrı Metni (2026)",
+   "ext": ".pdf",
+   "dosya_adi": "4007_Cagri_Metni_2026_27012026.pdf",
+   "sayfalar": [
+    "bilim-toplum__ulusal-destek-programlari__4007-bilim-senlikleri-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 876246,
+   "kat": "cagri",
+   "dosya": "dosyalar/2026-01__4007_Cagri_Metni_2026_27012026.pdf",
+   "sha256": "4806f8f8bca11829485e110de2ed99d8a669812f183c896abebcf7829f8b47e3",
+   "sayfa_sayisi": 18,
+   "metin_karakter": 50841,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-02/Bilim_ve_Toplum_PBS_Bilgilendirme_2026.pdf",
+   "baslik": "Başvuru Sistemi Bilgilendirme Kılavuzu (2026)",
+   "ext": ".pdf",
+   "dosya_adi": "Bilim_ve_Toplum_PBS_Bilgilendirme_2026.pdf",
+   "sayfalar": [
+    "bilim-toplum__ulusal-destek-programlari__4007-bilim-senlikleri-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 2447299,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2026-02__Bilim_ve_Toplum_PBS_Bilgilendirme_2026.pdf",
+   "sha256": "2b4ac47bfc5af53c45c72ddefa979f3c270d62c675885fd905f4e87faa07c761",
+   "sayfa_sayisi": 40,
+   "metin_karakter": 9445,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-02/4007_Proje_Hazirlama_Kilavuzu_2026.pdf",
+   "baslik": "4007 Proje Hazırlama Kılavuzu (2026)",
+   "ext": ".pdf",
+   "dosya_adi": "4007_Proje_Hazirlama_Kilavuzu_2026.pdf",
+   "sayfalar": [
+    "bilim-toplum__ulusal-destek-programlari__4007-bilim-senlikleri-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 2661939,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2026-02__4007_Proje_Hazirlama_Kilavuzu_2026.pdf",
+   "sha256": "6462c100a94714554d59d909bc96ec29e023f3340bf91439a84af61308d7f97b",
+   "sayfa_sayisi": 30,
+   "metin_karakter": 15197,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-02/4007_SSS_2026.pdf",
+   "baslik": "4007 Sıkça Sorulan Sorular (2026)",
+   "ext": ".pdf",
+   "dosya_adi": "4007_SSS_2026.pdf",
+   "sayfalar": [
+    "bilim-toplum__ulusal-destek-programlari__4007-bilim-senlikleri-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 1133250,
+   "kat": "cagri",
+   "dosya": "dosyalar/2026-02__4007_SSS_2026.pdf",
+   "sha256": "e366da8c267d6e855a59b1245cfbeb82a4db99bf0e47192ff94a3c535aa34efa",
+   "sayfa_sayisi": 8,
+   "metin_karakter": 11103,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2025-12/TUBITAK_4008_CAGRI_METNI_2025.pdf",
+   "baslik": "4008 Çağrı Metni (2025)",
+   "ext": ".pdf",
+   "dosya_adi": "TUBITAK_4008_CAGRI_METNI_2025.pdf",
+   "sayfalar": [
+    "bilim-toplum__ulusal-destek-programlari__4008-ozel-gereksinimli-bireylere-yonelik-kapsayici-toplum-uygulamalari-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 1270017,
+   "kat": "cagri",
+   "dosya": "dosyalar/2025-12__TUBITAK_4008_CAGRI_METNI_2025.pdf",
+   "sha256": "fc6dead1483378c6bef065890ab0a85ecfc95f49987de03afab83c1ccfc772e0",
+   "sayfa_sayisi": 15,
+   "metin_karakter": 37511,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2025-12/4008_Proje_Hazirlama_Kilavuzu_2025.pdf",
+   "baslik": "Proje Hazırlama Kılavuzu (2025)",
+   "ext": ".pdf",
+   "dosya_adi": "4008_Proje_Hazirlama_Kilavuzu_2025.pdf",
+   "sayfalar": [
+    "bilim-toplum__ulusal-destek-programlari__4008-ozel-gereksinimli-bireylere-yonelik-kapsayici-toplum-uygulamalari-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 2296193,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2025-12__4008_Proje_Hazirlama_Kilavuzu_2025.pdf",
+   "sha256": "89ebf57e2565d0ca9ca3b8b38e0da2ef0d8af4f4528008dd5918bca9508e39ab",
+   "sayfa_sayisi": 24,
+   "metin_karakter": 11701,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2025-12/Sikca_Sorulan_Sorular_2025_0.pdf",
+   "baslik": "Sıkça Sorulan Sorular 2025",
+   "ext": ".pdf",
+   "dosya_adi": "Sikca_Sorulan_Sorular_2025_0.pdf",
+   "sayfalar": [
+    "bilim-toplum__ulusal-destek-programlari__4008-ozel-gereksinimli-bireylere-yonelik-kapsayici-toplum-uygulamalari-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 291955,
+   "kat": "cagri",
+   "dosya": "dosyalar/2025-12__Sikca_Sorulan_Sorular_2025_0.pdf",
+   "sha256": "602861b5eb299d8324672bef4e92a091ed6a33671be016b65ccb1a453db8a339",
+   "sayfa_sayisi": 7,
+   "metin_karakter": 10873,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-08/Cagri_Metni_21.08.2026_tarihinde_guncellenmistir.pdf",
+   "baslik": "Çağrı Metni (21 Ağustos 2026 tarihinde güncellenmiştir.)",
+   "ext": ".pdf",
+   "dosya_adi": "Cagri_Metni_21.08.2026_tarihinde_guncellenmistir.pdf",
+   "sayfalar": [
+    "bilim-toplum__ulusal-destek-programlari__milli-teknoloji-atolyeleri-proje-destegi"
+   ],
+   "haric": null,
+   "boyut": 346643,
+   "kat": "cagri",
+   "dosya": "dosyalar/2026-08__Cagri_Metni_21.08.2026_tarihinde_guncellenmistir.pdf",
+   "sha256": "150e15669f09d951a5646e5d3ec60cd9d8bfaffa797aa9fc0c0cc7c5dd03e2ad",
+   "sayfa_sayisi": 21,
+   "metin_karakter": 50544,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-09/Milli_Teknoloji_Kulupler_Birligi_Cagri_Metni.pdf",
+   "baslik": "Milli Teknoloji Kulüpler Birliği Çağrı Metni (14 Eylül 2026 tarihinde güncellenmiştir)",
+   "ext": ".pdf",
+   "dosya_adi": "Milli_Teknoloji_Kulupler_Birligi_Cagri_Metni.pdf",
+   "sayfalar": [
+    "bilim-toplum__ulusal-destek-programlari__milli-teknoloji-kulupler-birligi"
+   ],
+   "haric": null,
+   "boyut": 1063693,
+   "kat": "cagri",
+   "dosya": "dosyalar/2026-09__Milli_Teknoloji_Kulupler_Birligi_Cagri_Metni.pdf",
+   "sha256": "b029bed479af0d35565e1a90f02bef157dcc982c3abcb10792abc3cf56c5b37d",
+   "sayfa_sayisi": 11,
+   "metin_karakter": 24560,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-10/MTKB_Uyelik_Asamasi_Basvuru_Kilavuzu.pdf",
+   "baslik": "MTKB Üyelik Aşaması Başvuru Kılavuzu",
+   "ext": ".pdf",
+   "dosya_adi": "MTKB_Uyelik_Asamasi_Basvuru_Kilavuzu.pdf",
+   "sayfalar": [
+    "bilim-toplum__ulusal-destek-programlari__milli-teknoloji-kulupler-birligi"
+   ],
+   "haric": null,
+   "boyut": 1681519,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2026-10__MTKB_Uyelik_Asamasi_Basvuru_Kilavuzu.pdf",
+   "sha256": "e7f50913a3cd58955ca12464aa4e585d2fc8b0ef5d7dd4430a88c89ccb4b24dc",
+   "sayfa_sayisi": 17,
+   "metin_karakter": 3048,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-04/2237-A_Cagri_Duyurusu_16_04_2026.pdf",
+   "baslik": "",
+   "ext": ".pdf",
+   "dosya_adi": "2237-A_Cagri_Duyurusu_16_04_2026.pdf",
+   "sayfalar": [
+    "bilimsel-etkinlik__etkinlik-duzenleme-destekleri__2237-bilimsel-egitim-etkinlikleri-destegi"
+   ],
+   "haric": null,
+   "boyut": 752850,
+   "kat": "cagri",
+   "dosya": "dosyalar/2026-04__2237-A_Cagri_Duyurusu_16_04_2026.pdf",
+   "sha256": "4aa19d01aa4dcc9aa19744f8ef627009acac87969d9b1f11889014e435c71490",
+   "sayfa_sayisi": 13,
+   "metin_karakter": 24774,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-10/2224-B_Programi_Cagri_Duyurusu_2224_b.pdf",
+   "baslik": "",
+   "ext": ".pdf",
+   "dosya_adi": "2224-B_Programi_Cagri_Duyurusu_2224_b.pdf",
+   "sayfalar": [
+    "bilimsel-etkinlik__etkinliklere-katilma-destekleri__2224-b-yurt-ici-bilimsel-etkinliklere-katilimi-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 654803,
+   "kat": "cagri",
+   "dosya": "dosyalar/2026-10__2224-B_Programi_Cagri_Duyurusu_2224_b.pdf",
+   "sha256": "ad95fc5d40b07a943e831f0e19467d65ebd061ee6a8ee6f1dc90007f0aec7df0",
+   "sayfa_sayisi": 12,
+   "metin_karakter": 18717,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-01/2224-A_ve_2224_B_Makale-Bildiri_Ekleme_Kilavuzu_120126_0.pdf",
+   "baslik": "Makale-Bildiri Ekleme Kılavuzu",
+   "ext": ".pdf",
+   "dosya_adi": "2224-A_ve_2224_B_Makale-Bildiri_Ekleme_Kilavuzu_120126_0.pdf",
+   "sayfalar": [
+    "bilimsel-etkinlik__etkinliklere-katilma-destekleri__2224-b-yurt-ici-bilimsel-etkinliklere-katilimi-destekleme-programi",
+    "bilimsel-etkinlik__etkinliklere-katilma-destekleri__2224-yurt-disi-bilimsel-etkinliklere-katilimi-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 417536,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2026-01__2224-A_ve_2224_B_Makale-Bildiri_Ekleme_Kilavuzu_120126_0.pdf",
+   "sha256": "49564e2e563e620413611eefe7c17410507ffcd26dbd29616c6ac31b5d0c31f8",
+   "sayfa_sayisi": 3,
+   "metin_karakter": 2859,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-06/2224-B_Programi_Sikca_Sorulan_Sorular_030626.pdf",
+   "baslik": "Sıkça Sorulan Sorular",
+   "ext": ".pdf",
+   "dosya_adi": "2224-B_Programi_Sikca_Sorulan_Sorular_030626.pdf",
+   "sayfalar": [
+    "bilimsel-etkinlik__etkinliklere-katilma-destekleri__2224-b-yurt-ici-bilimsel-etkinliklere-katilimi-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 543258,
+   "kat": "cagri",
+   "dosya": "dosyalar/2026-06__2224-B_Programi_Sikca_Sorulan_Sorular_030626.pdf",
+   "sha256": "aef69712709e2489f9a25c218cd68fcd6e91e19f9f20f4a4d643279e3fa93551",
+   "sayfa_sayisi": 8,
+   "metin_karakter": 21213,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2024-10/2224-C_Cagri_Duyurusu_14.10.24.pdf",
+   "baslik": "",
+   "ext": ".pdf",
+   "dosya_adi": "2224-C_Cagri_Duyurusu_14.10.24.pdf",
+   "sayfalar": [
+    "bilimsel-etkinlik__etkinliklere-katilma-destekleri__2224-c-uluslararasi-anlasmalar-cercevesinde-yurt-disindaki-bilimsel-etkinliklere-katilimi-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 643506,
+   "kat": "cagri",
+   "dosya": "dosyalar/2024-10__2224-C_Cagri_Duyurusu_14.10.24.pdf",
+   "sha256": "daf056ce8b7ff1d3dbb33476749f08a4c496733787da28bc3586155d2b888e5b",
+   "sayfa_sayisi": 9,
+   "metin_karakter": 14278,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-07/2224-D_Duyurusu_guncel.pdf",
+   "baslik": "",
+   "ext": ".pdf",
+   "dosya_adi": "2224-D_Duyurusu_guncel.pdf",
+   "sayfalar": [
+    "bilimsel-etkinlik__etkinliklere-katilma-destekleri__2224-d-yurt-disindaki-bilimsel-egitim-etkinliklerine-katilimi-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 583675,
+   "kat": "cagri",
+   "dosya": "dosyalar/2026-07__2224-D_Duyurusu_guncel.pdf",
+   "sha256": "2a2807215905a631c63abac547cdfec2381321b63f92fd56edb02d5b2d430ffe",
+   "sayfa_sayisi": 10,
+   "metin_karakter": 15530,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-10/2224-A_Programi_Cagri_Duyurusu_2224_a.pdf",
+   "baslik": "",
+   "ext": ".pdf",
+   "dosya_adi": "2224-A_Programi_Cagri_Duyurusu_2224_a.pdf",
+   "sayfalar": [
+    "bilimsel-etkinlik__etkinliklere-katilma-destekleri__2224-yurt-disi-bilimsel-etkinliklere-katilimi-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 667144,
+   "kat": "cagri",
+   "dosya": "dosyalar/2026-10__2224-A_Programi_Cagri_Duyurusu_2224_a.pdf",
+   "sha256": "b82f05be2ea347d404bedd54c119d7be282e9ddd8ee520a9cde1ea72aa1f6a4a",
+   "sayfa_sayisi": 11,
+   "metin_karakter": 18324,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-06/2224-A_Programi_Sikca_Sorulan_Sorular_030626.pdf",
+   "baslik": "Sıkça Sorulan Sorular",
+   "ext": ".pdf",
+   "dosya_adi": "2224-A_Programi_Sikca_Sorulan_Sorular_030626.pdf",
+   "sayfalar": [
+    "bilimsel-etkinlik__etkinliklere-katilma-destekleri__2224-yurt-disi-bilimsel-etkinliklere-katilimi-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 567965,
+   "kat": "cagri",
+   "dosya": "dosyalar/2026-06__2224-A_Programi_Sikca_Sorulan_Sorular_030626.pdf",
+   "sha256": "aa286c9adb4bc9393009df2339005f6766989c22279c2d8091187242a83c5d6d",
+   "sayfa_sayisi": 8,
+   "metin_karakter": 23928,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2024-03/teydeb_destek_programlari_ve_cagrilari_ust_limitleri.xlsx",
+   "baslik": "Proje bütçesine ve diğer destek üst limitlerine ulaşmak için lütfen tıklayınız.",
+   "ext": ".xlsx",
+   "dosya_adi": "teydeb_destek_programlari_ve_cagrilari_ust_limitleri.xlsx",
+   "sayfalar": [
+    "mali-hususlar-ve-odeme",
+    "sanayi__ulusal-destek-programlari__1501-tubitak-sanayi-ar-ge-projeleri-destekleme-programi",
+    "sanayi__ulusal-destek-programlari__1503-proje-pazarlari-destekleme-programi",
+    "sanayi__ulusal-destek-programlari__1505-universite-sanayi-isbirligi-destek-programi",
+    "sanayi__ulusal-destek-programlari__1507-tubitak-kobi-ar-ge-baslangic-destek-programi",
+    "sanayi__ulusal-destek-programlari__1511-tubitak-oncelikli-alanlar-arastirma-teknoloji-gelistirme-ve-yenilik-p-d-pteknoloji-odakli-sanayi-hamlesi-programi",
+    "sanayi__ulusal-destek-programlari__1515-oncul-ar-ge-laboratuvarlari-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 80517,
+   "kat": "cagri",
+   "dosya": "dosyalar/2024-03__teydeb_destek_programlari_ve_cagrilari_ust_limitleri.xlsx",
+   "sha256": "6a5eda267423e24ea65e00e6639aa562d4251e812d60c364fea90c5529f18161",
+   "ayni_icerikli_urller": [
+    "https://tubitak.gov.tr/sites/default/files/2024-03/teydeb_destek_programlari_ve_cagrilari_ust_limitleri%20%282%29.xlsx"
+   ]
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2023-09/on_kayit_kullanici_kilavuzu_9_2.pdf",
+   "baslik": "Kuruluş Bazlı Ön Kayıt Kullanıcı Kılavuzu (Sermaye Şirketleri)",
+   "ext": ".pdf",
+   "dosya_adi": "on_kayit_kullanici_kilavuzu_9_2.pdf",
+   "sayfalar": [
+    "mali-hususlar-ve-odeme",
+    "sanayi__uluslararasi-ortakli-destek-programlari__1709-eureka-eurostars",
+    "sanayi__uluslararasi-ortakli-destek-programlari__1719-eureka-network-cagrilari"
+   ],
+   "haric": null,
+   "boyut": 3582196,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2023-09__on_kayit_kullanici_kilavuzu_9_2.pdf",
+   "sha256": "4143d0e19ee475d1bc45ed99f98e07226148651c8d7a635d30b4a3204b5e4fd1",
+   "sayfa_sayisi": 25,
+   "metin_karakter": 32102,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2024-04/kamu_kurum_ve_kuruluslari_ile_universiteler_icin_on_kayit_kilavuzu.pdf",
+   "baslik": "Kamu Kurum ve Kuruluşları ile Üniversiteler için Ön Kayıt Kılavuzu",
+   "ext": ".pdf",
+   "dosya_adi": "kamu_kurum_ve_kuruluslari_ile_universiteler_icin_on_kayit_kilavuzu.pdf",
+   "sayfalar": [
+    "mali-hususlar-ve-odeme",
+    "sanayi__ulusal-destek-programlari__1505-universite-sanayi-isbirligi-destek-programi",
+    "sanayi__uluslararasi-ortakli-destek-programlari__1709-eureka-eurostars",
+    "sanayi__uluslararasi-ortakli-destek-programlari__1719-eureka-network-cagrilari"
+   ],
+   "haric": null,
+   "boyut": 3188849,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2024-04__kamu_kurum_ve_kuruluslari_ile_universiteler_icin_on_kayit_kilavuzu.pdf",
+   "sha256": "3469a2befe0c3387b67491fc12a71d280a2fe26d4dc611da81f356e5f1258c8d",
+   "ayni_icerikli_urller": [
+    "https://tubitak.gov.tr/sites/default/files/2024-03/kamu_kurum_ve_kuruluslari_ile_universiteler_icin_on_kayit_kilavuzu_1.pdf",
+    "https://tubitak.gov.tr/sites/default/files/2024-06/kamu_kurum_ve_kuruluslari_ile_universiteler_icin_on_kayit_kilavuzu.pdf"
+   ],
+   "sayfa_sayisi": 5,
+   "metin_karakter": 5834,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-04/Mali_Rapor_Hazirlama_Kilavuzu.pdf",
+   "baslik": "Mali Rapor Hazırlama Kılavuzu",
+   "ext": ".pdf",
+   "dosya_adi": "Mali_Rapor_Hazirlama_Kilavuzu.pdf",
+   "sayfalar": [
+    "mali-hususlar-ve-odeme"
+   ],
+   "haric": null,
+   "boyut": 2319154,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2026-04__Mali_Rapor_Hazirlama_Kilavuzu.pdf",
+   "sha256": "08e1be95461e83a6235a1b7d1e19cbaecd2c207e63b0db8bf8057bac6039ec08",
+   "sayfa_sayisi": 81,
+   "metin_karakter": 237847,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2025-09/giderformlarihazirlamakilavuzu.pdf",
+   "baslik": "Gider Formları Hazırlama Kılavuzu",
+   "ext": ".pdf",
+   "dosya_adi": "giderformlarihazirlamakilavuzu.pdf",
+   "sayfalar": [
+    "mali-hususlar-ve-odeme"
+   ],
+   "haric": null,
+   "boyut": 3128310,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2025-09__giderformlarihazirlamakilavuzu.pdf",
+   "sha256": "6b3f2988ff59d7a9c6ae2a65aa541d698568fb43d20d381a2341c3edeeeaa109",
+   "sayfa_sayisi": 29,
+   "metin_karakter": 23671,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2023-09/mmraporuhazirlamakilavuzu.pdf",
+   "baslik": "Mali Müşavirlik Raporu Hazırlama Kılavuzu (PRODİS)",
+   "ext": ".pdf",
+   "dosya_adi": "mmraporuhazirlamakilavuzu.pdf",
+   "sayfalar": [
+    "mali-hususlar-ve-odeme"
+   ],
+   "haric": null,
+   "boyut": 2753932,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2023-09__mmraporuhazirlamakilavuzu.pdf",
+   "sha256": "e28a6f3175c6b0adb38a40c918cac706a771b850cfe1bef1d31f169cd333f14c",
+   "sayfa_sayisi": 21,
+   "metin_karakter": 13309,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2023-09/mali_musavirlik_rapor_hazirlama_kilavuzu.pdf",
+   "baslik": "Mali Müşavirlik Proje Harcamaları Değerlendirme Raporu Hazırlama Kılavuzu",
+   "ext": ".pdf",
+   "dosya_adi": "mali_musavirlik_rapor_hazirlama_kilavuzu.pdf",
+   "sayfalar": [
+    "mali-hususlar-ve-odeme"
+   ],
+   "haric": null,
+   "boyut": 373836,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2023-09__mali_musavirlik_rapor_hazirlama_kilavuzu.pdf",
+   "sha256": "269d4ebb19fe06c63f301ef811fea2b6564716c975cb317ac8f31a025bc2e797",
+   "sayfa_sayisi": 26,
+   "metin_karakter": 58311,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-07/1501_Sanayi_Ar-Ge_Destek_Programi_2026-2_Proje_Cagri_Metni_13.07.2026_v2.pdf",
+   "baslik": "1501-Sanayi Ar-Ge Destek Programı 2026 yılı 2. Çağrı Dokümanı",
+   "ext": ".pdf",
+   "dosya_adi": "1501_Sanayi_Ar-Ge_Destek_Programi_2026-2_Proje_Cagri_Metni_13.07.2026_v2.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1501-tubitak-sanayi-ar-ge-projeleri-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 826521,
+   "kat": "cagri",
+   "dosya": "dosyalar/2026-07__1501_Sanayi_Ar-Ge_Destek_Programi_2026-2_Proje_Cagri_Metni_13.07.2026_v2.pdf",
+   "sha256": "10f733d7f6a2d0f8e728c63bdc119392f4373693e0c900fb42110c5cde704563",
+   "sayfa_sayisi": 7,
+   "metin_karakter": 15260,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2024-09/1501_1507_proje_oneri_bilgileri_formu_hazirlama_kilavuzu_agy100-101.pdf",
+   "baslik": "Proje Öneri Bilgileri Formu Hazırlama Kılavuzu",
+   "ext": ".pdf",
+   "dosya_adi": "1501_1507_proje_oneri_bilgileri_formu_hazirlama_kilavuzu_agy100-101.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1501-tubitak-sanayi-ar-ge-projeleri-destekleme-programi",
+    "sanayi__ulusal-destek-programlari__1507-tubitak-kobi-ar-ge-baslangic-destek-programi",
+    "sanayi__ulusal-destek-programlari__1701-ar-ge-proje-degerlendirme-ve-izleme-cagrisi"
+   ],
+   "haric": null,
+   "boyut": 966125,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2024-09__1501_1507_proje_oneri_bilgileri_formu_hazirlama_kilavuzu_agy100-101.pdf",
+   "sha256": "2c81d167d0709693faf7c61863210b635986aadeff547f2c4bb75d3133aff6ce",
+   "sayfa_sayisi": 27,
+   "metin_karakter": 80178,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2023-09/ar-ge_yardimi_istek_formu_hazirlama_kilavuzu_agy300_1501.pdf",
+   "baslik": "Ar-Ge Yardımı İstek Formu Hazırlama Kılavuzu",
+   "ext": ".pdf",
+   "dosya_adi": "ar-ge_yardimi_istek_formu_hazirlama_kilavuzu_agy300_1501.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1501-tubitak-sanayi-ar-ge-projeleri-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 440382,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2023-09__ar-ge_yardimi_istek_formu_hazirlama_kilavuzu_agy300_1501.pdf",
+   "sha256": "338b6414e3c4af16cafe2adb22a2cbf63c5594c405758a73e087cdf4bff1faa7",
+   "ayni_icerikli_urller": [
+    "https://tubitak.gov.tr/sites/default/files/2023-09/ar-ge_yardimi_istek_formu_hazirlama_kilavuzu_agy300_1501_0.pdf"
+   ],
+   "sayfa_sayisi": 11,
+   "metin_karakter": 24855,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2023-09/donemsel_izleme_raporu_hazirlama_kilavuzu_agy400.pdf",
+   "baslik": "Dönemsel İzleme Raporu Hazırlama Kılavuzu",
+   "ext": ".pdf",
+   "dosya_adi": "donemsel_izleme_raporu_hazirlama_kilavuzu_agy400.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1501-tubitak-sanayi-ar-ge-projeleri-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 331735,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2023-09__donemsel_izleme_raporu_hazirlama_kilavuzu_agy400.pdf",
+   "sha256": "fe4a0e528e0bec90e59d44e14f16a4c1d84225c3ccd6d70bbb44dc324e309f8b",
+   "ayni_icerikli_urller": [
+    "https://tubitak.gov.tr/sites/default/files/2023-09/donemsel_izleme_raporu_hazirlama_kilavuzu_agy400_0.pdf"
+   ],
+   "sayfa_sayisi": 9,
+   "metin_karakter": 21798,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2023-09/1505_proje_basvuru_hazirlama_kilavuzu_2023.pdf",
+   "baslik": "Proje Öneri Bilgileri Hazırlama Kılavuzu",
+   "ext": ".pdf",
+   "dosya_adi": "1505_proje_basvuru_hazirlama_kilavuzu_2023.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1505-universite-sanayi-isbirligi-destek-programi"
+   ],
+   "haric": null,
+   "boyut": 738102,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2023-09__1505_proje_basvuru_hazirlama_kilavuzu_2023.pdf",
+   "sha256": "bca9a9e00d69faa920b821a3eb5627c795ac89b3ea6330e63509d12e259395cb",
+   "sayfa_sayisi": 24,
+   "metin_karakter": 58660,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2024-08/Proje_Oneri_Degerlendirme_Raporu_Hazirlama_Kilavuzu_yeni_hali.pdf",
+   "baslik": "Proje Öneri Değerlendirme Raporu Hazırlama Kılavuzu",
+   "ext": ".pdf",
+   "dosya_adi": "Proje_Oneri_Degerlendirme_Raporu_Hazirlama_Kilavuzu_yeni_hali.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1505-universite-sanayi-isbirligi-destek-programi"
+   ],
+   "haric": null,
+   "boyut": 285232,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2024-08__Proje_Oneri_Degerlendirme_Raporu_Hazirlama_Kilavuzu_yeni_hali.pdf",
+   "sha256": "375f8b50d21d55edec46d7d0b235ab59905fa5f81814efc3865ef7855ea88156",
+   "sayfa_sayisi": 6,
+   "metin_karakter": 13487,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2023-09/agy305kilavuz-1904013.pdf",
+   "baslik": "Ar-Ge Yardımı İstek Formu Hazırlama Kılavuzu",
+   "ext": ".pdf",
+   "dosya_adi": "agy305kilavuz-1904013.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1505-universite-sanayi-isbirligi-destek-programi"
+   ],
+   "haric": null,
+   "boyut": 118082,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2023-09__agy305kilavuz-1904013.pdf",
+   "sha256": "b28bad5afe8d077e93b9a7e60020a8a49fac3c048d1e8df79d8bbf1312c8ed95",
+   "sayfa_sayisi": 8,
+   "metin_karakter": 19219,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2023-09/donemraporumalibolumhazirlama-190413.pdf",
+   "baslik": "Mali Rapor Hazırlama BİLGİ NOTU",
+   "ext": ".pdf",
+   "dosya_adi": "donemraporumalibolumhazirlama-190413.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1505-universite-sanayi-isbirligi-destek-programi"
+   ],
+   "haric": null,
+   "boyut": 153055,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2023-09__donemraporumalibolumhazirlama-190413.pdf",
+   "sha256": "556f5d14c487915916f94ce6a48e7bd055d9acdbf01c9fd402a3e683d7bc4a45",
+   "sayfa_sayisi": 1,
+   "metin_karakter": 2693,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2023-09/agy405-kilavuz-230413.pdf",
+   "baslik": "Dönemsel İzleme Raporu Hazırlama Kılavuzu",
+   "ext": ".pdf",
+   "dosya_adi": "agy405-kilavuz-230413.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1505-universite-sanayi-isbirligi-destek-programi"
+   ],
+   "haric": null,
+   "boyut": 61062,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2023-09__agy405-kilavuz-230413.pdf",
+   "sha256": "90ab684e0f93931ef1f8a5bea6a77f868deb08ad062793071ca0619fdc7b0dca",
+   "sayfa_sayisi": 7,
+   "metin_karakter": 18354,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2024-08/1505_sikca_sorulan_sorular_v4.pdf",
+   "baslik": "Sıkça Sorulan Sorular",
+   "ext": ".pdf",
+   "dosya_adi": "1505_sikca_sorulan_sorular_v4.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1505-universite-sanayi-isbirligi-destek-programi"
+   ],
+   "haric": null,
+   "boyut": 585446,
+   "kat": "cagri",
+   "dosya": "dosyalar/2024-08__1505_sikca_sorulan_sorular_v4.pdf",
+   "sha256": "358f2addd2d5e336af0b01c769480f90faf261c56b244e671fd2c6e2029b1eba",
+   "sayfa_sayisi": 6,
+   "metin_karakter": 12271,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-07/1507_KOBI_Ar-Ge_Baslangic_Destek_Programlari_2026-2_Proje_Cagri_Metni_13.07.2026_v2.pdf",
+   "baslik": "1507-KOBİ Ar-Ge Başlangıç Destek Programı 2026 yılı 2. Çağrı Dokümanı",
+   "ext": ".pdf",
+   "dosya_adi": "1507_KOBI_Ar-Ge_Baslangic_Destek_Programlari_2026-2_Proje_Cagri_Metni_13.07.2026_v2.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1507-tubitak-kobi-ar-ge-baslangic-destek-programi"
+   ],
+   "haric": null,
+   "boyut": 816300,
+   "kat": "cagri",
+   "dosya": "dosyalar/2026-07__1507_KOBI_Ar-Ge_Baslangic_Destek_Programlari_2026-2_Proje_Cagri_Metni_13.07.2026_v2.pdf",
+   "sha256": "3c4c2d391f251deb6c6408cb294ba7ca28ee85151fe8de119760251f3554bb46",
+   "sayfa_sayisi": 6,
+   "metin_karakter": 14059,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2023-09/donemsel_izleme_raporu_hazirlama_kilavuzu_agy401.pdf",
+   "baslik": "Dönemsel İzleme Raporu Hazırlama Kılavuzu",
+   "ext": ".pdf",
+   "dosya_adi": "donemsel_izleme_raporu_hazirlama_kilavuzu_agy401.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1507-tubitak-kobi-ar-ge-baslangic-destek-programi"
+   ],
+   "haric": null,
+   "boyut": 331129,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2023-09__donemsel_izleme_raporu_hazirlama_kilavuzu_agy401.pdf",
+   "sha256": "c9247b9ce9e8cb71736c7935f0ff1b165db513ef28adc6fc5caa243c80a65d79",
+   "sayfa_sayisi": 9,
+   "metin_karakter": 21208,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2023-09/ar-ge_yardimi_istek_formu_hazirlama_kilavuzu_agy301.pdf",
+   "baslik": "Ar-Ge Yardımı İstek Formu Hazırlama Kılavuzu",
+   "ext": ".pdf",
+   "dosya_adi": "ar-ge_yardimi_istek_formu_hazirlama_kilavuzu_agy301.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1507-tubitak-kobi-ar-ge-baslangic-destek-programi"
+   ],
+   "haric": null,
+   "boyut": 520095,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2023-09__ar-ge_yardimi_istek_formu_hazirlama_kilavuzu_agy301.pdf",
+   "sha256": "ed29ac62051bdb44a75cb888b71bfe9cad074ef4e2d035c5120f5873961dbbfe",
+   "sayfa_sayisi": 11,
+   "metin_karakter": 24527,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2023-09/1511_hamle_basvuru_kilavuzu.pdf",
+   "baslik": "Teknoloji Odaklı Sanayi Hamlesi Proje Öneri Başvuru Formu Hazırlama Kılavuzu",
+   "ext": ".pdf",
+   "dosya_adi": "1511_hamle_basvuru_kilavuzu.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1511-tubitak-oncelikli-alanlar-arastirma-teknoloji-gelistirme-ve-yenilik-p-d-pteknoloji-odakli-sanayi-hamlesi-programi"
+   ],
+   "haric": null,
+   "boyut": 580174,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2023-09__1511_hamle_basvuru_kilavuzu.pdf",
+   "sha256": "4ae4ea060fe5c281eda6076bfdc0141af437d934fd70d0d04263f27709d5c932",
+   "sayfa_sayisi": 23,
+   "metin_karakter": 47556,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2023-09/1514_donem_raporu_hazirlama_kilavuzu.pdf",
+   "baslik": "Dönem Raporu Hazırlama Kılavuzu",
+   "ext": ".pdf",
+   "dosya_adi": "1514_donem_raporu_hazirlama_kilavuzu.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1514-girisim-sermayesi-destekleme-programi-tech-investr"
+   ],
+   "haric": null,
+   "boyut": 924667,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2023-09__1514_donem_raporu_hazirlama_kilavuzu.pdf",
+   "sha256": "31accc91ad6fd69c6b7d3b7cda5cb93f05fba3672a30b0a11f3fc13e8edc2e66",
+   "sayfa_sayisi": 9,
+   "metin_karakter": 21922,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2024-03/1515_mali_rapor_hazirlama_kilavuzu.pdf",
+   "baslik": "Mali Rapor Hazırlama Kılavuzunu",
+   "ext": ".pdf",
+   "dosya_adi": "1515_mali_rapor_hazirlama_kilavuzu.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1515-oncul-ar-ge-laboratuvarlari-destekleme-programi"
+   ],
+   "haric": null,
+   "boyut": 531847,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2024-03__1515_mali_rapor_hazirlama_kilavuzu.pdf",
+   "sha256": "6dcee8a19a4f3bc4e5b594fb52f8f169ec0409f04687734cec62dcb1c8fdf11a",
+   "sayfa_sayisi": 24,
+   "metin_karakter": 82738,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-04/1601-2026-1_GCIP_Cagri_Metni.pdf",
+   "baslik": "Küresel Temiz Teknolojiler Girişimcilik Programı Teknoloji Ölçekleme ve Ticarileştirme Desteği Çağrısı",
+   "ext": ".pdf",
+   "dosya_adi": "1601-2026-1_GCIP_Cagri_Metni.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1601-yenilik-girisimcilik-alanlarinda-kapasite-artirilmasina-yonelik-dp"
+   ],
+   "haric": null,
+   "boyut": 246969,
+   "kat": "cagri",
+   "dosya": "dosyalar/2026-04__1601-2026-1_GCIP_Cagri_Metni.pdf",
+   "sha256": "eb28448445dd3a281f4f9a5c800873ce4dfebc1e845209b59b2acccd42adfce7",
+   "sayfa_sayisi": 7,
+   "metin_karakter": 12299,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2024-10/bigg_cagri_duyurusu-sure_uzatimi_cagrisinda_degisiklik_24062024.pdf",
+   "baslik": "1607-BİGG+ KOBİ Mentor Arayüzü Çağrısı",
+   "ext": ".pdf",
+   "dosya_adi": "bigg_cagri_duyurusu-sure_uzatimi_cagrisinda_degisiklik_24062024.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1601-yenilik-girisimcilik-alanlarinda-kapasite-artirilmasina-yonelik-dp"
+   ],
+   "haric": null,
+   "boyut": 746540,
+   "kat": "cagri",
+   "dosya": "dosyalar/2024-10__bigg_cagri_duyurusu-sure_uzatimi_cagrisinda_degisiklik_24062024.pdf",
+   "sha256": "bddf825b8da3a80f42bb5da10c474e86954e2b2c7a845ff12d73623e96e2688e",
+   "sayfa_sayisi": 11,
+   "metin_karakter": 20578,
+   "dil": "tr"
+  },
+  {
+   "url": "http://www.tubitak.gov.tr/sites/default/files/2204/1601-2018-1_cagri_metni_0.pdf",
+   "baslik": "1512 Teknogirişim Sermaye Desteği Programı 1.Aşama Uygulayıcı Kuruluş Çağrısı (2018)",
+   "ext": ".pdf",
+   "dosya_adi": "1601-2018-1_cagri_metni_0.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1601-yenilik-girisimcilik-alanlarinda-kapasite-artirilmasina-yonelik-dp"
+   ],
+   "haric": null,
+   "boyut": 312878,
+   "kat": "cagri",
+   "dosya": "dosyalar/2204__1601-2018-1_cagri_metni_0.pdf",
+   "sha256": "66e512750f84ec6d2dcb4ab108ea2ee760a854657aff50d4bafb7f892ba175bc",
+   "ayni_icerikli_urller": [
+    "https://tubitak.gov.tr/sites/default/files/2023-09/1601-2018-1_cagri_metni_0.pdf"
+   ],
+   "sayfa_sayisi": 9,
+   "metin_karakter": 20537,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2024-03/1602_sss_220207.pdf",
+   "baslik": "Sıkça sorulan sorular için tıklayınız.",
+   "ext": ".pdf",
+   "dosya_adi": "1602_sss_220207.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1602-tubitak-patent-destek-programi"
+   ],
+   "haric": null,
+   "boyut": 599068,
+   "kat": "cagri",
+   "dosya": "dosyalar/2024-03__1602_sss_220207.pdf",
+   "sha256": "5ce5fae2236c8701a51013aa46523c123a6ca9777aeaec7dd98791653137cee6",
+   "baslik_belirsiz": true,
+   "sayfa_sayisi": 3,
+   "metin_karakter": 4753,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2025-10/1601-2025-1_Cagri_Duyurusu-Revize-Takvim.pdf",
+   "baslik": "1601 2025-1 Çağrı Metni",
+   "ext": ".pdf",
+   "dosya_adi": "1601-2025-1_Cagri_Duyurusu-Revize-Takvim.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1612-bigg-1asama-uygulayici-kurulus-cagrisi"
+   ],
+   "haric": null,
+   "boyut": 532181,
+   "kat": "cagri",
+   "dosya": "dosyalar/2025-10__1601-2025-1_Cagri_Duyurusu-Revize-Takvim.pdf",
+   "sha256": "5421b87f8f3cb445ae5aada5e6148cb7e2552ced90623179693782e9325d848d",
+   "sayfa_sayisi": 9,
+   "metin_karakter": 18173,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2025-08/1812_Asama_1_Kilavuz.pdf",
+   "baslik": "BiGG Yatırım Hızlandırma Programı Aşaması (Aşama 1) Uygulayıcı Kuruluş Kılavuzu",
+   "ext": ".pdf",
+   "dosya_adi": "1812_Asama_1_Kilavuz.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1612-bigg-1asama-uygulayici-kurulus-cagrisi"
+   ],
+   "haric": null,
+   "boyut": 775931,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2025-08__1812_Asama_1_Kilavuz.pdf",
+   "sha256": "b24885405a2dd28ebbaf7dcc3651a2a50378ef4c14c0b64e9ec761c24db1b697",
+   "sayfa_sayisi": 57,
+   "metin_karakter": 115548,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-03/BiGG_1_Asama_PRODIS_Kilavuzu.pdf",
+   "baslik": "BiGG 1. Aşama PRODİS Kılavuzu",
+   "ext": ".pdf",
+   "dosya_adi": "BiGG_1_Asama_PRODIS_Kilavuzu.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1612-bigg-1asama-uygulayici-kurulus-cagrisi"
+   ],
+   "haric": null,
+   "boyut": 2469699,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2026-03__BiGG_1_Asama_PRODIS_Kilavuzu.pdf",
+   "sha256": "142a09a81a67d88e0b5038f47f53029c8d714641807db6c8b6a9c1fb6556236c",
+   "sayfa_sayisi": 20,
+   "metin_karakter": 17462,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2024-03/1601-2023-1_cagri_duyurusu_v2.pdf",
+   "baslik": "Çağrı Duyurusu için tıklayınız.",
+   "ext": ".pdf",
+   "dosya_adi": "1601-2023-1_cagri_duyurusu_v2.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1613-teknoloji-transferi-profesyoneli-cagrisi"
+   ],
+   "haric": null,
+   "boyut": 458731,
+   "kat": "cagri",
+   "dosya": "dosyalar/2024-03__1601-2023-1_cagri_duyurusu_v2.pdf",
+   "sha256": "e474d639716364e504cb6f87862a28f9e2559602d5571c6616dcb4f97c2aff80",
+   "baslik_belirsiz": true,
+   "sayfa_sayisi": 9,
+   "metin_karakter": 16459,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2024-06/1701-Proje_Degerlendirme_ve_Izleme_CagrisiMetni_2024.pdf",
+   "baslik": "1701 Ar-Ge Proje Değerlendirme ve İzleme Çağrı Dokümanı",
+   "ext": ".pdf",
+   "dosya_adi": "1701-Proje_Degerlendirme_ve_Izleme_CagrisiMetni_2024.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1701-ar-ge-proje-degerlendirme-ve-izleme-cagrisi"
+   ],
+   "haric": null,
+   "boyut": 682936,
+   "kat": "cagri",
+   "dosya": "dosyalar/2024-06__1701-Proje_Degerlendirme_ve_Izleme_CagrisiMetni_2024.pdf",
+   "sha256": "102e8173337f746a174f5479d2cd5292f8941110f438c282d5a352a09319f210",
+   "sayfa_sayisi": 8,
+   "metin_karakter": 15910,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2023-09/1702_patentlisans_221005.pdf",
+   "baslik": "Çağrı Duyurusu",
+   "ext": ".pdf",
+   "dosya_adi": "1702_patentlisans_221005.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1702-patent-tabanli-teknoloji-transferi-destekleme-cagrisi"
+   ],
+   "haric": null,
+   "boyut": 484041,
+   "kat": "cagri",
+   "dosya": "dosyalar/2023-09__1702_patentlisans_221005.pdf",
+   "sha256": "d6fb18c0e2f18fda11fd3692b8a0f062485d0c157059c6fcf1b88ba3ecb9d422",
+   "sayfa_sayisi": 12,
+   "metin_karakter": 31275,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2023-09/1702_patent_lisans_prodis_basvurusu_221005.pdf",
+   "baslik": "PRODİS Başvuru Kılavuzu",
+   "ext": ".pdf",
+   "dosya_adi": "1702_patent_lisans_prodis_basvurusu_221005.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1702-patent-tabanli-teknoloji-transferi-destekleme-cagrisi"
+   ],
+   "haric": null,
+   "boyut": 3494536,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2023-09__1702_patent_lisans_prodis_basvurusu_221005.pdf",
+   "sha256": "47083af12405cdda972d507c70c8f9d14ae340e21ec25561c671dbe1fcf93fd6",
+   "sayfa_sayisi": 38,
+   "metin_karakter": 11211,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-08/Siparis_Ar-Ge_2026-3_Cagri_Dokumani.pdf",
+   "baslik": "Sipariş Ar-ge 2026-3 Çağrı Dokümanı",
+   "ext": ".pdf",
+   "dosya_adi": "Siparis_Ar-Ge_2026-3_Cagri_Dokumani.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1707-siparise-dayali-ar-ge-projeleri-icin-kobi-destekleme-cagrisi"
+   ],
+   "haric": null,
+   "boyut": 624217,
+   "kat": "cagri",
+   "dosya": "dosyalar/2026-08__Siparis_Ar-Ge_2026-3_Cagri_Dokumani.pdf",
+   "sha256": "b5665606654f2033fe7e41f8e082f9112dc43e24b82b0e8691a2af569dbadc18",
+   "sayfa_sayisi": 10,
+   "metin_karakter": 25736,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2024-03/siparis_arge_2024-1_guncellenmis_sss-18012024.pdf",
+   "baslik": "Sıkça Sorulan Sorular için tıklayınız.",
+   "ext": ".pdf",
+   "dosya_adi": "siparis_arge_2024-1_guncellenmis_sss-18012024.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1707-siparise-dayali-ar-ge-projeleri-icin-kobi-destekleme-cagrisi"
+   ],
+   "haric": null,
+   "boyut": 1536388,
+   "kat": "cagri",
+   "dosya": "dosyalar/2024-03__siparis_arge_2024-1_guncellenmis_sss-18012024.pdf",
+   "sha256": "87266b83844de48032b98936138259c9161c0e18ff244913e65a54687a8caecc",
+   "baslik_belirsiz": true,
+   "ayni_icerikli_urller": [
+    "https://tubitak.gov.tr/sites/default/files/2024-03/siparis_arge_2024-1_guncellenmis_sss-18012024%20%281%29.pdf"
+   ],
+   "sayfa_sayisi": 8,
+   "metin_karakter": 14266,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-09/1711_YZE_2026_Cagri_Metni_Guncel.pdf",
+   "baslik": "1711 - Yapay Zekâ Ekosistem 2026 Çağrı Metni",
+   "ext": ".pdf",
+   "dosya_adi": "1711_YZE_2026_Cagri_Metni_Guncel.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1711-yapay-zeka-ekosistem-cagrisi"
+   ],
+   "haric": null,
+   "boyut": 558974,
+   "kat": "cagri",
+   "dosya": "dosyalar/2026-09__1711_YZE_2026_Cagri_Metni_Guncel.pdf",
+   "sha256": "60d1d7043d13d9ae7245c9dc47cce3f9c0fdd0c8854bd24a02839a86bcd4863e",
+   "sayfa_sayisi": 16,
+   "metin_karakter": 34202,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-09/1812-2026-2_Cagri_Duyurusu_v2.pdf",
+   "baslik": "BiGG Yatırım Programı 2026-2 Çağrı Metni",
+   "ext": ".pdf",
+   "dosya_adi": "1812-2026-2_Cagri_Duyurusu_v2.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1812-yatirim-tabanli-girisimcilik-destek-programi-bigg-yatirim"
+   ],
+   "haric": null,
+   "boyut": 420790,
+   "kat": "cagri",
+   "dosya": "dosyalar/2026-09__1812-2026-2_Cagri_Duyurusu_v2.pdf",
+   "sha256": "4a616f06b928404c0784d4a1cbcb8dc5279e069dd3bf105a9d45e437e8deaaaf",
+   "sayfa_sayisi": 11,
+   "metin_karakter": 24657,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2025-09/1812_Asama_3_Cagri_Duyurusu-_0.pdf",
+   "baslik": "1812 - 3. Aşama 2025 – 1 BİGG+ Tohum Yatırım Çağrısı",
+   "ext": ".pdf",
+   "dosya_adi": "1812_Asama_3_Cagri_Duyurusu-_0.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1812-yatirim-tabanli-girisimcilik-destek-programi-bigg-yatirim"
+   ],
+   "haric": null,
+   "boyut": 243152,
+   "kat": "cagri",
+   "dosya": "dosyalar/2025-09__1812_Asama_3_Cagri_Duyurusu-_0.pdf",
+   "sha256": "df81bb909c9477205361e12caf1bd1cf16b749865d880109496e52a7e54e21e9",
+   "sayfa_sayisi": 5,
+   "metin_karakter": 12097,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2025-12/fon_yatirim_kilavuzu_TBF_202501_v2.pdf",
+   "baslik": "TÜBİTAK BİGG Fonu Yatırım Kılavuzu",
+   "ext": ".pdf",
+   "dosya_adi": "fon_yatirim_kilavuzu_TBF_202501_v2.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1812-yatirim-tabanli-girisimcilik-destek-programi-bigg-yatirim"
+   ],
+   "haric": null,
+   "boyut": 488848,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2025-12__fon_yatirim_kilavuzu_TBF_202501_v2.pdf",
+   "sha256": "48bc4bda21c077b9187f04a855832c9b3d8012c606376575c03fa6347c9800f2",
+   "sayfa_sayisi": 2,
+   "metin_karakter": 5217,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2025-08/bigg_yatirim_cagrisi_sikca_sorulan_sorular_6.08.2025.pdf",
+   "baslik": "BİGG Yatırım Çağrısı Sıkça Sorulan Sorular",
+   "ext": ".pdf",
+   "dosya_adi": "bigg_yatirim_cagrisi_sikca_sorulan_sorular_6.08.2025.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1812-yatirim-tabanli-girisimcilik-destek-programi-bigg-yatirim"
+   ],
+   "haric": null,
+   "boyut": 343093,
+   "kat": "cagri",
+   "dosya": "dosyalar/2025-08__bigg_yatirim_cagrisi_sikca_sorulan_sorular_6.08.2025.pdf",
+   "sha256": "896a91e64c3bb524697b8311647d53e6f840e580927db2c8d27708fdcb5c4190",
+   "sayfa_sayisi": 6,
+   "metin_karakter": 18251,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2025-05/1831_2024-1_Cagri_Duyurusu15052025_tarihli_guncelleme.pdf",
+   "baslik": "1831 2024-1 Çağrı Duyurusu",
+   "ext": ".pdf",
+   "dosya_adi": "1831_2024-1_Cagri_Duyurusu15052025_tarihli_guncelleme.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1831-yesil-inovasyon-teknoloji-mentorluk-cagrisi"
+   ],
+   "haric": null,
+   "boyut": 292707,
+   "kat": "cagri",
+   "dosya": "dosyalar/2025-05__1831_2024-1_Cagri_Duyurusu15052025_tarihli_guncelleme.pdf",
+   "sha256": "e1a0769ccfefab704ceb1487a65da470f1ee7318a58a2ee2c949bd081200f7bf",
+   "sayfa_sayisi": 11,
+   "metin_karakter": 20544,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2024-05/1831_KOBI_BASVURU_KILAVUZU.pdf",
+   "baslik": "Başvuru Kılavuzu",
+   "ext": ".pdf",
+   "dosya_adi": "1831_KOBI_BASVURU_KILAVUZU.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1831-yesil-inovasyon-teknoloji-mentorluk-cagrisi"
+   ],
+   "haric": null,
+   "boyut": 2463636,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2024-05__1831_KOBI_BASVURU_KILAVUZU.pdf",
+   "sha256": "e3e1e331a69a9db3299bc2c175bd218f6d10e8db253492bff16da6192637c2b6",
+   "sayfa_sayisi": 18,
+   "metin_karakter": 6579,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-09/1832_2026-2_Cagri_Duyurusu_revize_1.pdf",
+   "baslik": "1832 2026-2 Çağrı Duyurusu",
+   "ext": ".pdf",
+   "dosya_adi": "1832_2026-2_Cagri_Duyurusu_revize_1.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1832-sanayide-yesil-donusum-cagrisi"
+   ],
+   "haric": null,
+   "boyut": 691265,
+   "kat": "cagri",
+   "dosya": "dosyalar/2026-09__1832_2026-2_Cagri_Duyurusu_revize_1.pdf",
+   "sha256": "2c8dd4195a5c835811a9c99b26c901f466a2ce8c1d598344acc7b65a89873ab8",
+   "sayfa_sayisi": 16,
+   "metin_karakter": 40557,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-04/1832_SSS_2.pdf",
+   "baslik": "Sıkça Sorulan Sorular",
+   "ext": ".pdf",
+   "dosya_adi": "1832_SSS_2.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1832-sanayide-yesil-donusum-cagrisi"
+   ],
+   "haric": null,
+   "boyut": 631006,
+   "kat": "cagri",
+   "dosya": "dosyalar/2026-04__1832_SSS_2.pdf",
+   "sha256": "ca163430bc24cfe406d5a8048cf1d552eb62acf0fb45ab115bedc40e444b5779",
+   "sayfa_sayisi": 4,
+   "metin_karakter": 7023,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-04/1833_SAYEM_Cagri_Duyurusu.pdf",
+   "baslik": "1833 SAYEM Çağrı Duyurusu",
+   "ext": ".pdf",
+   "dosya_adi": "1833_SAYEM_Cagri_Duyurusu.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1833-sayem-yesil-donusum-cagrisi"
+   ],
+   "haric": null,
+   "boyut": 835616,
+   "kat": "cagri",
+   "dosya": "dosyalar/2026-04__1833_SAYEM_Cagri_Duyurusu.pdf",
+   "sha256": "4ed16ef736b1fd8f81b20c091355d22764c68a30dfd822181e29737c6d64189f",
+   "sayfa_sayisi": 21,
+   "metin_karakter": 50993,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2024-03/1833-up_detay_dokumani-yesil_donusum_cagrisi_01.09.2023.pdf",
+   "baslik": "Ürünleştirme Projesi Detay Dokümanı",
+   "ext": ".pdf",
+   "dosya_adi": "1833-up_detay_dokumani-yesil_donusum_cagrisi_01.09.2023.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1833-sayem-yesil-donusum-cagrisi"
+   ],
+   "haric": null,
+   "boyut": 1000655,
+   "kat": "cagri",
+   "dosya": "dosyalar/2024-03__1833-up_detay_dokumani-yesil_donusum_cagrisi_01.09.2023.pdf",
+   "sha256": "0fd89bee6e5f465155efe89d4e88f20ceead93537789588798d305f3e965dd46",
+   "sayfa_sayisi": 14,
+   "metin_karakter": 17303,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-03/1833_SSS_26.02.2026.pdf",
+   "baslik": "Sıkça Sorulan Sorular",
+   "ext": ".pdf",
+   "dosya_adi": "1833_SSS_26.02.2026.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1833-sayem-yesil-donusum-cagrisi"
+   ],
+   "haric": null,
+   "boyut": 620633,
+   "kat": "cagri",
+   "dosya": "dosyalar/2026-03__1833_SSS_26.02.2026.pdf",
+   "sha256": "0ff4a6cdb20d6d180de6c38f39fb5acdcfaa93ccb82d87e6ba30dfea8082c582",
+   "sayfa_sayisi": 3,
+   "metin_karakter": 5328,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-09/1709-EUREKA-EUROSTARS_CAGRI_DUYURUSU_20262.pdf",
+   "baslik": "1709-EUREKA-EUROSTARS ÇAĞRI DUYURUSU 2026/2",
+   "ext": ".pdf",
+   "dosya_adi": "1709-EUREKA-EUROSTARS_CAGRI_DUYURUSU_20262.pdf",
+   "sayfalar": [
+    "sanayi__uluslararasi-ortakli-destek-programlari__1709-eureka-eurostars"
+   ],
+   "haric": null,
+   "boyut": 762243,
+   "kat": "cagri",
+   "dosya": "dosyalar/2026-09__1709-EUREKA-EUROSTARS_CAGRI_DUYURUSU_20262.pdf",
+   "sha256": "0f5159f6f65e6b29041792c6ff8d51462b749d4d78d1fac481b8d4fba5029fcb",
+   "sayfa_sayisi": 10,
+   "metin_karakter": 21075,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-01/Eurostars_Basvurusu_Hazirlama_10-12-2025.pdf",
+   "baslik": "Eurostars Başvurusu Hazırlama",
+   "ext": ".pdf",
+   "dosya_adi": "Eurostars_Basvurusu_Hazirlama_10-12-2025.pdf",
+   "sayfalar": [
+    "sanayi__uluslararasi-ortakli-destek-programlari__1709-eureka-eurostars"
+   ],
+   "haric": null,
+   "boyut": 927476,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2026-01__Eurostars_Basvurusu_Hazirlama_10-12-2025.pdf",
+   "sha256": "a7cee26874ad524b0f0c9a8d3c1a6a573ac417394d6a2d779a7caa0c05a2fa15",
+   "sayfa_sayisi": 12,
+   "metin_karakter": 3838,
+   "dil": "en"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2023-09/1709_donemsel_izleme_raporu_-_kilavuz_0.pdf",
+   "baslik": "Dönemsel İzleme Raporu Hazırlama Kılavuzu",
+   "ext": ".pdf",
+   "dosya_adi": "1709_donemsel_izleme_raporu_-_kilavuz_0.pdf",
+   "sayfalar": [
+    "sanayi__uluslararasi-ortakli-destek-programlari__1709-eureka-eurostars"
+   ],
+   "haric": null,
+   "boyut": 403371,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2023-09__1709_donemsel_izleme_raporu_-_kilavuz_0.pdf",
+   "sha256": "ed4708d0c04cfcdae42b65db743faaa5e4e16747b9fef927a0a72ea38c94d006",
+   "sayfa_sayisi": 10,
+   "metin_karakter": 25874,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2023-09/teknik_rapor_-_kilavuz.pdf",
+   "baslik": "Ar-Ge Yardımı İstek Formu Hazırlama Kılavuzu",
+   "ext": ".pdf",
+   "dosya_adi": "teknik_rapor_-_kilavuz.pdf",
+   "sayfalar": [
+    "sanayi__uluslararasi-ortakli-destek-programlari__1709-eureka-eurostars"
+   ],
+   "haric": null,
+   "boyut": 162280,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2023-09__teknik_rapor_-_kilavuz.pdf",
+   "sha256": "8b2d239aae98e08339c2b70f86903d470d14d2f1dc827d29e4665d714e4a8a9f",
+   "sayfa_sayisi": 12,
+   "metin_karakter": 29151,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2023-09/1709_on_proje_basvurusu_kilavuzu.pdf",
+   "baslik": "1709 Ön Proje Başvurusu Kılavuzu",
+   "ext": ".pdf",
+   "dosya_adi": "1709_on_proje_basvurusu_kilavuzu.pdf",
+   "sayfalar": [
+    "sanayi__uluslararasi-ortakli-destek-programlari__1709-eureka-eurostars"
+   ],
+   "haric": null,
+   "boyut": 1605094,
+   "kat": "kilavuz",
+   "dosya": "dosyalar/2023-09__1709_on_proje_basvurusu_kilavuzu.pdf",
+   "sha256": "dfe8e18db36069654e42d7de787602f79e57392900dae2ddc12d0b70b83c7fe1",
+   "sayfa_sayisi": 4,
+   "metin_karakter": 3191,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2025-02/Eureka_Seyahat_Destegi_Cagri_Duyurusu.pdf",
+   "baslik": "Eureka Seyahat Desteği Çağrı Duyurusu",
+   "ext": ".pdf",
+   "dosya_adi": "Eureka_Seyahat_Destegi_Cagri_Duyurusu.pdf",
+   "sayfalar": [
+    "sanayi__uluslararasi-ortakli-destek-programlari__eureka-seyahat-destegi"
+   ],
+   "haric": null,
+   "boyut": 563422,
+   "kat": "cagri",
+   "dosya": "dosyalar/2025-02__Eureka_Seyahat_Destegi_Cagri_Duyurusu.pdf",
+   "sha256": "38631d1a9d6347d2d7e8d778bd9e7ae5f307cb00f9585d1450c52adc589e9e4c",
+   "sayfa_sayisi": 4,
+   "metin_karakter": 4906,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2025-12/Eurostars_Koordinatorluk_Destegi_Programi_2026-1_Ulusal_Cagri_Duyurusu.pdf",
+   "baslik": "Eurostars Koordinatörlük Desteği Programı 2026-1 Ulusal Çağrı Duyurusu",
+   "ext": ".pdf",
+   "dosya_adi": "Eurostars_Koordinatorluk_Destegi_Programi_2026-1_Ulusal_Cagri_Duyurusu.pdf",
+   "sayfalar": [
+    "sanayi__uluslararasi-ortakli-destek-programlari__eurostars-koordinatorluk-destegi-programi"
+   ],
+   "haric": null,
+   "boyut": 533165,
+   "kat": "cagri",
+   "dosya": "dosyalar/2025-12__Eurostars_Koordinatorluk_Destegi_Programi_2026-1_Ulusal_Cagri_Duyurusu.pdf",
+   "sha256": "23de70e86ed6d29089fee8cb31704665fc91f5ee42d0f92beff4383448c24ce3",
+   "sayfa_sayisi": 7,
+   "metin_karakter": 12355,
+   "dil": "tr"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2024-08/Korea-Turkiye_JRP_Call_text_NRF_TUBITAK_MSIT_2024_final.pdf",
+   "baslik": "2516 Çağrı Metni",
+   "ext": ".pdf",
+   "dosya_adi": "Korea-Turkiye_JRP_Call_text_NRF_TUBITAK_MSIT_2024_final.pdf",
+   "sayfalar": [
+    "uluslararasi-birlikleri__ikili-birligi-programlari__2516-bilim-bilgi-ve-iletisim-teknolojileri-bakanligi-msit-ve-kore-ulusal-arastirma-vakfi-nrf-ile-ikili-isbirligi-programi"
+   ],
+   "haric": null,
+   "boyut": 543581,
+   "kat": "cagri",
+   "dosya": "dosyalar/2024-08__Korea-Turkiye_JRP_Call_text_NRF_TUBITAK_MSIT_2024_final.pdf",
+   "sha256": "9ae84d7fd98571ea4b733700402986f7c1bc2c0d4ded573374f7d78bc9401e35",
+   "sayfa_sayisi": 6,
+   "metin_karakter": 10149,
+   "dil": "en"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2025-07/2517-ASF-TUBITAK-Call_Text-2025.pdf",
+   "baslik": "tıklayınız",
+   "ext": ".pdf",
+   "dosya_adi": "2517-ASF-TUBITAK-Call_Text-2025.pdf",
+   "sayfalar": [
+    "uluslararasi-birlikleri__ikili-birligi-programlari__2517-azerbaycan-cumhuriyeti-bilimi-gelistirme-kurumu-sdf-ile-ikili-isbirligi-programi"
+   ],
+   "haric": null,
+   "boyut": 638621,
+   "kat": "cagri",
+   "dosya": "dosyalar/2025-07__2517-ASF-TUBITAK-Call_Text-2025.pdf",
+   "sha256": "e350ff28f47faabbd20bcd78c2614963dc5ad3b36a1ae0703f58ba2d3db160ca",
+   "baslik_belirsiz": true,
+   "sayfa_sayisi": 6,
+   "metin_karakter": 7236,
+   "dil": "en"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2024-08/2542_TUBITAK-ANAS-2024_call_text.pdf",
+   "baslik": "tıklayınız",
+   "ext": ".pdf",
+   "dosya_adi": "2542_TUBITAK-ANAS-2024_call_text.pdf",
+   "sayfalar": [
+    "uluslararasi-birlikleri__ikili-birligi-programlari__2542-azerbaycan-ulusal-bilimler-akademisi-anas-ile-ikili-isbirligi-programi"
+   ],
+   "haric": null,
+   "boyut": 646358,
+   "kat": "cagri",
+   "dosya": "dosyalar/2024-08__2542_TUBITAK-ANAS-2024_call_text.pdf",
+   "sha256": "cb391d108593ef97b361f25b0d7a31643418832e4446916f27b241afe3dce6d3",
+   "baslik_belirsiz": true,
+   "sayfa_sayisi": 6,
+   "metin_karakter": 7138,
+   "dil": "en"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2024-06/2544_jsps_call_guide_2024_JSPS_final.pdf",
+   "baslik": "tıklayınız",
+   "ext": ".pdf",
+   "dosya_adi": "2544_jsps_call_guide_2024_JSPS_final.pdf",
+   "sayfalar": [
+    "uluslararasi-birlikleri__ikili-birligi-programlari__2544-japon-bilimi-destekleme-kurumu-jsps-ile-ikili-isbirligi-programi"
+   ],
+   "haric": null,
+   "boyut": 519894,
+   "kat": "cagri",
+   "dosya": "dosyalar/2024-06__2544_jsps_call_guide_2024_JSPS_final.pdf",
+   "sha256": "f7fec8fd9cae52e6f26a5659c6db336c68f28310a4414a8bff72ce283ba5106d",
+   "baslik_belirsiz": true,
+   "sayfa_sayisi": 3,
+   "metin_karakter": 6020,
+   "dil": "en"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-05/TUBITAK-NSFC_Call_for_Proposals_2026_Call_Text.pdf",
+   "baslik": "tıklayınız",
+   "ext": ".pdf",
+   "dosya_adi": "TUBITAK-NSFC_Call_for_Proposals_2026_Call_Text.pdf",
+   "sayfalar": [
+    "uluslararasi-birlikleri__ikili-birligi-programlari__2566-tubitak-nsfc-cin-ikili-isbirligi-programi"
+   ],
+   "haric": null,
+   "boyut": 653394,
+   "kat": "cagri",
+   "dosya": "dosyalar/2026-05__TUBITAK-NSFC_Call_for_Proposals_2026_Call_Text.pdf",
+   "sha256": "357efaf9ff96e6a4fc56d3ed202b890a911912c10052ea27467954349df34709",
+   "baslik_belirsiz": true,
+   "sayfa_sayisi": 6,
+   "metin_karakter": 8725,
+   "dil": "en"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-05/1_Call_Text_TUBITAK_CAS_2026_Call_FINAL.pdf",
+   "baslik": "tıklayınız",
+   "ext": ".pdf",
+   "dosya_adi": "1_Call_Text_TUBITAK_CAS_2026_Call_FINAL.pdf",
+   "sayfalar": [
+    "uluslararasi-birlikleri__ikili-birligi-programlari__2568-cin-bilimler-akademisi-cas-ile-ikili-isbirligi-programi"
+   ],
+   "haric": null,
+   "boyut": 326617,
+   "kat": "cagri",
+   "dosya": "dosyalar/2026-05__1_Call_Text_TUBITAK_CAS_2026_Call_FINAL.pdf",
+   "sha256": "7008ea66b7a1b282ecfec5440e0b553fdf6e0cc1020fae4230fc99428bcfdd5c",
+   "baslik_belirsiz": true,
+   "sayfa_sayisi": 9,
+   "metin_karakter": 13236,
+   "dil": "en"
+  }
+ ],
+ "elenenler": [
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2023-08/desteklenen_arastirma_programlari.pdf",
+   "baslik": "2018 Yılı çağrısı ile destek verilen araştırma programları",
+   "ext": ".pdf",
+   "dosya_adi": "desteklenen_arastirma_programlari.pdf",
+   "sayfalar": [
+    "akademik__ulusal-destek-programlari__1004-mukemmeliyet-merkezi-destek-programi"
+   ],
+   "haric": "eski_cagri_veya_liste",
+   "boyut": 458027,
+   "kat": "cagri"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-04/3-senet_v1-5.xlsx",
+   "baslik": "Senet Hazırlama Dosyası",
+   "ext": ".xlsx",
+   "dosya_adi": "3-senet_v1-5.xlsx",
+   "sayfalar": [
+    "mali-hususlar-ve-odeme"
+   ],
+   "haric": "eski_cagri_veya_liste",
+   "boyut": 200856,
+   "kat": "kilavuz"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2023-09/1511-2012-cagrilar_rev.pdf",
+   "baslik": "2012 yılı kapanmış çağrılar",
+   "ext": ".pdf",
+   "dosya_adi": "1511-2012-cagrilar_rev.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1511-tubitak-oncelikli-alanlar-arastirma-teknoloji-gelistirme-ve-yenilik-p-d-pteknoloji-odakli-sanayi-hamlesi-programi"
+   ],
+   "haric": "eski_cagri_veya_liste",
+   "boyut": 110989,
+   "kat": "cagri"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2023-09/1511-2013-cagrilar.pdf",
+   "baslik": "2013 yılı kapanmış çağrılar",
+   "ext": ".pdf",
+   "dosya_adi": "1511-2013-cagrilar.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1511-tubitak-oncelikli-alanlar-arastirma-teknoloji-gelistirme-ve-yenilik-p-d-pteknoloji-odakli-sanayi-hamlesi-programi"
+   ],
+   "haric": "eski_cagri_veya_liste",
+   "boyut": 91624,
+   "kat": "cagri"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2023-09/1511_2014-cagrilar.pdf",
+   "baslik": "2014 yılı kapanmış çağrılar",
+   "ext": ".pdf",
+   "dosya_adi": "1511_2014-cagrilar.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1511-tubitak-oncelikli-alanlar-arastirma-teknoloji-gelistirme-ve-yenilik-p-d-pteknoloji-odakli-sanayi-hamlesi-programi"
+   ],
+   "haric": "eski_cagri_veya_liste",
+   "boyut": 66991,
+   "kat": "cagri"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2023-09/19_ocak_2015_kapanis_tarihli_cagrilar.pdf",
+   "baslik": "2015-1 dönemi kapanmış çağrılar",
+   "ext": ".pdf",
+   "dosya_adi": "19_ocak_2015_kapanis_tarihli_cagrilar.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1511-tubitak-oncelikli-alanlar-arastirma-teknoloji-gelistirme-ve-yenilik-p-d-pteknoloji-odakli-sanayi-hamlesi-programi"
+   ],
+   "haric": "eski_cagri_veya_liste",
+   "boyut": 112341,
+   "kat": "cagri"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2023-09/1511-2015-2-cagrilar.pdf",
+   "baslik": "2015-2 dönemi kapanmış çağrılar",
+   "ext": ".pdf",
+   "dosya_adi": "1511-2015-2-cagrilar.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1511-tubitak-oncelikli-alanlar-arastirma-teknoloji-gelistirme-ve-yenilik-p-d-pteknoloji-odakli-sanayi-hamlesi-programi"
+   ],
+   "haric": "eski_cagri_veya_liste",
+   "boyut": 226786,
+   "kat": "cagri"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2023-09/1511-kapanan-cagrilar-2016.pdf",
+   "baslik": "2016-1 dönemi kapanmış çağrılar",
+   "ext": ".pdf",
+   "dosya_adi": "1511-kapanan-cagrilar-2016.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1511-tubitak-oncelikli-alanlar-arastirma-teknoloji-gelistirme-ve-yenilik-p-d-pteknoloji-odakli-sanayi-hamlesi-programi"
+   ],
+   "haric": "eski_cagri_veya_liste",
+   "boyut": 225569,
+   "kat": "cagri"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2023-09/1511-2017-kapanancagrilar.pdf",
+   "baslik": "2017 yılı kapanmış çağrılar",
+   "ext": ".pdf",
+   "dosya_adi": "1511-2017-kapanancagrilar.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1511-tubitak-oncelikli-alanlar-arastirma-teknoloji-gelistirme-ve-yenilik-p-d-pteknoloji-odakli-sanayi-hamlesi-programi"
+   ],
+   "haric": "eski_cagri_veya_liste",
+   "boyut": 232514,
+   "kat": "cagri"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2023-09/2017-2_donemi_kapanan_cagrilar.pdf",
+   "baslik": "2017-2 dönemi kapanmış çağrılar",
+   "ext": ".pdf",
+   "dosya_adi": "2017-2_donemi_kapanan_cagrilar.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1511-tubitak-oncelikli-alanlar-arastirma-teknoloji-gelistirme-ve-yenilik-p-d-pteknoloji-odakli-sanayi-hamlesi-programi"
+   ],
+   "haric": "eski_cagri_veya_liste",
+   "boyut": 568739,
+   "kat": "cagri"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2023-09/gisdep-2018_cagrisi_2022-03-15.pdf",
+   "baslik": "Tech-InvesTR-2018 çağrı metni",
+   "ext": ".pdf",
+   "dosya_adi": "gisdep-2018_cagrisi_2022-03-15.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1514-girisim-sermayesi-destekleme-programi-tech-investr"
+   ],
+   "haric": "eski_cagri_veya_liste",
+   "boyut": 404321,
+   "kat": "cagri"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2023-09/1601-2018-2-sanayiakademiortakligi.pdf",
+   "baslik": "Katip Çelebi-Newton Fonu Sanayi- kademi Ortaklığı Programı (Industry-Academy Partnership Programme-IAPP) Çağrısı (2018)",
+   "ext": ".pdf",
+   "dosya_adi": "1601-2018-2-sanayiakademiortakligi.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1601-yenilik-girisimcilik-alanlarinda-kapasite-artirilmasina-yonelik-dp"
+   ],
+   "haric": "eski_cagri_veya_liste",
+   "boyut": 265368,
+   "kat": "cagri"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2023-09/bigg_cagri_dokumani_30_kobi_sorumlu_rev.pdf",
+   "baslik": "Mentor Arayüzü Çağrısı (BİGG+) 2019",
+   "ext": ".pdf",
+   "dosya_adi": "bigg_cagri_dokumani_30_kobi_sorumlu_rev.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1601-yenilik-girisimcilik-alanlarinda-kapasite-artirilmasina-yonelik-dp"
+   ],
+   "haric": "eski_cagri_veya_liste",
+   "boyut": 400666,
+   "kat": "cagri"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2023-09/uk_donemsel_faaliyet_raporu_ek-2_cagri_doneminde_alinan_basvurular.xlsx",
+   "baslik": "Uygulayıcı Kuruluş Dönemsel Faaliyet Raporu Ek-2",
+   "ext": ".xlsx",
+   "dosya_adi": "uk_donemsel_faaliyet_raporu_ek-2_cagri_doneminde_alinan_basvurular.xlsx",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1601-yenilik-girisimcilik-alanlarinda-kapasite-artirilmasina-yonelik-dp"
+   ],
+   "haric": "eski_cagri_veya_liste",
+   "boyut": 21669,
+   "kat": "cagri"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-01/1601-2025-1_Cagrisi_Desteklenmeye_Hak_Kazanan_Projeler_0.pdf",
+   "baslik": "2026-2028 döneminde Uygulayıcı Kuruluş olarak faaliyet gösteren kuruluşlar",
+   "ext": ".pdf",
+   "dosya_adi": "1601-2025-1_Cagrisi_Desteklenmeye_Hak_Kazanan_Projeler_0.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1612-bigg-1asama-uygulayici-kurulus-cagrisi"
+   ],
+   "haric": "eski_cagri_veya_liste",
+   "boyut": 439885,
+   "kat": "cagri"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2024-03/uk_donemsel_faaliyet_raporu_ek-2_cagri_doneminde_alinan_basvurular_0.xlsx",
+   "baslik": "Uygulayıcı Kuruluş Dönemsel Faaliyet Raporu Ek-2",
+   "ext": ".xlsx",
+   "dosya_adi": "uk_donemsel_faaliyet_raporu_ek-2_cagri_doneminde_alinan_basvurular_0.xlsx",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1612-bigg-1asama-uygulayici-kurulus-cagrisi"
+   ],
+   "haric": "eski_cagri_veya_liste",
+   "boyut": 21669,
+   "kat": "cagri"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2026-03/1601-2025-1_Cagrisi_Desteklenmeye_Hak_Kazanan_Projeler_0.pdf",
+   "baslik": "Uygulayıcı Kuruluşların Listesi",
+   "ext": ".pdf",
+   "dosya_adi": "1601-2025-1_Cagrisi_Desteklenmeye_Hak_Kazanan_Projeler_0.pdf",
+   "sayfalar": [
+    "sanayi__ulusal-destek-programlari__1812-yatirim-tabanli-girisimcilik-destek-programi-bigg-yatirim"
+   ],
+   "haric": "eski_cagri_veya_liste",
+   "boyut": 439885,
+   "kat": "cagri"
+  },
+  {
+   "url": "https://tubitak.gov.tr/sites/default/files/2023-12/uidb_e-imza_yardim_dokumani.pdf",
+   "baslik": "E-imza yardım dokümanı",
+   "ext": ".pdf",
+   "dosya_adi": "uidb_e-imza_yardim_dokumani.pdf",
+   "sayfalar": [
+    "uluslararasi-birlikleri__ikili-birligi-programlari__2544-japon-bilimi-destekleme-kurumu-jsps-ile-ikili-isbirligi-programi"
+   ],
+   "haric": "eski_cagri_veya_liste",
+   "boyut": 3065668,
+   "kat": "kilavuz"
+  }
+ ],
+ "erisilemeyen_sayfalar": [
+  "https://tubitak.gov.tr/tr/destekler/akademik/ulusal-destek-programlari/3005-sosyal-ve-beseri-bilimlerde-yenilikci-cozumler-arastirma-projeleri-destek-programi",
+  "https://tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1512-girisimcilik-destek-programi-bigg",
+  "https://tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1607-bigg-kobi-mentor-arayuzu"
+ ]
+}

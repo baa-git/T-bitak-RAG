@@ -1,0 +1,18 @@
+# v2 — Hibrit arama (BM25 + dense, RRF), reranker yok.
+extends: ../default.yaml
+
+experiment:
+  name: v2
+  description: "Kelime eşleşmesi ne kazandırır? BM25 ile dense aramayı RRF ile birleştiren hibrit arama (kodlar, sayılar)."
+  concept: hybrid_rrf
+  previous: v1
+
+chunker:
+  name: structural
+  context_header: true
+
+retriever:
+  mode: hybrid
+
+reranker:
+  enabled: false

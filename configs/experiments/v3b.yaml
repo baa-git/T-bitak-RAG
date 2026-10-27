@@ -1,0 +1,22 @@
+# v3b — v3 ile aynı pipeline, embedding modeli bge-m3.
+extends: ../default.yaml
+
+experiment:
+  name: v3b
+  description: "Embedding modeli ne kadar fark eder? v3 ile aynı pipeline, EmbeddingGemma 2 yerine bge-m3."
+  concept: embedding_comparison
+  previous: v3
+
+embedder:
+  model: BAAI/bge-m3
+  dimension: 1024
+
+chunker:
+  name: structural
+  context_header: true
+
+retriever:
+  mode: hybrid
+
+reranker:
+  enabled: true

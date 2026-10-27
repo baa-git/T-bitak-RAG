@@ -1,0 +1,135 @@
+{
+  "run_id": "v0_20261016-004903",
+  "experiment": "v0",
+  "started_at": "2026-10-16T00:49:03",
+  "finished_at": "2026-10-16T00:54:30",
+  "wall_clock_s": 327.1368401999998,
+  "judge_model": "qwen3:4b",
+  "llm_model": "qwen3:4b",
+  "embedder": "google/embeddinggemma-2",
+  "chunker": "fixed",
+  "retriever": "dense",
+  "reranker": null,
+  "counts": {
+    "questions": 104,
+    "chunks": 4193,
+    "docs": 282,
+    "judge_errors": 0,
+    "scope_false_rejections": 2
+  },
+  "retrieval": {
+    "recall_at_5": 0.28354978354978355,
+    "recall_at_10": 0.35497835497835495,
+    "mrr": 0.24108915542466622,
+    "doc_hit_at_5": 0.6103896103896104,
+    "doc_hit_at_10": 0.7012987012987013
+  },
+  "generation": {
+    "answer_accuracy": 0.6835443037974683,
+    "faithfulness": 0.7534246575342466,
+    "citation_precision": 0.30928270042194095,
+    "correct_rejection_rate": 0.76,
+    "false_rejection_rate": 0.0759493670886076,
+    "scope_rejection_rate": 1.0,
+    "programs_split_rate": 0.0,
+    "number_rejection_rate": 0.043478260869565216,
+    "number_strip_rate": 0.0,
+    "error_rate": 0.0,
+    "citation_repair_rate": 0.08860759493670886
+  },
+  "latency_ms": {
+    "retrieval_p50": 105.41279999961262,
+    "retrieval_p95": 134.4602600002418,
+    "llm_p50": 1292.697849999513,
+    "llm_p95": 2296.9522750001047,
+    "total_p50": 1370.4051499998968,
+    "total_p95": 2230.554964999919
+  },
+  "by_type": {
+    "tek_belge": {
+      "recall_at_5": 0.35714285714285715,
+      "recall_at_10": 0.42857142857142855,
+      "mrr": 0.24741759211533254,
+      "doc_hit_at_5": 0.6904761904761905,
+      "doc_hit_at_10": 0.7619047619047619,
+      "answer_accuracy": 0.6744186046511628,
+      "faithfulness": 0.825,
+      "citation_precision": 0.40541666666666665,
+      "false_rejection_rate": 0.06976744186046512,
+      "number_rejection_rate": 0.023809523809523808,
+      "number_strip_rate": 0.0,
+      "error_rate": 0.0,
+      "citation_repair_rate": 0.1
+    },
+    "cok_belge": {
+      "recall_at_5": 0.23958333333333334,
+      "recall_at_10": 0.3958333333333333,
+      "mrr": 0.36532481527093597,
+      "doc_hit_at_5": 0.6875,
+      "doc_hit_at_10": 0.8125,
+      "answer_accuracy": 0.6875,
+      "faithfulness": 0.42857142857142855,
+      "citation_precision": 0.2833333333333333,
+      "false_rejection_rate": 0.125,
+      "number_rejection_rate": 0.125,
+      "number_strip_rate": 0.0,
+      "error_rate": 0.0,
+      "citation_repair_rate": 0.21428571428571427
+    },
+    "cevapsiz": {
+      "citation_precision": 0.0,
+      "correct_rejection_rate": 0.6,
+      "number_rejection_rate": 0.06666666666666667,
+      "number_strip_rate": 0.0,
+      "error_rate": 0.0,
+      "citation_repair_rate": 0.0
+    },
+    "kapsam_disi": {
+      "correct_rejection_rate": 1.0,
+      "scope_rejection_rate": 1.0,
+      "error_rate": 0.0
+    },
+    "surum": {
+      "recall_at_5": 0.2,
+      "recall_at_10": 0.2,
+      "mrr": 0.139824016563147,
+      "doc_hit_at_5": 0.4,
+      "doc_hit_at_10": 0.5,
+      "answer_accuracy": 0.9,
+      "faithfulness": 0.8,
+      "citation_precision": 0.325,
+      "false_rejection_rate": 0.0,
+      "number_rejection_rate": 0.0,
+      "number_strip_rate": 0.0,
+      "error_rate": 0.0,
+      "citation_repair_rate": 0.0
+    },
+    "belirsiz": {
+      "recall_at_5": 0.1111111111111111,
+      "recall_at_10": 0.1111111111111111,
+      "mrr": 0.10320987654320987,
+      "doc_hit_at_5": 0.3333333333333333,
+      "doc_hit_at_10": 0.4444444444444444,
+      "answer_accuracy": 0.5,
+      "faithfulness": 0.8888888888888888,
+      "citation_precision": 0.1111111111111111,
+      "false_rejection_rate": 0.1,
+      "programs_split_rate": 0.0,
+      "number_rejection_rate": 0.0,
+      "number_strip_rate": 0.0,
+      "error_rate": 0.0,
+      "citation_repair_rate": 0.0
+    }
+  },
+  "stage_times_s": {
+    "ingest": 9.069183499999781,
+    "questions": 162.7736201999951,
+    "judge": 155.28958880000482
+  },
+  "refusals": {
+    "kapsam_disi": 12,
+    "cevaplanamaz": 7,
+    "dayanaksiz_sayi": 4,
+    "atifsiz_cevap": 2
+  }
+}

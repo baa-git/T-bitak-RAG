@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{% endblock %} · TÜBİTAK Mevzuat Rehberi</title>
+  <meta name="description" content="TÜBİTAK destek programları ve Ar-Ge mevzuatı üzerinde kaynak gösteren soru-cevap aracı.">
+  <meta name="color-scheme" content="light">
+  <link rel="preload" href="/static/fonts/source-serif-4-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <script src="/static/htmx.min.js" defer></script>
+  <script src="/static/app.js" defer></script>
+</head>
+<body class="{% block body_class %}{% endblock %}">
+  <a class="atla" href="#icerik">İçeriğe geç</a>
+  <header class="ust">
+    <div class="kap ust-ic">
+      <a class="marka" href="/">TÜBİTAK Mevzuat Rehberi</a>
+      <nav aria-label="Ana menü">
+        <ul class="menu">
+          <li><a href="/" {% if aktif == 'sorgu' %}aria-current="page"{% endif %}>Sohbet</a></li>
+          <li><a href="/hakkinda" {% if aktif == 'hakkinda' %}aria-current="page"{% endif %}>Hakkında</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="icerik" class="kap" tabindex="-1">
+    {% block content %}{% endblock %}
+  </main>
+  {% block footer %}
+  <footer class="alt">
+    <div class="kap">
+      <p>Açık kaynak eğitim projesi; resmî bir TÜBİTAK hizmeti değildir. Cevaplar yalnızca indekslenen belgelere dayanır.</p>
+      {% if is_demo %}<p class="demo-notu">Bu sayfalar gösterim verisiyle çalışıyor (sahte arka uç). Gerçek sistem için <code>rag serve</code> komutunu kullanın.</p>{% endif %}
+    </div>
+  </footer>
+  {% endblock %}
+</body>
+</html>

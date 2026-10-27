@@ -1,0 +1,18 @@
+# v0 — Naive RAG: sabit pencere chunking, yalnız dense arama, reranker yok.
+extends: ../default.yaml
+
+experiment:
+  name: v0
+  description: "Naive RAG nereye kadar gider? Sabit 512 token / 64 örtüşmeli parçalar ve yalnızca dense (vektör) arama."
+  concept: fixed_chunking
+  previous: null
+
+chunker:
+  name: fixed
+  context_header: false
+
+retriever:
+  mode: dense
+
+reranker:
+  enabled: false
